@@ -76,6 +76,18 @@ Blocking MQ(阻塞队列) =  LPUSH + BLPOP              --- key timeout
 
 ```
 
+## SET
+```
+SADD key member [member...]
+SREM key member [member...]
+SMEMBERS key
+SCARD key
+SISMEMBER key member
+SRANDMEMBER key [count]
+SPOP key [count]
+
+```
+
 ## 
 
 # USE
