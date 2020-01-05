@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/allst-redis/pom.xml" />
         <option value="$PROJECT_DIR$/allst-postgresql/pom.xml" />
         <option value="$PROJECT_DIR$/allst-es/pom.xml" />
+        <option value="$PROJECT_DIR$/allst-mysql/pom.xml" />
       </list>
     </option>
   </component>

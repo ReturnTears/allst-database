@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="allst-es" />
+        <module name="allst-mysql" />
         <module name="allst-postgresql" />
         <module name="allst-redis" />
       </profile>
@@ -15,6 +16,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="allst-es" options="-parameters" />
+      <module name="allst-mysql" options="-parameters" />
       <module name="allst-postgresql" options="-parameters" />
       <module name="allst-redis" options="-parameters" />
     </option>
