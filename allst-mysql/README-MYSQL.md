@@ -397,7 +397,20 @@ SELECT DATE_FORMAT('2020-01-05 21:58:31', '%Y-%m-%d');
 SELECT TIME_FORMAT('2020-01-05 21:58:31', '%H~%i~%s');
 
 
+-- MySQL条件判断函数
+SELECT IF(1 > 2, 'right', 'error');
+SELECT IF(2 > 1, 1, 0);
+SELECT IF(STRCMP('test','test'), 'TRUE', 'FALSE');
+SELECT IF(0, NULL, 'FALSE');
+SELECT IF(FALSE, NULL, 'FALSE');
+SELECT IFNULL(1,2);
+SELECT CASE 2 WHEN 1 THEN 'ONE' WHEN 2 THEN 'TWO' WHEN 3 THEN 'THREE' ELSE 'MORE' END;
+SELECT CASE WHEN 1 < 0 THEN 'true' ELSE 'fasle' end;
 
+-- MySQL加密函数
+SELECT MD5('mypwd');
+SELECT SHA('mypwd');
+SELECT SHA2('mypwd',0),SHA2('mypwd',224),SHA2('mypwd',256),SHA2('mypwd',384),SHA2('mypwd',512);
 
 
 
