@@ -214,3 +214,8 @@ https://www.bilibili.com/video/av62657941?p=5
 http://redisdoc.com/
 https://redisson.org/
 ```
+
+# 备注
+```
+分别使用redis的命令和redission去使用redis
+```

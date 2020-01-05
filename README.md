@@ -16,6 +16,7 @@ postgreSQL
 ## redis
 ```
 Redis
+详情查看README-REDIS.md
 ```
 
 ## mgo
