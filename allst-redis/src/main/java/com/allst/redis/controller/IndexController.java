@@ -53,4 +53,8 @@ public class IndexController {
         return "Success";
     }
 
+    @RequestMapping("/index")
+    public String index() {
+        return "Hello Redis";
+    }
 }
