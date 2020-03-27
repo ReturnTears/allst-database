@@ -453,16 +453,53 @@ SELECT SHA2('mypwd',0),SHA2('mypwd',224),SHA2('mypwd',256),SHA2('mypwd',384),SHA
 🍓 数据库中的数据类型
 
 🍍 整数类型
-
+  🍓 TINYINT
+  🍓 SMALLINT
+  🍓 MEDIUMINT
+  🍓 INT
+  🍓 INTEGER
+  🍓 BIGINT
 🍍 浮点数类型和定点数类型
-
- 
+  🍓 FLOAT
+  🍓 DOUBLE
+  🍓 DECIMAL(M,D) 或 DEC(m,D)
+🍍 日期与时间类型
+  🍓 YEAR
+  🍓 DATE
+  🍓 TIME
+  🍓 DATETIME
+  🍓 TIMESTAMP
+🍍 字符串类型
+  🍓 CHAR
+  🍓 VARCHAR
+  🍓 TEXT
+  🍓 ENUM
+  🍓 SET
+🍍 二进制类型
+  🍓 BINARY
+  🍓 VARBINARY
+  🍓 BIT
+  🍓 TINYBLOB
+  🍓 BLOB
+  🍓 MEDIUMBLOB
+  🍓 LONGBLOB
+🍍 JSON类型及MySQL 8 JSON增强
+  🍓 JSON是一种轻量级的数据交换格式
+  🍓 JSON函数
 
 
 
    
 🍓 
 🍓 
+
+🍓 MySQL常用命令
+在命令行执行:
+show engines;
+show engines \G;
+select version();
+show variables like 'have%';
+show variables like 'default_storage_engine';
 
 ```
 
