@@ -500,7 +500,8 @@ show engines \G;
 select version();
 show variables like 'have%';
 show variables like 'default_storage_engine';
-
+在Windows本地指定目录下运行如下命令， 将数据库test种的test表全部数据导入到test.csv文件中
+mysql -A test -h localhost -u root -p -e "select * from test;" > test.csv
 ```
 
 
