@@ -4,6 +4,7 @@
 
 **单值缓存**
 ```
+缓存：缓存数据、缓存绘画信息等...
 SET key value
 GET key
 
@@ -28,6 +29,7 @@ SET product:101 true ex 10 nx
 
 **计数器**
 ```
+排行榜、计数器
 INCR article:read:page:{文章id}
 GET article:read:page:{文章id}
 ```
@@ -41,6 +43,10 @@ spring session + redis实现session共享
 ```
 INCRBY orderId 1000     redis批量生成序列号提升性能
 ```
+
+**发布/订阅**
+
+**消息队列**
 
 ## Hash常用操作
 ****
