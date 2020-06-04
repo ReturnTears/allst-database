@@ -52,15 +52,20 @@ INCRBY orderId 1000     redis批量生成序列号提升性能
 ****
 ```
 HSET key field value
-HSETNX key field value
-HMSET key field value
 HGET key field value
-HMGET key field value
+HMSET key field1 value1 field2 value2
+HMGET key field1 field2
+HSETNX key field value 不存在则设置
 HDEL key field value
 HLEN key
 HGETALL key
-
-HINCRBY key field increment
+HINCRBY key field increment 
+HDECRBY key field increment
+hlen key
+hkeys key 获取key所有的field
+hvals key 获取key所有的value
+hgetall
+ 
 ```
 
 ## List常用操作
@@ -74,6 +79,24 @@ BLPOP key [key...] timeout
 BRPOP key [key...] timeout
 
 ```
+## String常用操作
+```text
+set key value
+get key
+setnx key value 不存在则设置
+del key
+setex key validTime value 有效时间(s),可用于设置session会话
+mset key1 value1 key2 value2 keyn valuen
+mget key1 key2 keyn
+getset key value 获取key旧值设置新value
+incr key 自增1
+decr key 自减1
+incrby key value 按照步长自增
+decrby key value 按照步长自减
+append key value
+strlen key
+```
+
 **常用数据结构**
 ```
 Stack(栈) = LPUSH + LPOP   FILO
