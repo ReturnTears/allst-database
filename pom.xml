@@ -10,6 +10,7 @@
 
     <modules>
         <module>allst-es</module>
+        <module>allst-mysql</module>
         <module>allst-postgresql</module>
         <module>allst-redis</module>
     </modules>
