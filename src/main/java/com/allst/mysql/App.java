@@ -1,4 +1,4 @@
-package com.allst.db;
+package com.allst.mysql;
 
 /**
  * Hello world!
