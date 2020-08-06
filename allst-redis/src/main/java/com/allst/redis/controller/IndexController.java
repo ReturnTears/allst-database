@@ -18,8 +18,8 @@ import java.util.concurrent.TimeUnit;
 @RestController
 public class IndexController {
 
-    @Autowired
-    private Redisson redisson;
+//    @Autowired
+//    private Redisson redisson;
 
     @Autowired
     private StringRedisTemplate redisTemplate;
@@ -28,11 +28,11 @@ public class IndexController {
     public String indexStock() {
         String lockKey = "product";
         String clientID = UUID.randomUUID().toString();
-        RLock rLock = redisson.getLock(lockKey);    // 获取锁的对象
+        //RLock rLock = redisson.getLock(lockKey);    // 获取锁的对象
         try {
             redisTemplate.opsForValue().setIfAbsent(lockKey, clientID, 30, TimeUnit.SECONDS);
 
-            rLock.lock(30, TimeUnit.SECONDS);// 在执行32行代码时, 会在这行代码开启一个分线程执行续命逻辑
+            //rLock.lock(30, TimeUnit.SECONDS);// 在执行32行代码时, 会在这行代码开启一个分线程执行续命逻辑
 
             int stock = Integer.parseInt(Objects.requireNonNull(redisTemplate.opsForValue().get("stock")));     // jedis.get("stock")
             if (stock > 0) {
@@ -46,7 +46,7 @@ public class IndexController {
             if (clientID.equals(redisTemplate.opsForValue().get(lockKey))) {
                 redisTemplate.delete(lockKey);
             }
-            rLock.unlock();     // 释放锁
+            //rLock.unlock();     // 释放锁
         }
         return "Success";
     }
