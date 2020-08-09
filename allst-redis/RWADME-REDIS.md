@@ -305,9 +305,117 @@ flushdb	清除当前数据库
 flushall 清除全部数据库内容
 redis是单线程的，基于内存操作，CPU不是redis的性能瓶颈，服务的内存和网络带宽是redis的瓶颈。
 
+https://redis.io/
 
 五大基本数据类型
+Redis-Key
+🍎
+keys *
+flushall
+set key value
+exists key
+move key 1	移动key到数据库
+expire key second
+ttl key
+type key
+
+🍌
+String(字符串)
+set key value
+get key
+keys *
+exists key
+append key content 存在key追加，不存在则新建
+strlen key
+incr key 自增1
+decr key 自减1
+incrby key count 步长自增
+decrby key count 步长自减
+getrange key start end 范围截取，包含首位，[0,1-]表示全部
+setrange key start end 范围设置/替换
+setnx key vlaue 不存在则设置 (分布式锁常使用)
+setex key time value 设置过期时间
+mset key value key2 value2 ···  批量设置
+mget key key2 key2 ··· 批量获取
+msetnx key1 value1 key2 value ··· 原子型操作
+getset key value 先获取原来的值再设置新的值
+
+🍇
+List
+所有的list命令都是以l开头的
+lpush key element 添加到列表头部
+lrange key start end 范围获取， 0 -1获取所有
+rpush key element 添加到列表尾部
+lpop key 从头部移除第一个元素
+rpop key 从头部移除最后一个元素
+lindex key index 通过下标获取list的元素
+llen key 元素个数
+lrem key number ele 移除key中number个ele元素
+ltrim key start end 通过下标截取列表，返回截取的列表
+rpoplpush source destine 将source列表中最后一个元素移除并添加到新列表中，新列表不存在则新建
+exists key 
+lset key index ele 将列表index位置的元素替换为ele, 不存在key会报错
+linsert key before / after ele newEle 往列表的ele元素前或后插入newEle
+消息队列: lpush rpop 左进又出 / 栈: lpush lpop 左进左出
+
+🍓
+Set
+所有的set命令都是以s开头的
+sadd key ele 
+smembers key 查看所有值
+sismember key ele 判断key是否存在ele
+scard key 元素个数
+srem key ele 移除元素
+srandmember key 随机抽选出一个元素
+srandmember key num 随机抽选出指定个数元素
+spop key 随机移除一个元素
+smove key1 key2 ele 从key1中移除元素ele添加到key2
+sdiff key1 key2 差集
+sinter key1 key2 交集
+sunion key1 key2 并集
+
+🥝
+Hash(哈希)
+hash所有的命令都是h开头的
+key-map 值是map集合
+hset hash field value 
+hget hash field
+hmset hash f1 v1 f2 v1 ···
+hmget hash f1 f2
+hgetall hash
+hdel hash f1 删除hash指定字段，对应的value也没有了
+hlen hash 获取hash键值对数量
+hexists hash field 判断hash建是否存在
+hkeys hash 获取所有key
+hvals hash 获取所有value
+hincrby hash field number 
+hdecrby hash field number
+hsetnx hash f1 v1 不存在f1则创建
+
+hash适合对象的存储
+
+
+🍑
+ZSet(有序集合)
+在set的基础上增加了一个值
+zadd myset score val 添加一个值
+zadd myset score val score2 val2 添加一个值
+zrange myset 0 -1
+zrangebyscore myset -inf +inf
+zrangebyscore myset -inf +inf withscores
+zrem myset val 移除有序集合中指定元素
+zcard myset 获取有序集合个数
+zrevrange myset 0 -1 倒序输出
+zcount myset min max 获取指定区间的成员数量
+
+涉及排序部分的结构可以使用zset
+重要消息、带权重进行判断
+
+
+🍍
 三大特殊数据类型
+
+
 Redis配置
 Redis持久化
 Redis事务操作
@@ -319,6 +427,7 @@ Redis哨兵模式
 
 # USE
 ```
+♥
 https://myusf.usfca.edu/arts-sciences/computer-science
 https://www.bilibili.com/video/av62657941?p=5
 http://redisdoc.com/
