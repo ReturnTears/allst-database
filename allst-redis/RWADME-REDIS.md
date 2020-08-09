@@ -414,7 +414,53 @@ zcount myset min max 获取指定区间的成员数量
 
 🍍
 三大特殊数据类型
+geospatial(地理)
+可以推算出两地之间的距离，方圆几里的人
+有效的经度(-180,180)、维度(-85.05112878,85.05112878)度
+当坐标位置超出上述指定范围时，该命令将会返回一个错误
+官方： https://www.redis.net.cn/order/3688.html
 
+geoadd 设置值
+geopos 获取
+geodist 俩位置的距离直线距离
+georadius 查询指定坐标和半径范围内的
+
+
+geoadd china:city 120.16 30.24 hangzhou
+geopos china:city beijin
+geodist china:city beijin chongqing [m | km]
+georadius china:city 110 30 500 km
+georadius china:city 110 30 500 km withdist withcoord count 1
+georadius china:city 110 30 500 km withdist withcoord count 1
+withdist 到中心位置的距离
+withcoord 显示他人定位信息
+GEORADIUSBYMEMBER china:city hangzhou 300 km
+geohash china:city beijin chongqing 将二维的经纬度转换为一维字符串，两个字符串越接近位置越近
+GEO底层的实现原理其实就是zset,所有可以使用zset命令来操作ges
+zrange china:city 0 -1
+zrem china:city beijin
+
+Hyperloglog
+基数 不重复的元素
+A {1,2,3,4,5,6,7,9,8}
+B {10,12,13,41,5,16,7,9,8}
+pfadd mykey e1 e2 ··· 创建一组元素mykey
+pfcount mykey 统计mykey元素的基数数量
+pfmerge mykey3 mykey1 mykey2 合并两组mykey1 mykey2 => mykey3
+
+如果允许容错可以使用hyperloglog
+
+Bitmaps
+涉及两个状态的都可以使用bitmaps
+例如：周一到周五的打卡天数
+setbit sign 1 1	第1天打卡
+setbit sign 2 0 第2天没打卡
+setbit sign 3 1 第3天打卡
+setbit sign 4 0 第4天没打卡
+setbit sign 5 1 第5天打卡
+
+getbit sign 1 获取
+bitcount sign 统计(位图是0/1状态，统计结果是1的和)
 
 Redis配置
 Redis持久化

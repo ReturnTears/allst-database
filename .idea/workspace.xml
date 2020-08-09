@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\ProgramData\.m2\repository" />
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1fjPiVBI2NxCywzskYiU5wy8GXr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\java\com\allst\redis\cache" />
+      <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\java\com\allst\redis\utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AllstPostgresqlApplication">
+    <configuration name="AllstEsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-es" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.es.AllstEsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstMysqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-mysql" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.mysql.AllstMysqlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstPostgresqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-postgresql" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.postgresql.AllstPostgresqlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.redis.AllstRedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="" />
+      <created>1577375220041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577375220041</updated>
+      <workItem from="1577375221903" duration="1783000" />
+      <workItem from="1577627471349" duration="4518000" />
+      <workItem from="1577713201112" duration="5079000" />
+      <workItem from="1577892064510" duration="95000" />
+      <workItem from="1577971675344" duration="1957000" />
+      <workItem from="1578202952039" duration="3238000" />
+      <workItem from="1578229213898" duration="3544000" />
+      <workItem from="1578585825894" duration="841000" />
+      <workItem from="1578799828686" duration="1619000" />
+      <workItem from="1578823782789" duration="1122000" />
+      <workItem from="1585065548437" duration="1347000" />
+      <workItem from="1585412073907" duration="86000" />
+      <workItem from="1585496688215" duration="66000" />
+      <workItem from="1586144253108" duration="70000" />
+      <workItem from="1589466167468" duration="913000" />
+      <workItem from="1589469123464" duration="229000" />
+      <workItem from="1590282360264" duration="38000" />
+      <workItem from="1591024695146" duration="1350000" />
+      <workItem from="1591281593113" duration="3812000" />
+      <workItem from="1591499742265" duration="24000" />
+      <workItem from="1593823836980" duration="288000" />
+      <workItem from="1596728658101" duration="487000" />
+      <workItem from="1596808734862" duration="35000" />
+      <workItem from="1596814262808" duration="1277000" />
+      <workItem from="1596961622708" duration="38000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1577376978478</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577376978478</updated>
+    </task>
+    <task id="LOCAL-00002" summary="redis常用命令">
+      <created>1577631997367</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577631997367</updated>
+    </task>
+    <task id="LOCAL-00003" summary="redis常用命令">
+      <created>1577717669683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577717669683</updated>
+    </task>
+    <task id="LOCAL-00004" summary="redis常用命令">
+      <created>1577719405191</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577719405191</updated>
+    </task>
+    <task id="LOCAL-00005" summary="redis实现分布式锁">
+      <created>1577722888766</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577722888766</updated>
+    </task>
+    <task id="LOCAL-00006" summary="redis常用命令">
+      <created>1577892139926</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577892139926</updated>
+    </task>
+    <task id="LOCAL-00007" summary="redis常用命令">
+      <created>1578203633851</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578203633851</updated>
+    </task>
+    <task id="LOCAL-00008" summary="MySQL8">
+      <created>1578229710676</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578229710676</updated>
+    </task>
+    <task id="LOCAL-00009" summary="MySQL8">
+      <created>1578234909973</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578234909973</updated>
+    </task>
+    <task id="LOCAL-00010" summary="MySQL 条件判断函数  加密函数">
+      <created>1578235887026</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578235887026</updated>
+    </task>
+    <task id="LOCAL-00011" summary="REDIS">
+      <created>1578237382791</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1578237382791</updated>
+    </task>
+    <task id="LOCAL-00012" summary="MySQL 8.0 高级部分">
+      <created>1585066874700</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585066874700</updated>
+    </task>
+    <task id="LOCAL-00013" summary="PostgresSQL">
+      <created>1589466744720</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589466744721</updated>
+    </task>
+    <task id="LOCAL-00014" summary="PostgresSQL">
+      <created>1589466883395</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589466883395</updated>
+    </task>
+    <task id="LOCAL-00015" summary="PostgresSQL">
+      <created>1589469266364</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589469266365</updated>
+    </task>
+    <task id="LOCAL-00016" summary="重拾Redis">
+      <created>1591027418139</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1591027418140</updated>
+    </task>
+    <task id="LOCAL-00017" summary="重拾Redis String Hash">
+      <created>1591285173953</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591285173953</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="redis实现分布式锁" />
+    <MESSAGE value="redis常用命令" />
+    <MESSAGE value="MySQL8" />
+    <MESSAGE value="MySQL 条件判断函数  加密函数" />
+    <MESSAGE value="REDIS" />
+    <MESSAGE value="MySQL 8.0 高级部分" />
+    <MESSAGE value="PostgresSQL" />
+    <MESSAGE value="重拾Redis" />
+    <MESSAGE value="重拾Redis String Hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="重拾Redis String Hash" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596728768797">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1596728768797" />
+    <state x="652" y="180" key="FileChooserDialogImpl" timestamp="1596728796750">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="652" y="180" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1596728796750" />
+    <state x="403" y="13" key="SettingsEditor" timestamp="1596814283961">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="403" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1596814283961" />
+    <state x="976" y="157" key="VCS.ChangeListViewerDialog" timestamp="1596728695136">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="976" y="157" key="VCS.ChangeListViewerDialog/0.0.1536.864@0.0.1536.864" timestamp="1596728695136" />
+    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596728826207">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1596728826206" />
+  </component>
+</project>
