@@ -5,10 +5,12 @@ import com.allst.redis.utils.RedisUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Transaction;
 
+import javax.annotation.Resource;
 import java.util.Set;
 
 /**
@@ -17,11 +19,19 @@ import java.util.Set;
 @SpringBootTest
 class AllstRedisApplicationTests {
 
-    @Autowired
-    private StringRedisTemplate redisTemplate;
+//    @Autowired
+//    private StringRedisTemplate redisTemplate;
 
     @Autowired
     private RedisUtil redisUtil;
+
+    @Resource
+    private RedisTemplate redisTemplate;
+
+    @Test
+    void contextRedisLoads() {
+        redisTemplate.opsForList().leftPush("user:3", "hello world");
+    }
 
     @Test
     void contextLoads() {
@@ -30,7 +40,7 @@ class AllstRedisApplicationTests {
 
     @Test
     void redisLoads() {
-        String addr = redisTemplate.opsForValue().get("addr");
+        String addr = redisTemplate.opsForValue().get("addr").toString();
         System.out.println(addr);
     }
 
