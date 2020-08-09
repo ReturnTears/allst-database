@@ -1,11 +1,13 @@
 package com.allst.redis;
 
+import com.alibaba.fastjson.JSONObject;
 import com.allst.redis.utils.RedisUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.Transaction;
 
 import java.util.Set;
 
@@ -108,5 +110,25 @@ class AllstRedisApplicationTests {
         System.out.println("索引查询: " + jedis.select(0));
         System.out.println("key数量: " + jedis.dbSize());
         //System.out.println("清库：" + jedis.flushAll());
+    }
+
+    @Test
+    void jedisMultiLoads() {
+        Jedis jedis = new Jedis("127.0.0.1", 6379);
+        JSONObject object = new JSONObject();
+        object.put("name", "JUN");
+        object.put("age", 18);
+        Transaction multip = jedis.multi();
+        try {
+            multip.set("user:1", object.toJSONString());
+            multip.set("user:2", object.toJSONString());
+            multip.exec();
+        } catch (Exception e) {
+            multip.discard();
+            e.printStackTrace();
+        } finally {
+            System.out.println(jedis.get("user:1"));
+            jedis.close();
+        }
     }
 }
