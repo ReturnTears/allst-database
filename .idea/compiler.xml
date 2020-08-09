@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="allst-es" />
-        <module name="allst-mysql" />
         <module name="allst-postgresql" />
         <module name="allst-redis" />
+        <module name="allst-mysql" />
       </profile>
     </annotationProcessing>
   </component>
