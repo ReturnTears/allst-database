@@ -235,6 +235,87 @@ Redis事务命令	WATCH
 		
 
 ```
+## Redis to Regain
+```
+Redis(Remote Dictionary Server)远程字典服务
+是一个开源的使用ANSI C语言编写，支持网络，可基于内存亦可持久化的日志型，Key-Value数据库，提供多语言的API
+Redis可用于内存存储、持久化(rdb/aof)、效率高、用于高速缓存、发布订阅系统、地图信息分析、计数器、计时器
+
+Redis安装（Windows & Linux）
+tar -zxvf redis-6.0.5.tar.gz
+yum install gcc-c++
+gcc -v
+make
+make install
+redis默认安装路径:/usr/local/bin
+在默认安装路径中mkdir config,创建配置目录，用于存放配置文件
+cp /usr/local/redis-6.0.5/redis.conf /usr/local/bin/config
+之后就使用该文件启动，原生文件用于备份
+daemonize on修改为yes 改为后台启动
+启动服务：/usr/local/bin redis-server config/redis.config
+客户端连接：redis-cli -p 7379
+查看redis进程是否开启：ps -ef|grep redis
+关闭Redis服务：shutdown
+not connected > exit
+
+redis-benchmark官方自带性能测试工具，其可选参数为:
+1、	-h 	127.0.0.1	指定服务器主机
+2、	-p 	6379		指定服务器端口
+3、	-s 				指定服务器socket
+4、	-c 	50			指定并发连接数
+5、	-n 	10000		指定请求数
+6、	-d 	2			以字节的形式指定set/getz值的数据大小
+7、	-k 	1			1=keep alive 0=reconnect
+8、 	-f 				set/get/incr使用随机key,sadd使用随机值	
+9、 	-p 	1			通过管道传输<numreq>请求
+X、 	-q 				强制退出redis,仅显示query/sec值
+1、	-csv 			以SCV格式输出
+2、	-l 				生成循环，永久执行测试
+3、	-t 				仅运行以逗号分隔的测试命令列表
+
+性能测试： redis-benchmark -h localhost -p 6379 -c 100 -n 10000
+结果：
+====== SET ======
+一万次请求
+  10000 requests completed in 0.23 seconds
+100个客户端
+  100 parallel clients
+每次写入3个字节
+  3 bytes payload
+只有一台服务器处理这些请求
+  keep alive: 1
+
+  host configuration "save": 900 1 300 10 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+所有请求在4毫秒内完成
+5.37% <= 1 milliseconds
+83.94% <= 2 milliseconds
+97.63% <= 3 milliseconds
+99.53% <= 4 milliseconds
+100.00% <= 4 milliseconds
+每秒处理43859.65次请求
+43859.65 requests per second
+
+Redis默认数据库由16个
+select 0-15切换数据库，默认使用第1个，0
+DBSISE 查看db大小
+keys * 查看数据库所有key
+flushdb	清除当前数据库
+flushall 清除全部数据库内容
+redis是单线程的，基于内存操作，CPU不是redis的性能瓶颈，服务的内存和网络带宽是redis的瓶颈。
+
+
+五大基本数据类型
+三大特殊数据类型
+Redis配置
+Redis持久化
+Redis事务操作
+Redis主从复制
+Redis哨兵模式
+缓存穿透/击穿/雪崩
+集成Redis
+```
 
 # USE
 ```
