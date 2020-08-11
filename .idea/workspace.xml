@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/allst-redis/src/main/java/com/allst/redis/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-redis/src/main/resources/redis.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-redis/src/main/java/com/allst/redis/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-redis/src/main/java/com/allst/redis/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-redis/src/test/java/com/allst/redis/AllstRedisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-redis/src/test/java/com/allst/redis/AllstRedisApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +30,6 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,6 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/allst-redis/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -106,6 +89,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\resources" />
       <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\java\com\allst\redis\cache" />
       <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\java\com\allst\redis\utils" />
     </key>
@@ -224,7 +208,7 @@
       <workItem from="1596961622708" duration="38000" />
       <workItem from="1596966632405" duration="157000" />
       <workItem from="1596968640795" duration="5227000" />
-      <workItem from="1597152780506" duration="2558000" />
+      <workItem from="1597152780506" duration="4624000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1577376978478</created>
@@ -373,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596986373122</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="springboot整合redis">
+      <created>1597155522351</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1597155522352</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,30 +422,46 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1597154723022" />
-    <state x="485" y="0" key="CommitChangelistDialog2" timestamp="1596986369972">
+    <state x="485" y="0" key="CommitChangelistDialog2" timestamp="1597155521211">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="485" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1596986369972" />
+    <state x="485" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1597155521211" />
     <state x="652" y="180" key="FileChooserDialogImpl" timestamp="1596728796750">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="652" y="180" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1596728796750" />
-    <state width="1156" height="212" key="GridCell.Tab.0.bottom" timestamp="1597153595399">
+    <state width="1495" height="212" key="GridCell.Tab.0.bottom" timestamp="1597155579613">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1156" height="212" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597153595399" />
-    <state width="1156" height="212" key="GridCell.Tab.0.center" timestamp="1597153595399">
+    <state width="1495" height="212" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
+    <state width="1495" height="212" key="GridCell.Tab.0.center" timestamp="1597155579613">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1156" height="212" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1597153595399" />
-    <state width="1156" height="212" key="GridCell.Tab.0.left" timestamp="1597153595399">
+    <state width="1495" height="212" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
+    <state width="1495" height="212" key="GridCell.Tab.0.left" timestamp="1597155579613">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1156" height="212" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1597153595399" />
-    <state width="1156" height="212" key="GridCell.Tab.0.right" timestamp="1597153595399">
+    <state width="1495" height="212" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
+    <state width="1495" height="212" key="GridCell.Tab.0.right" timestamp="1597155579613">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1156" height="212" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1597153595399" />
+    <state width="1495" height="212" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
+    <state width="788" height="223" key="GridCell.Tab.1.bottom" timestamp="1597155349357">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="788" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
+    <state width="788" height="223" key="GridCell.Tab.1.center" timestamp="1597155349357">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="788" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
+    <state width="788" height="223" key="GridCell.Tab.1.left" timestamp="1597155349357">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="788" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
+    <state width="788" height="223" key="GridCell.Tab.1.right" timestamp="1597155349357">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="788" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
     <state x="399" y="40" key="SettingsEditor" timestamp="1596969052138">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -463,17 +470,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="976" y="157" key="VCS.ChangeListViewerDialog/0.0.1536.864@0.0.1536.864" timestamp="1596728695136" />
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2" timestamp="1596986374843">
+    <state x="487" y="177" key="Vcs.Push.Dialog.v2" timestamp="1597155525297">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1596986374843" />
+    <state x="487" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597155525297" />
     <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596728826207">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1596728826206" />
-    <state x="1017" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1596970432391">
+    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1597156237982">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="1017" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1596970432391" />
+    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1597156237982" />
   </component>
 </project>
