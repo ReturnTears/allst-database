@@ -492,6 +492,22 @@ exec
 
 Redis配置
 Redis持久化
+save规则满足的情况下会自动触发rdb规则
+执行flushall命令也会触发rdb规则
+退出redis时，也会产生rdb文件
+备份就自动生成一个dump.rdb文件
+如何恢复rdb文件？
+只需要将rdb文件放在redis启动目录下即可，redis启动的时候会自动检测dump.rdb恢复其中的数据
+查看需要存放的位置：
+127.0.0.1:6379>config get dir
+/usr/local/bin
+rdb的优缺点：
+适合大规模的数据恢复
+对数据的完整性要求不高
+需要一定的时间间隔进程操作，如果redis服务宕机了，最后一次修改的数据就没有了
+fork进程的时候，会占用一定的内容空间
+
+
 Redis事务操作
 Redis主从复制
 Redis哨兵模式
