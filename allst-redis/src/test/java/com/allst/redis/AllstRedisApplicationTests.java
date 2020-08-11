@@ -1,12 +1,15 @@
 package com.allst.redis;
 
 import com.alibaba.fastjson.JSONObject;
+import com.allst.redis.pojo.User;
 import com.allst.redis.utils.RedisUtil;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Transaction;
 
@@ -26,6 +29,7 @@ class AllstRedisApplicationTests {
     private RedisUtil redisUtil;
 
     @Resource
+    @Qualifier(value = "myRedisTemplate")
     private RedisTemplate redisTemplate;
 
     @Test
@@ -140,5 +144,13 @@ class AllstRedisApplicationTests {
             System.out.println(jedis.get("user:1"));
             jedis.close();
         }
+    }
+
+    @Test
+    void userLoads() throws JsonProcessingException {
+        User user = new User(101, "Spark", 18);
+        String jsonStr = new ObjectMapper().writeValueAsString(user);
+        redisTemplate.opsForValue().set("user", jsonStr);
+        System.out.println(redisTemplate.opsForValue().get("user"));
     }
 }
