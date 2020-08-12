@@ -29,7 +29,7 @@ class AllstRedisApplicationTests {
     private RedisUtil redisUtil;
 
     @Resource
-    @Qualifier(value = "myRedisTemplate")
+    @Qualifier(value = "redisTemplate")
     private RedisTemplate redisTemplate;
 
     @Test
