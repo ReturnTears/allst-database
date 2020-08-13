@@ -534,8 +534,28 @@ aof默认文件是无线追加，如果aof文件>64m,会启动一个fork线程�
 
 Redis事务操作
 
+Redis发布/订阅
+Redis发布/订阅（pub / sub）是哟中消息通信模式， 发送者发送消息， 订阅者接收消息
+例： 微信公众号、微博、订阅系统
+订阅一个频道：SUBSCRIBE xuexi
+发送消息到频道: publish xuexi "hello redis"
+
+使用场景：消息队列
 
 Redis主从复制
+主从复制是指将一台redis服务器的数据，复制到其他的Redis服务器。前者称为主节点（master/leader）,后者称为（slave/followe）;
+数据的复制是单向的，只能由主节点从从节点， master以写为主， slave以读为主
+默认情况下，每台redis服务器都是主节点，且一个主节点可以有多个从节点， 但是一个从节点只能有一个主节点
+主从复制的作用：
+数据冗余
+故障恢复
+负载均衡
+高可用基石
+环境配置：
+支配置从库， 不用配置主库
+查看当前库的信息：info replication
+
+
 Redis哨兵模式
 缓存穿透/击穿/雪崩
 集成Redis

@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allst-redis/RWADME-REDIS.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-redis/RWADME-REDIS.md" afterDir="false" />
     </list>
@@ -187,7 +186,7 @@
       <workItem from="1596966632405" duration="157000" />
       <workItem from="1596968640795" duration="5227000" />
       <workItem from="1597152780506" duration="4724000" />
-      <workItem from="1597332901122" duration="1097000" />
+      <workItem from="1597332901122" duration="3401000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1577376978478</created>
@@ -350,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597157457254</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="aof">
+      <created>1597334067159</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1597334067159</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +404,8 @@
     <MESSAGE value="jedis multi测试" />
     <MESSAGE value="springboot整合redis" />
     <MESSAGE value="redis.conf配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis.conf配置" />
+    <MESSAGE value="aof" />
+    <option name="LAST_COMMIT_MESSAGE" value="aof" />
   </component>
   <component name="WindowStateProjectService">
     <state x="790" y="121" key="#Inspections" timestamp="1597155031961">
@@ -409,10 +416,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1597157513851" />
-    <state x="485" y="0" key="CommitChangelistDialog2" timestamp="1597157455978">
+    <state x="485" y="0" key="CommitChangelistDialog2" timestamp="1597334065104">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="485" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1597157455978" />
+    <state x="485" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1597334065104" />
     <state x="652" y="180" key="FileChooserDialogImpl" timestamp="1596728796750">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -457,14 +464,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="976" y="157" key="VCS.ChangeListViewerDialog/0.0.1536.864@0.0.1536.864" timestamp="1596728695136" />
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2" timestamp="1597157460410">
+    <state x="487" y="177" key="Vcs.Push.Dialog.v2" timestamp="1597334069831">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597157460410" />
-    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596728826207">
+    <state x="487" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597334069831" />
+    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597334034978">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1596728826206" />
+    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1597334034978" />
     <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1597333684989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
