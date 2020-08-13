@@ -507,8 +507,34 @@ rdb的优缺点：
 需要一定的时间间隔进程操作，如果redis服务宕机了，最后一次修改的数据就没有了
 fork进程的时候，会占用一定的内容空间
 
+appendonly 
+
+appendonly no
+appendfilename "appendonly.aof"
+            always 每次修改都会sync
+appendfsync everysec 每秒执行一次sync,可能会丢失1s的数据
+            no 不执行syync,
+默认是不开启的， no > yes开启aof
+它会记录下所有的操作指令，aof有问题的话是redis-server启动不了服务的
+修复aof文件：
+redis-check-aof --fix appendonly.aof 
+如果文件错误修复后redis-server的服务又可以重启了
+aof的优缺点:
+每一次修改都同步，文件的完整性会更好
+每秒同步一次，可能会丢失一秒的数据
+从不同步，效率更高
+---
+相对于数据文件来说， aod远远大于rdb,，修复的速度也比rdb慢， 
+aof运行效率也比rdb慢，所以我们redis的默认配置就是rdb持久化
+
+aof默认文件是无线追加，如果aof文件>64m,会启动一个fork线程来对文件进行重写， 使得aof文件的体积不至于过大。
+
+
+
 
 Redis事务操作
+
+
 Redis主从复制
 Redis哨兵模式
 缓存穿透/击穿/雪崩

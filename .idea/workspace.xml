@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/allst-redis/src/main/resources/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-redis/RWADME-REDIS.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-redis/RWADME-REDIS.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,24 +102,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AllstRedisApplicationTests.redisSetLoads2">
-    <configuration name="AllstRedisApplicationTests.redisSetLoads2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="allst-redis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.allst.redis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.allst.redis" />
-      <option name="MAIN_CLASS_NAME" value="com.allst.redis.AllstRedisApplicationTests" />
-      <option name="METHOD_NAME" value="redisSetLoads2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.AllstEsApplication">
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -163,13 +147,7 @@
       <item itemvalue="Spring Boot.AllstMysqlApplication" />
       <item itemvalue="Spring Boot.AllstPostgresqlApplication" />
       <item itemvalue="Spring Boot.AllstRedisApplication" />
-      <item itemvalue="JUnit.AllstRedisApplicationTests.redisSetLoads2" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.AllstRedisApplicationTests.redisSetLoads2" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -208,7 +186,8 @@
       <workItem from="1596961622708" duration="38000" />
       <workItem from="1596966632405" duration="157000" />
       <workItem from="1596968640795" duration="5227000" />
-      <workItem from="1597152780506" duration="4624000" />
+      <workItem from="1597152780506" duration="4724000" />
+      <workItem from="1597332901122" duration="1097000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1577376978478</created>
@@ -364,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597155522352</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="redis.conf配置">
+      <created>1597157457254</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1597157457254</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,57 +397,58 @@
     <MESSAGE value="jedis String测试" />
     <MESSAGE value="jedis multi测试" />
     <MESSAGE value="springboot整合redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot整合redis" />
+    <MESSAGE value="redis.conf配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis.conf配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="790" y="121" key="#Inspections" timestamp="1597155031961">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="790" y="121" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1597155031961" />
-    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597154723022">
+    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597157513851">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1597154723022" />
-    <state x="485" y="0" key="CommitChangelistDialog2" timestamp="1597155521211">
+    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1597157513851" />
+    <state x="485" y="0" key="CommitChangelistDialog2" timestamp="1597157455978">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="485" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1597155521211" />
+    <state x="485" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1597157455978" />
     <state x="652" y="180" key="FileChooserDialogImpl" timestamp="1596728796750">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="652" y="180" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1596728796750" />
-    <state width="1495" height="212" key="GridCell.Tab.0.bottom" timestamp="1597155579613">
+    <state width="788" height="223" key="GridCell.Tab.0.bottom" timestamp="1597157517676">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1495" height="212" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
-    <state width="1495" height="212" key="GridCell.Tab.0.center" timestamp="1597155579613">
+    <state width="788" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
+    <state width="788" height="223" key="GridCell.Tab.0.center" timestamp="1597157517676">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1495" height="212" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
-    <state width="1495" height="212" key="GridCell.Tab.0.left" timestamp="1597155579613">
+    <state width="788" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
+    <state width="788" height="223" key="GridCell.Tab.0.left" timestamp="1597157517675">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1495" height="212" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
-    <state width="1495" height="212" key="GridCell.Tab.0.right" timestamp="1597155579613">
+    <state width="788" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1597157517675" />
+    <state width="788" height="223" key="GridCell.Tab.0.right" timestamp="1597157517676">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1495" height="212" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1597155579613" />
-    <state width="788" height="223" key="GridCell.Tab.1.bottom" timestamp="1597155349357">
+    <state width="788" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
+    <state width="788" height="223" key="GridCell.Tab.1.bottom" timestamp="1597157517677">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="788" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
-    <state width="788" height="223" key="GridCell.Tab.1.center" timestamp="1597155349357">
+    <state width="788" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597157517677" />
+    <state width="788" height="223" key="GridCell.Tab.1.center" timestamp="1597157517676">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="788" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
-    <state width="788" height="223" key="GridCell.Tab.1.left" timestamp="1597155349357">
+    <state width="788" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
+    <state width="788" height="223" key="GridCell.Tab.1.left" timestamp="1597157517676">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="788" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
-    <state width="788" height="223" key="GridCell.Tab.1.right" timestamp="1597155349357">
+    <state width="788" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
+    <state width="788" height="223" key="GridCell.Tab.1.right" timestamp="1597157517676">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="788" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1597155349357" />
+    <state width="788" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
     <state x="399" y="40" key="SettingsEditor" timestamp="1596969052138">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -470,17 +457,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="976" y="157" key="VCS.ChangeListViewerDialog/0.0.1536.864@0.0.1536.864" timestamp="1596728695136" />
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2" timestamp="1597155525297">
+    <state x="487" y="177" key="Vcs.Push.Dialog.v2" timestamp="1597157460410">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597155525297" />
+    <state x="487" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597157460410" />
     <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596728826207">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1596728826206" />
-    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1597156237982">
+    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1597333684989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1597156237982" />
+    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1597333684989" />
   </component>
 </project>
