@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020-08-06_下午_11_47_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-redis/RWADME-REDIS.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-redis/RWADME-REDIS.md" afterDir="false" />
-    </list>
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,6 +185,7 @@
       <workItem from="1597152780506" duration="4724000" />
       <workItem from="1597332901122" duration="3455000" />
       <workItem from="1597762144891" duration="11000" />
+      <workItem from="1598454890209" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1577376978478</created>
