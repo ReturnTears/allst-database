@@ -244,6 +244,8 @@ Redis可用于内存存储、持久化(rdb/aof)、效率高、用于高速缓存
 Redis安装（Windows & Linux）
 tar -zxvf redis-6.0.5.tar.gz
 yum install gcc-c++
+升级gcc:
+yum -y install centos-release-scl && yum -y install devtoolset-9-gcc devtoolset-9-gcc-c++ devtoolset-9-binutils && scl enable devtoo
 gcc -v
 make
 make install
@@ -552,11 +554,30 @@ Redis主从复制
 负载均衡
 高可用基石
 环境配置：
-支配置从库， 不用配置主库
-查看当前库的信息：info replication
+只配置从库， 不用配置主库
+配置命令:
+slaveof host port
+配置效果是是临时的
+在配置文件redis.conf中配置
+slaveof <masterip> <masterport>
+配置文件配置后是永久的
 
+查看当前库的信息：info replication
+主机断开后，从机依然可以提供服务，但是没有写服务，如果主机重新连接回来， 从机依然可以读取主机写的数据
+如果使用命令行来配置的主从，从机断开后重新连接回来就会变成master，但是将该master作为从机连接到之前的主机又可以从新读取到主机的数据
+
+复制原理：
+salve启动成功连接到master后会发送一个sync同步命令，
+master接到命令，启动后台的存盘进程， 同时收集所有接收到的用于修改数据集命令，在后台进程执行完毕之后，master将传输整个数据文件到slave，并完成一次完全同步。
+全量复制:slave服务在接收到数据文件数据后，将其存盘并加载到内存中。
+增量复制:master继续将新的所有收集到的修改命令依次传给salve完成同步。
+但是只要重新连接master，一次完全同步将被自动执行，
 
 Redis哨兵模式
+slaveof no one 命令可以在主机断开后使从机自己成为主机
+
+
+
 缓存穿透/击穿/雪崩
 集成Redis
 ```
