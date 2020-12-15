@@ -509,6 +509,7 @@ mysql -A test -h localhost -u root -p -e "select * from test;" > test.csv
 # 获取当月第一天和最后一天
 SELECT date_add(curdate(), interval - day(curdate())+1 day) FROM dual;
 SELECT last_day(curdate()) FROM dual;
+if(safetyInspect.`status` &lt;&gt; 'ywc', if(safetyInspect.result_level = '3', datediff(safetyInspect.rectify_end_date,curdate()), '0'), '0') as diff_day,
 ```
 
 
