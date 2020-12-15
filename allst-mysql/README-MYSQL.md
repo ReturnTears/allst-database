@@ -504,7 +504,12 @@ show variables like 'default_storage_engine';
 mysql -A test -h localhost -u root -p -e "select * from test;" > test.csv
 ```
 
-
+# MySQL常用SQL及函数
+```text
+# 获取当月第一天和最后一天
+SELECT date_add(curdate(), interval - day(curdate())+1 day) FROM dual;
+SELECT last_day(curdate()) FROM dual;
+```
 
 
 
