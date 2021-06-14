@@ -510,6 +510,22 @@ mysql -A test -h localhost -u root -p -e "select * from test;" > test.csv
 SELECT date_add(curdate(), interval - day(curdate())+1 day) FROM dual;
 SELECT last_day(curdate()) FROM dual;
 if(safetyInspect.`status` &lt;&gt; 'ywc', if(safetyInspect.result_level = '3', datediff(safetyInspect.rectify_end_date,curdate()), '0'), '0') as diff_day,
+# 获取年、季度、月、周、日
+<if test="ew.type != null and ew.type == 'year'.toString()">
+    AND DATE_FORMAT(qualityInspect.check_time, '%Y') = YEAR(NOW())
+</if>
+<if test="ew.type != null and ew.type == 'quarter'.toString()">
+    AND QUARTER(qualityInspect.check_time) = QUARTER(NOW())
+</if>
+<if test="ew.type != null and ew.type == 'month'.toString()">
+    AND DATE_FORMAT(qualityInspect.check_time,'%Y%m') = DATE_FORMAT(CURDATE(),'%Y%m')
+</if>
+<if test="ew.type != null and ew.type == 'week'.toString()">
+    AND DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt; DATE(qualityInspect.check_time)
+</if>
+<if test="ew.type != null and ew.type == 'today'.toString()">
+    AND TO_DAYS(qualityInspect.check_time) = TO_DAYS(NOW())
+</if>
 ```
 
 
