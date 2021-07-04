@@ -19,17 +19,19 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * 自定义Redis配置类
+ * 使用RedisConfig和RedisConfig2都可以， 推荐使用RedisConfig2
+ * 若使用RedisConfig则打开所有注释的注解
  *
  * @author YiYa
  * @since 2020/8/6-10:20
  */
-@ConditionalOnClass(RedisOperations.class)
-@EnableConfigurationProperties(RedisProperties.class)
-@Configuration
+//@ConditionalOnClass(RedisOperations.class)
+//@EnableConfigurationProperties(RedisProperties.class)
+//@Configuration
 public class RedisConfig {
 
-    @Bean
-    @ConditionalOnMissingBean(name = "redisTemplate")
+    //@Bean
+    //@ConditionalOnMissingBean(name = "redisTemplate")
     public RedisTemplate<String, Object> redisTemplate(
             RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
@@ -55,10 +57,9 @@ public class RedisConfig {
         return template;
     }
 
-    @Bean
-    @ConditionalOnMissingBean(StringRedisTemplate.class)
-    public StringRedisTemplate stringRedisTemplate(
-            RedisConnectionFactory redisConnectionFactory) {
+    //@Bean
+    //@ConditionalOnMissingBean(StringRedisTemplate.class)
+    public StringRedisTemplate stringRedisTemplate(RedisConnectionFactory redisConnectionFactory) {
         StringRedisTemplate template = new StringRedisTemplate();
         template.setConnectionFactory(redisConnectionFactory);
         return template;
