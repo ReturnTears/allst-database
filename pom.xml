@@ -14,8 +14,14 @@
         <module>allst-postgresql</module>
         <module>allst-redis</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
 
-  <packaging>pom</packaging>
+    <packaging>pom</packaging>
 
   <name>allst-db</name>
   <url>http://www.example.com</url>
