@@ -47,6 +47,32 @@ discard 放弃执行事务
 组队中某个命令出现了报告错误，执行时整个的所有队列都会被取消。
 如果执行阶段某个命令报出了错误，则只有报错的命令不会被执行，而其他的命令都会执行，不会回滚。
 
+
+dump.rdb文件的生成规则:
+默认生成在:  dir ./ 由该配置项决定
+例如：启动redis时使用命令：
+       cd /usr/local/redis/ 在该目录下运行redis:
+       src/redis-server redis.conf
+     就会在/usr/local/redis/目录下生成dump.rdb文件
+    
+    启动redis时使用命令：
+       cd /usr/local/redis/src 在该目录下运行redis:
+       redis-server redis.conf
+     就会在/usr/local/redis/src目录下生成dump.rdb文件
+
+查看redis进程信息：
+ps -ef | grep redis
+kill -9 pid
+
+
+redis 6.2 默认持久化规则(在指定时间间隔内将内存中的数据集快照写入磁盘):
+save 3600 1         # 3600s 1个key发生操作
+save 300 100        # 300s 100个key发生操作
+save 60 10000       # 60s 1w个key发生操作
+
+vi //usr/local/redis/redis.conf
+::set nu 打开配置文件redis.conf的行号
+
 ```
 
 # 案例
