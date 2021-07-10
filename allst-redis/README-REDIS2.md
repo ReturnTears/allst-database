@@ -75,5 +75,11 @@ case-3: 秒杀
 3、乐观锁造成库存遗留问题
    当某个用户提交数据并修改了版本号后，其他用户正常提交的数据由于版本号不一致也不能进行数据的操作
    使用Lua脚本
+
+添加：
+CentOS7通过ab并发测试
+vim postfile 模拟表单提交参数,以&符号结尾;存放当前目录。
+内容：prodId=0101&
+ab -n 2000 -c 200 -k -p ~/postfile -T application/x-www-form-urlencoded http://192.168.33.100:4568/sec/dt
  
 ```
