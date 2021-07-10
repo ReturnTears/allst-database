@@ -2,6 +2,10 @@ package com.allst.redis.utils;
 
 import cn.hutool.core.util.StrUtil;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.Transaction;
+
+import java.util.List;
 
 /**
  * 秒杀工具类
@@ -29,11 +33,19 @@ public class SeckillUtil {
             return "数据为空~";
         }
         // 2、连接redis
-        final Jedis jedis = new Jedis("192.168.33.100", 6379);
+        // final Jedis jedis = new Jedis("192.168.33.100", 6379);
+
+        // 改造、2使用连接池（解决连接超时问题）
+        JedisPool jedisPool = JedisPoolUtil.getJedisPoolInstance();
+        Jedis jedis = jedisPool.getResource();
 
         // 3、拼接key：库存key,用户key
         String kcKey = StrUtil.format("sk:{}:qt", prodId);
         String userKey = StrUtil.format("sk:{}:user", prodId);
+
+        // 改造：监视库存
+        jedis.watch(kcKey);
+
         // 4、获取库存,为空则秒杀还未开始
         String kc = jedis.get(kcKey);
         if (kc == null) {
@@ -60,8 +72,22 @@ public class SeckillUtil {
         }
 
         // 7、秒杀过程： 库存减1，用户加1
-        jedis.decr(kcKey);
-        jedis.sadd(userKey, userId);
+        // jedis.decr(kcKey);
+        // jedis.sadd(userKey, userId);
+
+        // 改造：7、使用事务、（解决超卖问题）
+        Transaction multi = jedis.multi();
+        // 组队操作
+        multi.decr(kcKey);
+        multi.sadd(userKey, userId);
+        // 执行
+        List<Object> results = multi.exec();
+        if (results == null || results.size() == 0) {
+            System.out.println("秒杀失败了......");
+            jedis.close();
+            return "秒杀失败了......";
+        }
+
         String result = StrUtil.format("{}:秒杀成功", userId);
         System.out.println(result);
         return result;

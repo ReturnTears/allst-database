@@ -67,5 +67,9 @@ case-3: 秒杀
                     Key             Value
     商品库存 =》 sk:prodId:qt     (String)剩余数量   ➖减数量
 秒杀成功者清单 =》sk:prodId:user   (set) 成功者id1,成功者id2..... ＋增加人数
-
+存在问题：
+1、连接超时问题
+    连接池
+2、超卖问题
+    乐观锁：watch监视、事务、组队
 ```
