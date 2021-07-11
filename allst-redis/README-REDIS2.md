@@ -73,6 +73,36 @@ save 60 10000       # 60s 1w个key发生操作
 vi //usr/local/redis/redis.conf
 ::set nu 打开配置文件redis.conf的行号
 
+主从复制
+info replication ： 打印主从复制的相关信息
+
+1、一主二仆
+   slaveof <ip> <port> 成为某个实例的从服务器，ip与port为主库的地址和端口信息。配从库不配主库。
+   在主机上写，在从机上可以读取数据，在从机上写数据报错
+   主机挂掉，重启就行，一切如初
+   从机重启需重设：slaveof <ip> <port> ，也可以将配置信息添加到配置文件中。永久生效。
+
+   
+2、薪火相传
+   上一个Slave可以是下一个slave的Master，Slave同样可以接收其他 slaves的连接和同步请求，那么该slave作为了链条中下一个的master, 可以有效减轻master的写压力,去中心化降低风险。
+   用 slaveof <ip> <port>
+   中途变更转向:会清除之前的数据，重新建立拷贝最新的
+   风险是一旦某个slave宕机，后面的slave都没法备份
+   主机挂了，从机还是从机，无法写数据了
+
+3、反客为主
+   在薪火相传的模式中，当一个master宕机后，后面的slave可以立刻升为master，其后面的slave不用做任何修改。
+   用 slaveof no one 将从机变为主机。
+
+4、哨兵模式
+   slave-priority 10 ： 设置从机的优先级，值越小，优先级越高，用于选举主机时使用。默认100。（老版本中的配置）
+   replica-priority 10 ： 同上， 新版本中的配置
+   sentinel.conf中配置如下命令行：
+   sentinel monitor shizhan 192.168.33.100 6379 1
+   其中shizhan为监控对象起的服务器名称， 1 为至少有多少个哨兵同意迁移的数量
+   启动哨兵模式：
+   src/redis-sentinel sentinel.conf
+
 ```
 
 # 案例
