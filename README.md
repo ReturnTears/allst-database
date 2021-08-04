@@ -2,23 +2,17 @@
 # db
 ```
 DataBase
-
 ```
 ## es
-```
-elastic search
-``` 
+[elastic search](allst-es/README-ES.md)
 
 ## pg
-```
-postgreSQL
-```
+[postgreSQL](allst-postgresql/README.md)
 
 ## redis
-```
-Redis
-详情查看README-REDIS.md
-```
+[Redis](allst-redis/README-REDIS2.md)
+
+[Redis](allst-redis/README-REDIS.md)
 
 ## mgo
 ```
@@ -26,6 +20,6 @@ mangodb
 ```
 
 ## mysql
-```
-MySQL8+
-```
+Part1: [MySQL](allst-mysql/README-MYSQL.md)
+
+Part2: [MySQL](allst-mysql/README-MYSQL2.md)

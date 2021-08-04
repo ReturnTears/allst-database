@@ -136,4 +136,9 @@ MyCat的使用
 ## MySQL高级
 ___MySQL架构原理和存储机制___
 
+[MySQL体系架构图](src/main/resources/pic/mysql-server1.jpg)
+```text
+MySQL Server架构自顶向下大致可以分网络连接层、服务层、存储引擎层和系统文件层。
+```
+
 
