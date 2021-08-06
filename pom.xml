@@ -13,6 +13,7 @@
         <module>allst-mysql</module>
         <module>allst-postgresql</module>
         <module>allst-redis</module>
+        <module>allst-luence</module>
     </modules>
     <dependencies>
         <dependency>
