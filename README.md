@@ -26,3 +26,11 @@ Part2: [MySQL](allst-mysql/README-MYSQL2.md)
 
 ## luence
 [Luence](allst-luence/README.md)
+
+## git 提交错误解决
+```text
+fatal: unable to access 'https://github.com/xxx/xxxx.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+git config --global http.sslVerify "false"
+或者
+git config --global --unset http.proxy
+```
