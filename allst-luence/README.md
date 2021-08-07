@@ -21,3 +21,18 @@ Lucene是一个开源的，高性能的，信息搜索库（IR：Information Ret
 ```
 
 Luence特性：``
+
+使用luke工具查看Lucene索引
++ [查看索引1](src/main/resources/picture/luke_1.png)
++ [查看索引2](src/main/resources/picture/luke_2.png)
++ [查看索引3](src/main/resources/picture/luke_3.png)
+
+## 注意实现
+```text
+使用索引搜索工具luke搜索我们创建的索引时， 需要版本匹配一致。
+org.apache.lucene:8.9.0版本配合luke-swing-8.0.0-luke-release使用时会报错：
+cannot open index path . not a valid lucene index directory or corrupted see
+解决方法:
+将lucene版本修改为：org.apache.lucene:7.7.3
+
+```

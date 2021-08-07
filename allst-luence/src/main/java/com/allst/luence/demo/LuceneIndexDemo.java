@@ -16,6 +16,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.allst.luence.uitl.CommonField.LUCENE_INDEX_PATH;
+
 /**
  * 索引的创建
  *
@@ -44,7 +46,7 @@ public class LuceneIndexDemo {
         Analyzer analyzer = new StandardAnalyzer();
         // 创建Directory 和 IndexWriteConfig对象
         try {
-            Directory directory = FSDirectory.open(Paths.get("E:/TestData/lucene/index"));
+            Directory directory = FSDirectory.open(Paths.get(LUCENE_INDEX_PATH));
             IndexWriterConfig indexWriterConfig = new IndexWriterConfig(analyzer);
             // 4、创建IndexWriter 写入对象
             IndexWriter indexWriter = new IndexWriter(directory,indexWriterConfig);
