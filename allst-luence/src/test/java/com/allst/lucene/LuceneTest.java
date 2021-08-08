@@ -1,5 +1,6 @@
 package com.allst.lucene;
 
+import com.allst.luence.demo.AnalyzerDemo;
 import com.allst.luence.demo.LuceneFieldDemo;
 import com.allst.luence.demo.LuceneIndexDemo;
 import com.allst.luence.demo.SearchIndexDemo;
@@ -16,6 +17,8 @@ public class LuceneTest {
     private final SearchIndexDemo searchIndexDemo = new SearchIndexDemo();
 
     private final LuceneFieldDemo fieldDemo = new LuceneFieldDemo();
+
+    private final AnalyzerDemo analyzerDemo = new AnalyzerDemo();
 
     @Test
     public void testCreateIndex() {
@@ -82,6 +85,15 @@ public class LuceneTest {
     public void testIndexUpdate() {
         try {
             fieldDemo.indexUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testAnalyzer() {
+        try {
+            analyzerDemo.createIndex();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -48,5 +48,11 @@
             <artifactId>ik-analyzer</artifactId>
             <version>8.4.0</version>
         </dependency>
+        <!-- ik分词器 -->
+        <dependency>
+            <groupId>com.github.magese</groupId>
+            <artifactId>ik-analyzer</artifactId>
+            <version>7.7.1</version>
+        </dependency>
     </dependencies>
 </project>
