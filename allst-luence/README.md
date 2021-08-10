@@ -20,12 +20,21 @@ Lucene是一个开源的，高性能的，信息搜索库（IR：Information Ret
 给用户的检索方式。这个过程类似于通过字典中的检索字表查字的过程。
 ```
 
-Luence特性：``
+Lucene特性：``
 
 使用luke工具查看Lucene索引
 + [查看索引1](src/main/resources/picture/luke_1.png)
 + [查看索引2](src/main/resources/picture/luke_2.png)
 + [查看索引3](src/main/resources/picture/luke_3.png)
+
+Lucene底层存储结构
+
+
+Lucene相关度排序
+
+
+Lucene使用注意事项
+
 
 ## 注意实现
 ```text
@@ -36,3 +45,25 @@ cannot open index path . not a valid lucene index directory or corrupted see
 将lucene版本修改为：org.apache.lucene:7.7.3
 
 ```
+
+# Solr
+Solr是一个建立在Lucene基础上的 企业级的 快速的 可扩展的 可部署的 搜索和存储引擎。
+
+Solr官网：
+https://solr.apache.org/ 
+Solr下载地址
+wget https://downloads.apache.org/lucene/solr/7.7.3/solr-7.7.3.tgz
+
+解压：
+tar -xvf solr-7.7.3.tgz
+启动：
+cd solr-7.7.3/
+bin/solr start -force -port 端口号
+-force 为以root用户启动时必须加的命令 若不是root用户启动则无需加该命令
+端口号也可以不指定， 默认端口为：8983
+
+使用浏览器访问主机：http://host:port
+[访问成功页面](src/main/resources/picture/solr.jpg)
+
+
+
