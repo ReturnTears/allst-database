@@ -63,6 +63,10 @@ bin/solr start -force -port 端口号
 端口号也可以不指定， 默认端口为：8983
 
 使用浏览器访问主机：http://host:port
+http://192.168.0.100:8983/
+如果访问不了，查看防火墙是否关闭。
+查看防火墙状态： systemctl status firewalld
+关闭防火墙： systemctl stop firewalld
 [访问成功页面](src/main/resources/picture/solr.jpg)
 
 
