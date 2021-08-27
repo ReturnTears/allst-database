@@ -65,7 +65,7 @@ INSERT INTO tb_emp6 (name, salary) VALUES ('kang', 10000),('yang', 20000), ('xia
 DESC tb_emp6;
 # 查看表详细结构语句
 SHOW CREATE TABLE tb_emp6;
-SHOW CREATE TABLE tb_emp6 \G
+SHOW CREATE TABLE tb_emp6;
 # 修改表名
 ALTER TABLE tb_dept3 RENAME tb_deptment3;
 # 修改字段的数据类型
@@ -119,28 +119,28 @@ SELECT 1 XOR 2 as col_1, 1 XOR 0 as col_2  FROM DUAL;
 
 
 # 备注备注备注备注备注备注备注
-1.今天
+# 1.今天
 
 SELECT * FROM 表名 WHERE TO_DAYS(时间字段名) = TO_DAYS(NOW());
-2.昨天
+# 2.昨天
 
 SELECT * FROM 表名 WHERE TO_DAYS(NOW()) - TO_DAYS(时间字段名) <= 1;
-3.本周
+# 3.本周
 AND YEARWEEK(DATE_FORMAT(safetyPlan.product_time,'%Y-%m-%d')) = YEARWEEK(NOW())
 SELECT * FROM 表名 WHERE YEARWEEK(DATE_FORMAT(时间字段名,'%Y-%m-%d')) = YEARWEEK(NOW());
-4.上周
+# 4.上周
 
 SELECT * FROM 表名 WHERE YEARWEEK(DATE_FORMAT(时间字段名,'%Y-%m-%d')) = YEARWEEK(NOW())-1;
-5.近7天
+# 5.近7天
 
 SELECT * FROM 表名 WHERE DATE_SUB(CURDATE(), INTERVAL 7 DAY) <= DATE(时间字段名);
-6.近30天
+# 6.近30天
 
 SELECT * FROM 表名 WHERE DATE_SUB(CURDATE(), INTERVAL 30 DAY) <= DATE(时间字段名);
-7.本月
+# 7.本月
 
 SELECT * FROM 表名 WHERE DATE_FORMAT(时间字段名,'%Y%m') = DATE_FORMAT(CURDATE(),'%Y%m');
-8.上月
+# 8.上月
 
 SELECT * FROM 表名 WHERE PERIOD_DIFF(DATE_FORMAT(NOW(),'%Y%m'),DATE_FORMAT(时间字段名,'%Y%m')) = 1;
 
@@ -152,19 +152,19 @@ SELECT * FROM 表名 WHERE MONTH(FROM_UNIXTIME(时间字段名,'%y-%m-%d')) = MO
 
 SELECT * FROM 表名 WHERE YEAR(FROM_UNIXTIME(时间字段名,'%y-%m-%d')) = YEAR(NOW()) AND MONTH(FROM_UNIXTIME(时间字段名,'%y-%m-%d')) = MONTH(NOW())；
 
-9.近6个月
+# 9.近6个月
 
 SELECT * FROM 表名 WHERE 时间字段名 BETWEEN DATE_SUB(NOW(),INTERVAL 6 MONTH) AND NOW();
-10.本季度
+# 10.本季度
 
 SELECT * FROM 表名 WHERE QUARTER(时间字段名) = QUARTER(NOW());
-11.上季度
+# 11.上季度
 
 SELECT * FROM 表名 WHERE QUARTER(时间字段名) = QUARTER(DATE_SUB(NOW(),INTERVAL 1 QUARTER));
-12.本年
+# 12.本年
 
 SELECT * FROM 表名 WHERE YEAR(时间字段名)=YEAR(NOW());
-13.去年
+# 13.去年
 
 SELECT * FROM 表名 WHERE YEAR(时间字段名) = YEAR(DATE_SUB(NOW(),INTERVAL 1 YEAR));
 
