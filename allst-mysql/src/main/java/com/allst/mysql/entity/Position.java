@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class Position implements Serializable {
     @Id
     @Column(name = "id")
-    // @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "name")
