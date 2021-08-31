@@ -14,9 +14,9 @@ class AllstMysqlApplicationTests {
 
     @Test
     void contextLoads() {
-        for (int i = 0; i < 20; ) {
+        for (int i = 0; i < 20; i++) {
             Position position = new Position();
-            position.setId(++i);
+            // position.setId(++i);
             position.setCity("GuangZhou");
             position.setName("zhangSan:" + i);
             position.setSalary("123456.78");
