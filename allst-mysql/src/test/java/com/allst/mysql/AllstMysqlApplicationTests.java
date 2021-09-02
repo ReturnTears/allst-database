@@ -44,4 +44,11 @@ class AllstMysqlApplicationTests {
             positionDetailRepository.save(positionDetail);
         }
     }
+
+    @Test
+    void test() {
+        Object positions = positionRepository.findPositionsById(640312027549532160L);
+        Object[] pos = (Object[]) positions;
+        System.out.println(pos[0] + ", " + pos[1]);
+    }
 }
