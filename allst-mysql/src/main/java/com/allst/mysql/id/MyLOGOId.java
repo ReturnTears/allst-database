@@ -18,7 +18,7 @@ public class MyLOGOId implements ShardingKeyGenerator {
 
     @Override
     public Comparable<?> generateKey() {
-        System.out.println("------执行了自定义主键生成器MyLagouId-------");
+        System.out.println("------执行了自定义主键生成器MyLOGOId-------");
         return snow.generateKey();
     }
 

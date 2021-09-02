@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
+ * 职位表
+ *
  * @author June
  * @since 2021年08月
  */
