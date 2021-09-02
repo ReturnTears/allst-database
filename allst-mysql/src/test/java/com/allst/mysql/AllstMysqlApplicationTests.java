@@ -1,7 +1,9 @@
 package com.allst.mysql;
 
+import com.allst.mysql.entity.City;
 import com.allst.mysql.entity.Position;
 import com.allst.mysql.entity.PositionDetail;
+import com.allst.mysql.repository.CityRepository;
 import com.allst.mysql.repository.PositionDetailRepository;
 import com.allst.mysql.repository.PositionRepository;
 import org.junit.jupiter.api.Test;
@@ -16,6 +18,9 @@ class AllstMysqlApplicationTests {
 
     @Autowired
     private PositionDetailRepository positionDetailRepository;
+
+    @Autowired
+    private CityRepository cityRepository;
 
     @Test
     void contextLoads() {
@@ -50,5 +55,13 @@ class AllstMysqlApplicationTests {
         Object positions = positionRepository.findPositionsById(640312027549532160L);
         Object[] pos = (Object[]) positions;
         System.out.println(pos[0] + ", " + pos[1]);
+    }
+
+    @Test
+    void testBroadcast() {
+        City city = new City();
+        city.setName("ganshu");
+        city.setProvince("jiayuguan");
+        cityRepository.save(city);
     }
 }
