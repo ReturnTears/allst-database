@@ -225,8 +225,17 @@ ShardingSphere
     + 行表达式分片策略
 
 + Sharding-Proxy
+
+  ​	以Windows系统下sharding-proxy为例：
+
+  + 下载apache-shardingsphere-sharding-proxy
+  + 解压到指定的目录
+  + 添加MySQL连接驱动包到lib文件夹中
+  + 修改conf下配置文件
+  + 启动bin目录下start.bat脚本
+  + 启动完成后使用MySQL-CLI命令行启动：mysql -h 127.0.0.1 -P 3307 -u root -p  （密码也为root，这里对应前面的server.yaml文件中的配置）
     
-    
+  sharding异常之no table route info_
 + Sharding-Sidecar
 
 

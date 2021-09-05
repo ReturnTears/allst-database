@@ -1,4 +1,4 @@
-package com.allst.mysql.entity;
+package com.allst.db.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

@@ -14,6 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Repeat;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 @SpringBootTest(classes = AllstMysqlApplication.class)
@@ -64,6 +65,12 @@ class AllstMysqlApplicationTests {
         Object positions = positionRepository.findPositionsById(640312027549532160L);
         Object[] pos = (Object[]) positions;
         System.out.println(pos[0] + ", " + pos[1]);
+    }
+
+    @Test
+    void testFindPositions() {
+        List<Position> positions = positionRepository.findAll();
+        positions.forEach(System.out::println);
     }
 
     @Test

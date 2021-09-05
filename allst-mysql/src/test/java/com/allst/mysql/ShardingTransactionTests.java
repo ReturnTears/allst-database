@@ -13,6 +13,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
+ * 运行事务相关测试方法时， 需要把注释的事务相关依赖打开
+ *
  * @author June
  * @since 2021年09月
  */
