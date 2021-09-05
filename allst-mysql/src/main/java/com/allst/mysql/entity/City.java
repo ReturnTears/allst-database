@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class City implements Serializable {
     @Id
     @Column(name = "id")
-    // @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "name")
@@ -52,5 +52,14 @@ public class City implements Serializable {
         this.id = id;
         this.name = name;
         this.province = province;
+    }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", province='" + province + '\'' +
+                '}';
     }
 }
