@@ -54,6 +54,25 @@
             <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
             <version>${sharding-version}</version>
         </dependency>
+        <!-- XA -->
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>sharding-transaction-xa-core</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+        <!-- SAGA -->
+        <!-- jar暂未发布到maven中央仓，因此需要您根据源码自行部署 -->
+        <!--<dependency>
+            <groupId>io.shardingsphere</groupId>
+            <artifactId>sharding-transaction-base-saga</artifactId>
+        </dependency>-->
+        <!-- SEATA -->
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>sharding-transaction-base-seata-at</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
