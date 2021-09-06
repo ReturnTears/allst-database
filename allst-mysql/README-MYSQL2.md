@@ -56,7 +56,7 @@
 		hash冲突问题
 	
 ```
-## MyCat
+## MySQL高级-MyCat
 ```text
 MyCat是一个实现了MySQL协议的服务器，是Java语言编写的数据库中间件
 MyCat是居于阿里开源的Cobar产品研发的，Cobar的稳定性，可靠性，优秀的架构和性能以及众多成熟的使用案例使得MyCat变得非常强大
@@ -130,13 +130,29 @@ MyCat的使用
     实现数据的多重备份，保证数据的安全
     可以在master[innodb]和slave[myisam]中使用不同的数据库引擎，实现读写分离
     MySQL5.5+默认支持主从备份
-    
+
+在mycat的安装目录bin目录下执行如下命令：
+1、安装mycat服务
+.\mycat.bat install
+2、启动mycat服务
+.\mycat.bat start
+.\mycat.bat restart
+3、查看mycat状态
+.\mycat.bat status
+4、关闭mycat服务
+.\mycat.bat stop
+5、启动mysql
+mysql -uroot -h127.0.0.1 -P8066 -p （密码为自己配置的密码， 我这里是root）
 ```
 
+
+
 ## MySQL高级
+
 ___MySQL架构原理和存储机制___
 
 [MySQL体系架构图](src/main/resources/pic/mysql-server1.jpg)
+
 ```text
 MySQL Server架构自顶向下大致可以分网络连接层、服务层、存储引擎层和系统文件层。
 ```
@@ -235,6 +251,7 @@ ShardingSphere
   + 启动bin目录下start.bat脚本
   + 启动完成后使用MySQL-CLI命令行启动：mysql -h 127.0.0.1 -P 3307 -u root -p  （密码也为root，这里对应前面的server.yaml文件中的配置）
     
+  
   sharding异常之no table route info_
 + Sharding-Sidecar
 
