@@ -257,3 +257,53 @@ ShardingSphere
 
 
 
+## MySQL高级-运维工具
+
++ **Yearning**
+
+  Yearning是开源的MySQL SQL语句审核平台，提供数据库字典查询，查询审计，SQL审核，等功能
+
++ **Yearning 2.0**
+
+  指南：https://guide.yearning.io/
+
++ **canal**
+
+  canal主要用途是基于MySQL数据库增量日志解析，提供增量数据订阅和消费
+
+  canal的工作原理类似MySQL主从同步原理
+
+  指南：https://github.com/alibaba/canal/
+
++ **DataX**
+
+  DataX是阿里巴巴内被广泛使用的离线数据同步工具、平台， 实现包括MySQL，Oracle，SQL Server，PostgreSQL，HDFS，Hive，ADS，HBase，TableStore(OTS)，MaxCompute(ODPS)，DRDS等各种异构数据源之间高效的数据同步功能
+
+  指南：https://github.com/alibaba/DataX/
+
++ **percona-toolkit**
+
+  percona-toolkit是一组高级命令行工具的集合，可以查看当前服务的摘要信息，磁盘检测，分析慢查询日志，查找重复索引，实现表同步等等。
+
+  下载地址：https://www.percona.com/downloads/percona-toolkit/LATEST/
+
+  在线指南：https://www.percona.com/doc/percona-toolkit/3.0/index.html
+
++ **MySQLMTOP**
+
+  官方地址：https://www.lepus.cc/
+
++ **ELK**
+
+  ELK 最早是 Elasticsearch（简称ES）、Logstash、Kibana 三款开源软件的简称 。
+
+  
+
++ **Prometheus**
+
+  Prometheus于2012年由SoundCloud创建，目前已经已发展为最热门的分布式监控系统。
+  Prometheus完全开源的，被很多云厂商（架构）内置，在这些厂商（架构）中，可以简单部署
+  Prometheus，用来监控整个云基础架构设施。比如DigitalOcean或Docker都使用普罗米修斯作为基础监控。
+  Prometheus是一个时间序列数据库，它涵盖了可以绑定的整个生态系统工具集及其功能。
+  Prometheus主要用于对基础设施的监控，包括服务器、数据库、VPS，几乎所有东西都可以通过
+  Prometheus进行监控。
