@@ -15,6 +15,7 @@
         <module>allst-redis</module>
         <module>allst-luence</module>
         <module>allst-sharding-proxy</module>
+        <module>allst-oracle</module>
     </modules>
     <dependencies>
         <dependency>

@@ -27,6 +27,9 @@ Part2: [MySQL](allst-mysql/README-MYSQL2.md)
 ## luence
 [Luence](allst-luence/README.md)
 
+## Oracle
+[Oracle 11g](allst-oracle/README.md)
+
 ## git 提交错误解决
 ```text
 fatal: unable to access 'https://github.com/xxx/xxxx.git/': OpenSSL SSL_read: Connection was reset, errno 10054
