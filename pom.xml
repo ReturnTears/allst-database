@@ -16,6 +16,7 @@
         <module>allst-luence</module>
         <module>allst-sharding-proxy</module>
         <module>allst-oracle</module>
+        <module>allst-mongodb</module>
     </modules>
     <dependencies>
         <dependency>
