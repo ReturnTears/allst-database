@@ -55,3 +55,29 @@ db.集合名.drop();
 删除当前数据库
 db.dropDatabase();
 ```
+
+## MongoDB的应用场景
+```text
+
+```
+
+## 报错解决
+```text
+运行时报错如下：
+java.lang.NoSuchMethodError: com.mongodb.connection.ConnectionPoolSettings$Builder.maxWaitQueueSize(I)
+
+解决思路：
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.5.5</version>
+    <relativePath/>
+</parent>
+将springboot parent依赖修改为如下
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.2.5.RELEASE</version>
+    <relativePath/>
+</parent>
+```
