@@ -61,6 +61,8 @@ db.dropDatabase();
 
 ```
 
+## Mongo
+
 ## 报错解决
 ```text
 运行时报错如下：
