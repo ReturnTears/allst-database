@@ -10,13 +10,15 @@
 
     <modules>
         <module>allst-es</module>
+        <module>allst-luence</module>
+        <module>allst-mongodb</module>
         <module>allst-mysql</module>
+        <module>allst-neo4j</module>
+        <module>allst-odps</module>
+        <module>allst-oracle</module>
         <module>allst-postgresql</module>
         <module>allst-redis</module>
-        <module>allst-luence</module>
         <module>allst-sharding-proxy</module>
-        <module>allst-oracle</module>
-        <module>allst-mongodb</module>
     </modules>
     <dependencies>
         <dependency>

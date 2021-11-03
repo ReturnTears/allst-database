@@ -6,18 +6,11 @@ DataBase
 ## es
 [elastic search](allst-es/README-ES.md)
 
-## pg
-[postgreSQL](allst-postgresql/README.md)
-
-## redis
-[Redis](allst-redis/README-REDIS2.md)
-
-[Redis](allst-redis/README-REDIS.md)
+## luence
+[Luence](allst-luence/README.md)
 
 ## mgo
-```
-mangodb
-```
+[mangodb](allst-mongodb/README.md)
 
 ## mysql
 Part1: [MySQL](allst-mysql/README-MYSQL.md)
@@ -28,11 +21,23 @@ Part2: [MySQL](allst-mysql/README-MYSQL2.md)
 
 [Ne04j](allst-neo4j/README.md)
 
-## luence
-[Luence](allst-luence/README.md)
+## odps
+[ODPS](allst-odps/README.md)
 
 ## Oracle
 [Oracle 11g](allst-oracle/README.md)
+
+## pg
+[postgreSQL](allst-postgresql/README.md)
+
+## redis
+[Redis](allst-redis/README-REDIS2.md)
+
+[Redis](allst-redis/README-REDIS.md)
+
+## sharding
+[Sharding](allst-sharding-proxy/README.md)
+
 
 ## git 提交错误解决
 ```text
