@@ -71,26 +71,26 @@ UDF又可以进一步分为标量值函数UDF、自定义聚合函数UDAF和自�
 
 ## ODPS的基础构架
 MaxCompute构架分为四层，分别是客户端、接入层、逻辑层和计算层：
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/架构图.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/架构图.png)
 
 ### 【客户端】
 ODPS以RESTful API方式对外提供服务，用户可以通过不同的方式来使用ODPS的服务，
 包括直接通过RESTful API请求访问、ODPS SDK、ODPS CLT(Command Line Tool)、Java集成开发环境和管理控制台等。
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/客户端.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/客户端.png)
 
 ### 【接入层】
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/接入层.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/接入层.png)
 
 ### 【逻辑层】
 逻辑层又称为控制层，是ODPS的核心部分。可以认为是ODPS的大脑，负责项目空间、对象管理、授权管理、命令解析、元数据五部分。
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/逻辑层.png)
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/逻辑层组件.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/逻辑层.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/逻辑层组件.png)
 
 ### 请求处理器(Worker)
 负责处理所有RESTful请求，本地处理一些作业，提交分布式作业给调度器。
 本地能处理的作业包括：用户空间、表、资源、任务等的管理。
 需要提交给调度器的作业包括：SQL、MR等分布式计算的任务。
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/worker.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/worker.png)
 
 
 ### 调度器（Scheduler）
@@ -101,7 +101,7 @@ ODPS以RESTful API方式对外提供服务，用户可以通过不同的方式�
 + 生成Task的工作流（DAG 图）
 + 把可运行的Task放到TaskPool中
 + 定时对该优先级队列进行排序。
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/schedulerf.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/schedulerf.png)
 
 
 ### 作业执行管理器（Executor）
@@ -110,23 +110,23 @@ ODPS以RESTful API方式对外提供服务，用户可以通过不同的方式�
 判断自身资源是否充足。
 主动轮询TaskPool,请求下一个Task，生成计算层的分布式作业描述文件，提交给计算层。
 监控这些任务的运行状态，定时把状态汇报给调度器。
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/executor.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/executor.png)
 
 
 【计算层】
 计算层开始真正执行计算任务。
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/计算层.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/计算层.png)
 
 
 Pangu(盘古)文件系统存储文件的格式如下：
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/存储文件格式.png)
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/元数据管理.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/存储文件格式.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/元数据管理.png)
 
 
 一条ODPS SQL的执行
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/提交作业.png)
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/运行作业.png)
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/查询状态.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/提交作业.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/运行作业.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/查询状态.png)
 
 
 ## 权限管理
@@ -163,7 +163,7 @@ Owner：当一个用户创建了一个项目，他便自动成为该项目的Own
 ## 授权
 授权有主体(Subject)、客体(Object)和操作(Action)三要素。
 授权有ACL(基于对象的授权)和Policy(基于策略的授权)两种方法。
-![Image](https://github.com/ReturnTears/allst-db/allst-odps/blob/master/src/main/resources/static/picture/授权.png)
+![Image](https://github.com/ReturnTears/allst-database/blob/master/allst-odps/src/main/resources/static/picture/授权.png)
 
 
 查看权限
