@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.6</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.2.2.RELEASE</version>
+		<relativePath/>
 	</parent>
 	<groupId>com.allst.odps</groupId>
 	<artifactId>allst-odps</artifactId>
@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
-			<scope>runtime</scope>
+			<version>21.1.0.0</version>
 		</dependency>
 
 		<dependency>
