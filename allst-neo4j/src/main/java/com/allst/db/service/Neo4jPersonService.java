@@ -26,4 +26,15 @@ public class Neo4jPersonService {
     public Person save(Person person) {
         return personRepository.save(person);
     }
+
+    public  List<Person>  personList(double money){
+        return  personRepository.personList1(money);
+    }
+
+    public List<Person> shortestPath(String startName,String endName){
+        return personRepository.shortestPath(startName,endName);
+    }
+    public  List<Person> personListDept(String name){
+        return  personRepository.personListDept(name);
+    }
 }
