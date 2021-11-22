@@ -14,7 +14,7 @@
 	<name>allst-neo4j</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -25,6 +25,15 @@
 			<groupId>org.neo4j</groupId>
 			<artifactId>neo4j</artifactId>
 			<version>3.5.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-neo4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-ogm-bolt-driver</artifactId>
+			<version>3.2.18</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

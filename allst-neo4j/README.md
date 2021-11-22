@@ -29,7 +29,7 @@ systemctl reload firewalld
 5、neo4j启动命令
 ./bin/neo4j start
 6、使用浏览器 访问服务器上的 neo4j
-http://http://ip:7474/
+http://ip:7474/
 我这里的ip：192.168.0.108
 默认的账号是 neo4j 密码 neo4j 这里第一次登录的话会要求修改密
 第一次访问时需要登录用户名和密码：都为neo4j, 需要修改密码：我这里修改为：hadoop
