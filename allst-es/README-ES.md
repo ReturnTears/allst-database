@@ -1,6 +1,9 @@
 # ES
 ## ElasticSearch7.6.x+
 ```text
+官方地址：
+https://www.elastic.co/cn/elasticsearch/
+Elasticsearch 是一个分布式、RESTful 风格的搜索和数据分析引擎，能够解决不断涌现出的各种用例。
 ElasticSearch是基于Lucene做了一些封装和增强
 ELK是Elasticsearch、Logstash、Kibana三大开源框架首字母大写简称。
 ES是面向文档的,一切皆是JSON
