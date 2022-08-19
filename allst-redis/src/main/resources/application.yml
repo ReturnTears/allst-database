@@ -1,9 +1,9 @@
 spring:
   redis:
-    # host: 127.0.0.1 # windows
-    host: 192.168.33.100 # linux
+    host: 127.0.0.1 # windows
+    # host: 192.168.33.100 # linux
     port: 6379
-    password: #123456(home)，company is null
+    password: #123456(company)，home is null
     jedis:
       pool:
         max-active: 8

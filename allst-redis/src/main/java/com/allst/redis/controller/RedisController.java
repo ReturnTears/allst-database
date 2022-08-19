@@ -19,7 +19,14 @@ public class RedisController {
 
     @GetMapping("/test1")
     public String getRedisValue() {
-        redisTemplate.opsForValue().set("name", "yangyang");
+        redisTemplate.opsForValue().set("name", "YangYang");
         return (String) redisTemplate.opsForValue().get("name");
+    }
+
+    @GetMapping("/test2")
+    public String getRedisValue2() {
+        Object test2 = redisTemplate.opsForValue().get("test2");
+        System.out.println(test2);
+        return (String) redisTemplate.opsForValue().get("test2");
     }
 }
