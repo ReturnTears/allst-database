@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class User {
     private Integer id;
+    private String userId;
     private String name;
     private Integer age;
 }

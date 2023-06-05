@@ -148,7 +148,7 @@ class AllstRedisApplicationTests {
 
     @Test
     void userLoads() throws JsonProcessingException {
-        User user = new User(101, "Spark", 18);
+        User user = new User(101, "110","Spark", 18);
         String jsonStr = new ObjectMapper().writeValueAsString(user);
         redisTemplate.opsForValue().set("user", jsonStr);
         System.out.println(redisTemplate.opsForValue().get("user"));
