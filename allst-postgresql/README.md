@@ -12,4 +12,6 @@ pg_ctl register -N PostgreSQL -D "D:\Program Files\PostgreSQL\11\data\"
 Family电脑上的安装路径
 pg_ctl.exx register -N PostgresSQL -D "本地安装路径下的data目录"
 
+Windows本地PostgreSQL的用户名和密码：
+user: postgres , password: 123456, database: postgres
 ```

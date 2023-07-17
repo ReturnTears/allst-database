@@ -46,3 +46,29 @@ git config --global http.sslVerify "false"
 或者
 git config --global --unset http.proxy
 ```
+
+## Mybatis
+```text
+  begin
+    insert into oracle_table ( id, code ) values( 1 , '1' );  
+    insert into oracle_table ( id, code ) values( 2 , '2' );  
+    insert into oracle_table ( id, code ) values( 3 , '3' );   
+    insert into oracle_table ( id, code ) values( 4 , '4' );
+  end;
+
+ <update id="upRroleTable" useGeneratedKeys="false" parameterType="java.util.HashMap">
+  begin
+    <foreach collection="list" item="info" index="list" separator=";">
+        update ${tableName}
+        <set>
+            VAL_CD=#{info.VAL_CD},
+            VAL_NM=#{info.VAL_NM},
+            VAL=#{info.VAL},
+            VAL_ID=#{info.VAL_ID},
+            ruleset=#{info.ruleset}
+        </set>
+        where VAL_ID =#{info.VAL_ID}
+    </foreach>
+    ;end;
+</update>
+```
