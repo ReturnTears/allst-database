@@ -6,6 +6,7 @@ import com.mybatisflex.core.query.QueryWrapper;
 import com.mybatisflex.core.util.UpdateEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
@@ -33,6 +34,11 @@ public class AccountController {
         return accountMapper.selectListByQuery(query);
     }
 
+    @GetMapping("/accounts/{id}")
+    Account getById(@PathVariable("id") Long id) {
+        return accountMapper.selectById(id);
+    }
+
     @GetMapping("/save")
     public void save() {
         Account account = UpdateEntity.of(Account.class);
@@ -41,5 +47,14 @@ public class AccountController {
         account.setUserName("康帅");
         account.setBirthday(new Date());
         accountMapper.insert(account);
+    }
+
+    @GetMapping("/update")
+    public void update() {
+        Account account = UpdateEntity.of(Account.class, 4);
+        account.setId(4L);
+        account.setAge(24);
+        account.setUserName("小张同学");
+        accountMapper.update(account);
     }
 }
