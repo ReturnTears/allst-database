@@ -1,6 +1,10 @@
 package com.allst.db;
 
+import com.allst.db.entity.Account;
+import com.allst.db.mapper.AccountMapper;
+import com.mybatisflex.core.query.QueryWrapper;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
@@ -22,6 +26,17 @@ class AllstOracleApplicationTests {
         List<String> result2 = list3.stream().filter(i1 -> !list4.contains(i1)).collect(Collectors.toList());
 
         System.out.println(result2);
+    }
+
+    @Autowired
+    private AccountMapper accountMapper;
+
+    @Test
+    void testFlux() {
+        QueryWrapper queryWrapper = QueryWrapper.create()
+                .select();
+        List<Account> accountList = accountMapper.selectListByQuery(queryWrapper);
+        System.out.println(accountList);
     }
 
 }
