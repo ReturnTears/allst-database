@@ -52,5 +52,10 @@ neo4j.bat start
 6、使用浏览器 访问服务器上的 neo4j
 http://127.0.0.1:7474
 默认的账号是 neo4j 密码 neo4j 这里第一次登录的话会要求修改密码
-
+修改后：username:neo4j,password:hadoop
+7、配置Neo4j允许远程访问
+放开注释#dbms.connector.http.listen_address=:7474
+远程bolt连接：
+放开注释#dbms.connector.bolt.listen_address=:7687
+取消认证机制：dbms.security.auth_enabled=false
 ```
