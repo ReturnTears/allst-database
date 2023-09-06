@@ -31,6 +31,40 @@ config 指定配置文件
 
 ```
 
+## mongo 在Windows安装
+```text
+1、登录MongoDB 官网下载页面https：//www.mongodb.com/try/download/community，在页面的右边可以找到MongoDB社区版的下载链接
+2、解压刚刚下载的.zip包，E:\Program Files\mongodb-7.0.1
+3、配置环境变量：MONGODB_HOME=E:\Program Files\mongodb-7.0.1 PATH=%MONGODB_HOME%\bin;
+4、在MongoDB安装目录下提供具有如下内容的配置文件(mongod.conf)
+# mongod.conf
+# 配置与存储有关的信息
+storage:
+  dbPath: E:\Program Files\mongodb-7.0.1\data\db
+  journal:
+	enabled: true
+# 指定与日志有关的信息
+systemLog:
+	destination: file
+	quiet: true
+	logAppend: false
+	path: E:\Program Files\mongodb-7.0.1\logs\mongod.log
+# 配置与网络有关的信息
+net:
+	port: 27017
+	bindIp: 0.0.0.0
+
+需要手动创建：data目录、logs目录
+5、运行如下命令即可启动MongoDB服务器(注意：需要用管理员身份运行命令行cmd)。
+mongod.exe --config "E:\Program Files\mongodb-7.0.1\mongod.conf" --install
+
+6、启动服务器
+net start MongoDB
+也可以手动打开服务：services.msc进入服务手动开启
+关闭服务：
+net stop  MongoDB
+```
+
 ## mongo shell 的启动
 ```text
 启动mongo shell

@@ -14,15 +14,15 @@ import org.bson.Document;
 public class MongoDemo {
     public static void main(String[] args) {
         // 插入
-        // insertMongo();
+        insertMongo();
         // 查询
-        findMongo();
+        // findMongo();
     }
 
     private static void insertMongo() {
-        MongoClient mongoClient = new MongoClient("192.168.0.107", 27017);
+        MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         // 获取数据库对象
-        MongoDatabase mongoDatabase = mongoClient.getDatabase("test");
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("admin");
         // 获取集合对象
         MongoCollection<Document> collection = mongoDatabase.getCollection("lagou");
         // 构建Document对象，并插入到集合中
@@ -48,9 +48,9 @@ public class MongoDemo {
      * Document{{_id=61604e97245f7a8dc8ee908b, name=xiaohu, birthday=Tue Jun 11 08:00:00 CST 2019, salary=25000.0, city=chongqing}}
      */
     private static void findMongo() {
-        MongoClient mongoClient = new MongoClient("192.168.0.107", 27017);
+        MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         // 获取数据库对象
-        MongoDatabase mongoDatabase = mongoClient.getDatabase("test");
+        MongoDatabase mongoDatabase = mongoClient.getDatabase("admin");
         // 获取集合对象
         MongoCollection<Document> collection = mongoDatabase.getCollection("lagou");
         // 指定字段排序
