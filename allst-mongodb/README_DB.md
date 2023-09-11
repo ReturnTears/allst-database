@@ -74,4 +74,21 @@ db.users.updateMany(
 {address: {$exists: false}},
 {$set: {favotite: "Java", gender: "男"}}
 )
-
+-- 删除文档
+db.collection.find()
+db.collection.deleteOne({age: 29})
+db.users.find()
+db.users.deleteOne({zip: null})
+-- 查询文档
+db.collection.find(query, projection)
+db.users.find({name: "fkjava"})
+db.users.find({age: {$gt: 20}})
+db.users.find({age: {$gt: 20, $lt: 50}})
+db.users.find({name: {$exists: false}})
+db.users.find().skip(1)
+db.users.find().limit(2)
+db.users.find().sort({_id: 1})
+db.products.find()
+db.products.aggregate([
+{$group: {_id: "$item", amount: {$sum: "$qty"}}}
+])
