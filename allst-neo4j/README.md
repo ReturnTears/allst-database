@@ -58,4 +58,22 @@ http://127.0.0.1:7474
 远程bolt连接：
 放开注释#dbms.connector.bolt.listen_address=:7687
 取消认证机制：dbms.security.auth_enabled=false
+
+Neo4j的bin目录中还提供了一个cypher-shell.bat程序，它相当于Neo4j客户端。打开命令行窗口，输入如下命令
+cypher-shell -a localhost:7687 -u neo4j -p hadoop -d neo4j
+该命令中的-a指定Neo4j服务器地址，-u指定登录所使用的用户名，-p指定密码，-d指定默认连接的数据库
+
+```
+
+## COL
+```text
+SHOW DATABASES ;
+//SHOW DATABASE neo4j ;
+//:use neo4j ;
+MATCH (b: Book{price: 148}) RETURN b;
+MATCH (b) RETURN b;
+match(b:Book) where b.price > 120 return b;
+match(b:Book) return b order by b.price;
+match(b) return b order by coalesce(b.price, 0);
+match(b) return b order by coalesce(b.price, 0) SKIP 4 LIMIT 2;
 ```
