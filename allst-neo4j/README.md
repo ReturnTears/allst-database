@@ -129,7 +129,13 @@ MATCH (n:Person) where n.name = "KangKang" RETURN n;
 MATCH (b: Book) USING INDEX b : Book(name) WHERE b.name = "SpringBoot终极讲义" RETURN b;
 CREATE INDEX IF NOT EXISTS for(n :Book) on (n.name, n.price) ;
 DROP INDEX book_name_index IF EXISTS ;
-
+FOREACH (value in ["wusong","jinlian","linchong","luda"] | CREATE (:Person {name: value})) ;
+MATCH p = (n)-[*]->(m) FOREACH (n in nodes(p) | set n.tag = "new Label") ;
+MATCH (n{tag: "new Label"}) RETURN n ;
+MATCH p = (n)-[*]->(m) FOREACH (n in nodes(p) | REMOVE n.tag) ;
+UNWIND [1,2,3, NULL] as x RETURN x, "fkjava" as y;
+UNWIND [1,2,3,2,1] as x WITH DISTINCT x RETURN collect(x) as newList;
+UNWIND [[1,2],["a","b"],"c"] as x UNWIND x as y RETURN y;
 ```
 
 ## 语法基础
