@@ -19,6 +19,7 @@
         <module>allst-postgresql</module>
         <module>allst-redis</module>
         <module>allst-sharding-proxy</module>
+        <module>allst-cassandra</module>
     </modules>
     <dependencies>
         <dependency>
