@@ -20,6 +20,7 @@
         <module>allst-redis</module>
         <module>allst-sharding-proxy</module>
         <module>allst-cassandra</module>
+        <module>allst-solr</module>
     </modules>
     <dependencies>
         <dependency>

@@ -1,0 +1,14 @@
+{
+  "authentication":{ 
+    "blockUnknown": true, 
+    "class":"solr.BasicAuthPlugin",
+    "credentials":{"root":"pPKs8BkTXNNLlzipK0LAm6gh64kBEfIuKx1HYU4rHnc= hOJ+WQ/ubP/DPfTnGbjF+ANOZHmnaQ8jAnJh4xxdYu8="}, 
+    "realm":"FkJava Solr users", 
+    "forwardCredentials": false 
+  },
+  "authorization":{
+    "class":"solr.RuleBasedAuthorizationPlugin",
+    "permissions":[{"name":"security-edit", "role":"admin"}], 
+    "user-role":{"root":"admin"} 
+  }
+}
