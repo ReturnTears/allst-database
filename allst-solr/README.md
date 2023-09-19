@@ -13,3 +13,18 @@ curl --user root:32147 http://localhost:8983/solr/admin/authentication -H 'Conte
 curl --user root:32147 http://localhost:8983/solr/admin/authentication -H 'Content-type:application/json' -d @delete.json
 如图：deleteUser.png
 ```
+
+## 管理Solr的Core
+Solr 使用Core 来保存索引文档，Solr 的Core 有点类似于RDBMS的表。因此，在正式使用Solr之前，必须先创建Core
+```text
+Solr提供了两种方式来创建Core
+1、Solr提供了两种方式来创建Core
+solr create_core -c Core fkjava -d sample_techproducts_configs
+
+2、通过图形用户界面创建Core
+
+
+删除Core:
+solr delete -c fkjava
+
+```
