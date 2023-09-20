@@ -41,6 +41,35 @@ http.cors.allow-origin:
 点击bin目录下elasticsearch.bat脚本
 启动完成后: http://127.0.0.1:9200
 
+为ES的默认用户设置密码：
+命令行输入：elasticsearch-setup-passwords interactive
+密位设置： hadoop
+
+为Elasticsearch集群创建一个证书颁发机构的证书:
+命令行输入：elasticsearch-certutil ca
+使用默认的证书文件名，密码设置为：567890
+
+为Elasticsearch集群的每个节点生成各自的证书及私钥：
+命令行输入：elasticsearch-certutil cert --ca elastic-stack-ca.p12
+1、输入证书机构颁发的密码：567890
+2、设置新的证书的名字：使用默认的证书名
+3、输入新的证书密码：123456
+
+使用elasticsearch.keystore管理证书文件的密码：
+命令行输入：elasticsearch-keystore add xpack.security.transport.ssl.keystore.secure_password
+会提示输入密码：123456
+在配置文件elasticsearch.yml中配置了几处使用证书的地方，就需要执行几次上述命令
+1、命令行输入：elasticsearch-keystore add xpack.security.transport.ssl.truststore.secure_password
+提示输入密码为：123456
+2、命令行输入：elasticsearch-keystore add xpack.security.http.ssl.keystore.secure_password
+提示输入密码为：123456
+3、命令行输入：elasticsearch-keystore add xpack.security.http.ssl.truststore.secure_password
+提示输入密码为：123456
+
+重启服务，输入如下命令来测试服务器：
+使用curl来测试Elasticsearch服务器：curl -u elastic:hadoop -k https://localhost:9200
+上面命令中的-u选项用于指定用户名和密码，-k选项用于指定忽略对方站点的SSL证书
+
 下载可视化开源工具:https://github.com/mobz/elasticsearch-head
 在elasticsearch-head-master目录中安装相关依赖包：
 使用淘宝安装: cnpm install

@@ -33,5 +33,5 @@ solr delete -c fkjava
 ```text
 git提交报错：Error in the HTTP2 framing layer fatal
 解决思路：git config --global http.version HTTP/1.1
-
+git config --global http.sslVerify "false"
 ```
