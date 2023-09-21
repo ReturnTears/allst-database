@@ -77,6 +77,27 @@ http.cors.allow-origin:
 启动完成后:http://127.0.0.1:9100
 ```
 
+### Elasticsearch基本用法
+```text
+1、操作Index
+1.2、添加Index使用PUT请求
+命令行：curl -k -u elastic:hadoop -X PUT https://localhost:9200/fkjava
+输出为：{"acknowledged":true,"shards_acknowledged":true,"index":"fkjava"}
+1.3、查看当前有哪些Index
+命令行：curl -k -u elastic:hadoop https://localhost:9200/_cat/indices
+输出为：
+green  open .security-7              zcophF-mSnytZCGJpVLx3w 1 0  6 0 19.6kb 19.6kb
+yellow open fkjava                   7Xavx2X9TVyAq1nGDtQnrg 1 1  0 0   230b   230b
+green  open .kibana_task_manager_1   FqkEIthfQmu1Kswq45mceQ 1 0  2 0  6.6kb  6.6kb
+green  open .apm-agent-configuration I5_ietocQzexs4TDPCwcrA 1 0  0 0   283b   283b
+yellow open my-es                    JrqUJL2mSPql8QxCRoH5_A 5 1  0 0  1.3kb  1.3kb
+green  open .kibana_1                YsvraOl2QMOSx3iJyLW36w 1 0 14 4 23.6kb 23.6kb
+1.3、删除Index使用DELETE请求
+命令行：curl -k -u elastic:hadoop -X DELETE https://localhost:9200/fkjava
+输出为：{"acknowledged":true}
+
+```
+
 ## Windows下安装Kibana
 ```text
 Windows下Kibana也是开箱即用的
