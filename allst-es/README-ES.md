@@ -96,6 +96,20 @@ green  open .kibana_1                YsvraOl2QMOSx3iJyLW36w 1 0 14 4 23.6kb 23.6
 命令行：curl -k -u elastic:hadoop -X DELETE https://localhost:9200/fkjava
 输出为：{"acknowledged":true}
 
+2、操作文档
+2.1、添加文档使用POST请求。
+在命令行所在的当前路径下定义一个book.json文件
+2.2、运行如下命令即可添加一个文档
+命令行：curl -k -u elastic:hadoop -X POST https://localhost:9200/fkjava/book/1 -d @book.json -H "Content-Type:application/json"
+输入：如图：操作文档.png
+
+查看指定Index下的所有文档，运行如下命令即可:
+命令行：curl -k -u elastic:hadoop https://localhost:9200/fkjava/_search?pretty=true
+查看指定Index下指定ID的文档，运行如下命令即可：
+命令行：curl -k -u elastic:hadoop https://localhost:9200/fkjava/book/1?pretty=true
+删除指定ID对应的文档，运行如下命令即可:
+命令行：curl -k -u elastic:hadoop -X DELETE https://localhost:9200/fkjava/book/1 
+
 ```
 
 ## Windows下安装Kibana
