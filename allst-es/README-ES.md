@@ -110,5 +110,26 @@ i18n.locale: "zh-CN"实现汉化
 ## IK分词器
 ```text
 https://github.com/medcl/elasticsearch-analysis-ik
+使用Elasticsearch的插件机制即可安装IK分词器，运行如下命令来安装IK分词器:
+命令行输入：
+elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.1/elasticsearch-analysis-ik-7.6.1.zip
+运行该命令将会自动从GitHub下载IK分词器压缩包，下载完成后请确认是否要安装IK分词器，选择y后继续安装。
+安装过程查看：安装ik分词器.png
+
+在项目目录下新建 fkjava.json文件
+使用如下命令创建Index:
+curl -k -u elastic:hadoop -X PUT https://localhost:9200/fkjava -d @fkjava.json -H "Content-Type:application/json"
+该命令中增加了-H选项，设置Content-Type请求头的值为“application/json”；还增加了-d选项，用于读取fkjava.json文件的内容作为请求数据。
+输出为：{"acknowledged":true,"shards_acknowledged":true,"index":"fkjava"}
+如图：创建Index.png
+
+在项目目录下新建 analyze.json文件
+curl -k -u elastic:hadoop -X POST https://localhost:9200/fkjava/_analyze?pretty=true -d @analyze.json -H "Content-Type:application/json"
+如图：测试ik分词器.png
+每个词都被称作一个token，每个token都对应如下属性。
+➢ start_offset：起始位置。
+➢ end_offset：结束位置。
+➢ type：类型。
+➢ position：词的位置。
 
 ```
