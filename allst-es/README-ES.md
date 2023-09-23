@@ -47,13 +47,28 @@ http.cors.allow-origin:
 
 为Elasticsearch集群创建一个证书颁发机构的证书:
 命令行输入：elasticsearch-certutil ca
-使用默认的证书文件名，密码设置为：567890
+使用默认的证书文件名elastic-certificates.p12，密码设置为：567890
 
 为Elasticsearch集群的每个节点生成各自的证书及私钥：
 命令行输入：elasticsearch-certutil cert --ca elastic-stack-ca.p12
 1、输入证书机构颁发的密码：567890
 2、设置新的证书的名字：使用默认的证书名
 3、输入新的证书密码：123456
+
+从elastic-certificates.p12证书文件中导出公钥证书，导出得到的公钥证书文件名为elastic.cer:
+所在证书目录下输入命令行：
+keytool -export -alias ca -file elastic.cer -keystore elastic-certificates.p12
+会提示输入密钥库口令：123456
+在当前目录下可查看公钥证书文件：elastic.cer
+如图：导出公钥证书文件.png
+
+将目标网站的公钥证书添加到trustStore中,命令行如下：
+keytool -import -alias ca -file elastic.cer -keystore elastic.store
+如果elastic.store 不存在，该命令将会提示两次输入密码,我们输入345678
+如图：添加公钥到trustStore.png
+经过上述两步后会生成文件elastic.store，且成功地将目标服务器的SSL 证书添加到trustStore：elastic.store 中了
+
+
 
 使用elasticsearch.keystore管理证书文件的密码：
 命令行输入：elasticsearch-keystore add xpack.security.transport.ssl.keystore.secure_password
@@ -114,7 +129,8 @@ green  open .kibana_1                YsvraOl2QMOSx3iJyLW36w 1 0 14 4 23.6kb 23.6
 输出为：查询文档关键字.png
 如果要根据查询条件来删除文档，只要向Index后加“_delete_by_query”的URL地址发送POST请求即可：
 curl -k -u elastic:hadoop -X POST https://localhost:9200/fkjava/_delete_by_query -d @search.json -H "Content-Type: application/json"
-输出为：
+输出为：根据查询条件删除文档.png
+
 
 ```
 
