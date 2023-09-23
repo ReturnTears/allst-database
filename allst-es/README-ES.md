@@ -109,6 +109,12 @@ green  open .kibana_1                YsvraOl2QMOSx3iJyLW36w 1 0 14 4 23.6kb 23.6
 命令行：curl -k -u elastic:hadoop https://localhost:9200/fkjava/book/1?pretty=true
 删除指定ID对应的文档，运行如下命令即可:
 命令行：curl -k -u elastic:hadoop -X DELETE https://localhost:9200/fkjava/book/1 
+查询数据就是要求在文档的description字段中包含“全面”关键词：
+命令行：curl -k -u elastic:hadoop https://localhost:9200/fkjava/_search -d @search.json -H "Content-Type: application/json"
+输出为：查询文档关键字.png
+如果要根据查询条件来删除文档，只要向Index后加“_delete_by_query”的URL地址发送POST请求即可：
+curl -k -u elastic:hadoop -X POST https://localhost:9200/fkjava/_delete_by_query -d @search.json -H "Content-Type: application/json"
+输出为：
 
 ```
 

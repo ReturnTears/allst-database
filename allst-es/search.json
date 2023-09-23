@@ -1,0 +1,7 @@
+{
+  "query": {
+    "match": {
+      "description": "全面"
+    }
+  }
+}
