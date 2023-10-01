@@ -21,6 +21,7 @@
         <module>allst-sharding-proxy</module>
         <module>allst-cassandra</module>
         <module>allst-solr</module>
+        <module>allst-clickhouse</module>
     </modules>
     <dependencies>
         <dependency>
