@@ -71,4 +71,17 @@ git config --global --unset http.proxy
     </foreach>
     ;end;
 </update>
+
+Mybatis 开启二级缓存
+开启二级缓存需要做以下配置。
+（1）在MyBatis全局配置中启用二级缓存配置。
+    <settings><setting name="cacheEnabled" value="true"/></settings>
+（2）在对应的Mapper.xml中配置Cache节点。
+    <cache></cache> 这里是一个空标签，也可以去实现 Cache 接口来自定义缓存。
+（3）在对应的Select查询节点中添加useCache=true。
+    userCache是用来设置是否禁用二级缓存的,flushCache=true表示刷新缓存
+    <select id="selectUserByUserId" useCache="false" flushCache="true" resultType="com.all.dao.User" parameterType="int">    
+        select * from user where id=#{id}
+    </select>
+
 ```
