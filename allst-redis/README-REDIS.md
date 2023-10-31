@@ -255,7 +255,7 @@ cp /usr/local/redis-6.0.5/redis.conf /usr/local/bin/config
 之后就使用该文件启动，原生文件用于备份
 daemonize on修改为yes 改为后台启动
 启动服务：/usr/local/bin redis-server config/redis.config
-客户端连接：redis-cli -p 7379
+客户端连接：redis-cli -p 6379
 查看redis进程是否开启：ps -ef|grep redis
 关闭Redis服务：shutdown
 not connected > exit
