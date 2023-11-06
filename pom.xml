@@ -22,6 +22,7 @@
         <module>allst-cassandra</module>
         <module>allst-solr</module>
         <module>allst-clickhouse</module>
+        <module>allst-trino</module>
     </modules>
     <dependencies>
         <dependency>
