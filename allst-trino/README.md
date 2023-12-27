@@ -16,4 +16,16 @@ docker 安装Trino
 5、使用如下命令可以重新开始：
    docker start trino-trial
    
+使用jar包运行trino cli
+java -jar .\trino-cli-435-executable.jar --version
+
+java -jar .\trino-cli-435-executable.jar
+
+使用本地jar包作为客户端链接docker上trino服务：
+java -jar .\trino-cli-435-executable.jar --server 172.20.10.5:8080
+trino>
+接下来就可以和trino服务端进行交互了
+
+Trino服务端提供了一个Web界面，通常叫作Trino Web UI。
+默认用户名：admin
 ```

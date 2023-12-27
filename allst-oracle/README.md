@@ -112,3 +112,47 @@ SQL优化核心思想第一个观点：只有大表才会产生性能问题。
 假设这1000行数据都在不同的数据块中，那么回表就需要耗费1 000个物理I/O。因此，集群因子影响索引回表的物理I/O次数
 
 ```
+
+## Oracle数据库锁表
+```text
+1、锁表原因
+可能是修改表中的数据，忘了提交事务会造成锁表。 Oracle数据库操作中，我们有时会用到锁表查询以及解锁和kill进程等操作。
+
+2、锁表查询的代码有以下的形式
+select count(*) from v$locked_object;
+select * from v$locked_object;
+
+3、查看哪个表被锁
+select b.owner,b.object_name,a.session_id,a.locked_mode from v$locked_object a,dba_objects b where b.object_id = a.object_id;
+OWNER ：数据表的所有者用户
+OBJECT_NAME： 被锁住的表名
+SESSION_ID： 会话ID
+LOCKED_MODE： 锁级别
+
+锁级别分为6级：
+1级锁有：Select 
+2级锁有：Select for update,Lock For Update,Lock Row Share
+3级锁有：Insert, Update, Delete, Lock Row Exclusive
+4级锁有：Create Index,Lock Share
+5级锁有：Lock Share Row Exclusive
+6级锁有：Alter table, Drop table, Drop Index, Truncate table, Lock Exclusive
+
+4、查看是哪个session引起的
+SELECT a.OS_USER_NAME, c.owner, c.object_name, b.sid, b.serial#,logon_time
+FROM v$locked_object a, v$session b, dba_objects c
+WHERE a.session_id = b.sid
+AND a.object_id = c.object_id
+ORDER BY b.logon_time
+
+5、杀掉对应进程
+alter system kill session '1025,41';
+需要用户有管理员的权限操作，其中1025为sid,41为serial#
+
+如果有ora-00031错误，则在后面加immediate;
+alter system kill session '1025,41' immediate;
+
+6、如何避免锁表
+常见问题是用户更新操作没有提交事务，
+所以：如果单独更新操作，需要写2个操作 SQL，一个是更新操作SQL语句，另一个是commit语句提交事务。
+
+```
