@@ -20,6 +20,7 @@ public class MongoDemo {
     }
 
     private static void insertMongo() {
+        // 无密码时可以使用此方式
         MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         // 获取数据库对象
         MongoDatabase mongoDatabase = mongoClient.getDatabase("admin");

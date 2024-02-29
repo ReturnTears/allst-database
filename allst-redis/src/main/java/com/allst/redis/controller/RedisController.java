@@ -20,6 +20,11 @@ public class RedisController {
     @GetMapping("/test1")
     public String getRedisValue() {
         redisTemplate.opsForValue().set("name", "YangYang");
+        // 使用setIfAbsent方法设置键值对，仅当key不存在时才设置
+        Boolean absent = redisTemplate.opsForValue().setIfAbsent("name", "HelloWorld");
+        if (Boolean.TRUE.equals(absent)) {
+            System.out.println("name设置成功...");
+        }
         return (String) redisTemplate.opsForValue().get("name");
     }
 
