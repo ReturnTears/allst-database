@@ -87,7 +87,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-core</artifactId>
-            <version>5.7.3</version>
+            <version>5.8.19</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
