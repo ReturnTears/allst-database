@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 import java.util.List;
 
-import static com.allst.db.entity.table.AccountTableDef.ACCOUNT;
-
 /**
  * @author Hutu
  * @since 2023-07-26 下午 10:13
@@ -28,7 +26,8 @@ public class AccountController {
 
         //构造 QueryWrapper，也支持使用 QueryWrapper.create() 构造，效果相同
         QueryWrapper query = new QueryWrapper();
-        query.where(ACCOUNT.AGE.ge(20));
+        //query.where(ACCOUNT.AGE.ge(20));
+        query.where("age > 20");
 
         //通过 query 查询数据列表返回
         return accountMapper.selectListByQuery(query);
