@@ -23,6 +23,7 @@
         <module>allst-solr</module>
         <module>allst-clickhouse</module>
         <module>allst-trino</module>
+        <module>allst-graphql</module>
     </modules>
     <dependencies>
         <dependency>
