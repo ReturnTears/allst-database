@@ -24,6 +24,7 @@
         <module>allst-clickhouse</module>
         <module>allst-trino</module>
         <module>allst-graphql</module>
+        <module>allst-influxdb</module>
     </modules>
     <dependencies>
         <dependency>
