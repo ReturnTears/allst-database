@@ -25,6 +25,7 @@
         <module>allst-trino</module>
         <module>allst-graphql</module>
         <module>allst-influxdb</module>
+        <module>allst-jpa</module>
     </modules>
     <dependencies>
         <dependency>
