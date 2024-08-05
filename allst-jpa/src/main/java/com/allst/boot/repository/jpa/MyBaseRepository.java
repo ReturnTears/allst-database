@@ -1,4 +1,4 @@
-package com.allst.boot.repository;
+package com.allst.boot.repository.jpa;
 
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.Repository;

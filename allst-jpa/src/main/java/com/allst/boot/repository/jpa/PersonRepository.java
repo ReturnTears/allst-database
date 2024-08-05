@@ -1,4 +1,4 @@
-package com.allst.boot.repository;
+package com.allst.boot.repository.jpa;
 
 import com.allst.boot.entity.Person;
 

@@ -1,5 +1,6 @@
 package com.allst.boot.controller;
 
+import com.allst.boot.entity.Person;
 import com.allst.boot.model.PersonBo;
 import com.allst.boot.service.PersonService;
 import lombok.RequiredArgsConstructor;
@@ -27,5 +28,10 @@ public class PersonController {
     @GetMapping("/findById/{id}")
     public PersonBo findById(@PathVariable Long id) {
         return personService.findById(id);
+    }
+
+    @GetMapping("/findPerByName/{name}")
+    public Person findPersonByName(@PathVariable String name) {
+        return personService.findPersonByName(name);
     }
 }
