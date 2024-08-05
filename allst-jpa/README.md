@@ -54,3 +54,19 @@ public interface PagingAndSortingRepository<T, ID>  {
   Page<T> findAll(Pageable pageable);
 }
 ```
+
+## Queryf方法
+```text
+标准的CRUD Repository 通常有对底层数据store的查询。使用Spring Data，声明这些Query查询,只需要四个步骤：
+1、声明一个扩展 Repository 或其子接口之一的接口，并将其泛型指定为它应该处理的domain类和ID类型，如以下例子所示。
+interface PersonRepository extends Repository<Person, Long> {}
+2、在接口中声明query方法。
+interface PersonRepository extends Repository<Person, Long> {
+    List<Person> findByLastname(String lastname);
+}
+3、设置Spring为这些接口创建代理实例
+@EnableJpaRepositories
+class Config {}
+4、
+
+```
