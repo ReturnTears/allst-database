@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class AllstRedisApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(AllstRedisApplication.class, args);
     }

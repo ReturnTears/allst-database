@@ -1,8 +1,10 @@
 package com.allst.redis.utils;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.concurrent.TimeUnit;
  * @author YiYa
  * @since 2020/8/6-10:18
  */
+@Slf4j
 @Component
 public final class RedisUtil {
 
@@ -487,7 +490,6 @@ public final class RedisUtil {
                 expire(key, time);
             return true;
         } catch (Exception e) {
-            e.printStackTrace();
             return false;
         }
     }
@@ -503,7 +505,6 @@ public final class RedisUtil {
             redisTemplate.opsForList().rightPushAll(key, value);
             return true;
         } catch (Exception e) {
-            e.printStackTrace();
             return false;
         }
     }
@@ -522,7 +523,6 @@ public final class RedisUtil {
                 expire(key, time);
             return true;
         } catch (Exception e) {
-            e.printStackTrace();
             return false;
         }
     }
@@ -539,7 +539,6 @@ public final class RedisUtil {
             redisTemplate.opsForList().set(key, index, value);
             return true;
         } catch (Exception e) {
-            e.printStackTrace();
             return false;
         }
     }
@@ -556,8 +555,28 @@ public final class RedisUtil {
         try {
             return redisTemplate.opsForList().remove(key, count, value);
         } catch (Exception e) {
-            e.printStackTrace();
             return 0L;
         }
+    }
+
+    /**
+     * 向指定频道发生消息
+     *
+     * @param channel   频道
+     * @param message   消息
+     * @return  发送结果：true 成功，false失败
+     */
+    public boolean convertAndSend(String channel, Object message) {
+        if (!StringUtils.hasText(channel)) {
+            return false;
+        }
+        try {
+            redisTemplate.convertAndSend(channel, message);
+            log.info("发送消息成功，channel：{}，message：{}", channel, message);
+            return true;
+        } catch (Exception e) {
+            log.error("发送消息失败，channel：{}，message：{}", channel, message);
+        }
+        return false;
     }
 }

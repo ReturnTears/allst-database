@@ -79,6 +79,7 @@ BLPOP key [key...] timeout
 BRPOP key [key...] timeout
 
 ```
+
 ## String常用操作
 ```text
 set key value
@@ -235,6 +236,7 @@ Redis事务命令	WATCH
 		
 
 ```
+
 ## Redis to Regain
 ```
 Redis(Remote Dictionary Server)远程字典服务
@@ -592,6 +594,16 @@ Redis不好在线扩容， 集群容量一旦达到上限，在线扩容就十�
 
 缓存穿透/击穿/雪崩
 集成Redis
+```
+
+## 发布订阅
+```text
+订阅主题：
+subscribe channel_name [channel...]
+示例：
+subscribe default_channel_topic
+
+
 ```
 
 # USE
