@@ -1,6 +1,7 @@
 package com.allst.boot.service;
 
 import com.allst.boot.entity.Person;
+import com.allst.boot.entity.PersonMongo;
 import com.allst.boot.model.PersonBo;
 import com.allst.boot.repository.jpa.PersonRepository;
 import com.allst.boot.repository.mongo.MongoDBPersonRepository;
@@ -40,9 +41,9 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public Person findPersonByName(String name) {
-        Person person = mongoDBPersonRepository.findByName(name);
-        System.out.println("person: " + person);
-        return person;
+    public PersonMongo findPersonByName(String name) {
+        PersonMongo personMongo = mongoDBPersonRepository.findByName(name);
+        System.out.println("person: " + personMongo);
+        return personMongo;
     }
 }

@@ -17,23 +17,22 @@ import javax.persistence.*;
  */
 @Data
 @Entity
-//@Document("person")
-@Table(name = "person")
-public class Person {
-    //@Field(value = "_id")
-    //private ObjectId _id;
+@Document("person")
+public class PersonMongo {
+    @Field(value = "_id")
+    private ObjectId _id;
 
     @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Field(value = "id")
     private Long id;
 
-    @Column(name = "name")
+    @Field(value = "name")
     private String name;
 
-    @Column(name = "age")
+    @Field(value = "age")
     private Integer age;
 
-    @Column(name = "address")
+    @Field(value = "address")
     private String address;
+
 }
