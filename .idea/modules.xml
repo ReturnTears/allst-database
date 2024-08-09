@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/allst-es/allst-es.iml" filepath="$PROJECT_DIR$/allst-es/allst-es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allst-jpa.iml" filepath="$PROJECT_DIR$/allst-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allst-mongodb/allst-mongodb.iml" filepath="$PROJECT_DIR$/allst-mongodb/allst-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allst-neo4j/allst-neo4j.iml" filepath="$PROJECT_DIR$/allst-neo4j/allst-neo4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allst-oracle/allst-oracle.iml" filepath="$PROJECT_DIR$/allst-oracle/allst-oracle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allst-postgresql/allst-postgresql.iml" filepath="$PROJECT_DIR$/allst-postgresql/allst-postgresql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allst-solr.iml" filepath="$PROJECT_DIR$/allst-solr.iml" />
+    </modules>
+  </component>
+</project>

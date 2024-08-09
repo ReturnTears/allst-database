@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -16,10 +19,16 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="Elasticsearch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,67 +37,133 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ReturnTears&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8d49072c-91f1-42e1-b8be-60a2295f0e8b" />
+        <option name="url" value="https://github.com/ReturnTears/allst-db.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\ProgramData\.m2\repository" />
-        <option name="mavenHome" value="D:/Program Files/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Program Files/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="jdkForImporter" value="1.8" />
+        <option name="jdkForImporter" value="11" />
         <option name="vmOptionsForImporter" value="-Xmx768m -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+  <component name="MavenRunner">
+    <option name="jreName" value="11" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="1fjPiVBI2NxCywzskYiU5wy8GXr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/allst-redis/src/main/resources" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/allst-db/allst-graphql/src/main/resources/graphql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.18066406&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33657587&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2c8243330970bca84f4c1a52c10d6448&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mongo&quot;,
+      &quot;oracle&quot;,
+      &quot;trino&quot;,
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\resources" />
-      <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\java\com\allst\redis\cache" />
-      <recent name="E:\IdeaProjects\allst-db\allst-redis\src\main\java\com\allst\redis\utils" />
+      <recent name="E:\IdeaProjects\allst-db\allst-graphql\src\main\resources\graphql" />
+      <recent name="E:\IdeaProjects\allst-db\allst-trino\src\main\resources\images" />
+      <recent name="E:\IdeaProjects\allst-db\allst-es" />
+      <recent name="E:\IdeaProjects\allst-db\allst-solr\src\main\resources" />
+      <recent name="E:\IdeaProjects\allst-db\allst-neo4j" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\allst-db\allst-solr\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.allst.boot.entity" />
+      <recent name="com.allst.db.repository" />
+      <recent name="com.allst.db.entity" />
+      <recent name="com.allst.mysql" />
+      <recent name="com.allst.lucene" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,12 +173,47 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AllstEsApplication">
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager" selected="Spring Boot.AllstRedisApplication">
+    <configuration name="MongoAuthDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.db.mongo.MongoAuthDemo" />
+      <module name="allst-mongodb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.db.mongo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.db.mongo.MongoDemo" />
+      <module name="allst-mongodb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.db.mongo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolrClientTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="allst-solr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.allst.boot" />
+      <option name="MAIN_CLASS_NAME" value="com.allst.boot.SolrClientTest" />
+      <option name="METHOD_NAME" value="testSave(java.lang.Integer,java.lang.String,java.lang.String,java.lang.Double)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="AllstEsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -113,9 +223,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AllstMongodbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-mongodb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.db.AllstMongodbApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AllstMysqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="allst-mysql" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.mysql.AllstMysqlApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstNeo4jApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-neo4j" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.db.AllstNeo4jApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstOdpsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-odps" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.odps.AllstOdpsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstOracleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="HIDE_BANNER" value="true" />
+      <module name="allst-oracle" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.db.AllstOracleApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,23 +267,84 @@
       </method>
     </configuration>
     <configuration name="AllstRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="HIDE_BANNER" value="true" />
       <module name="allst-redis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.redis.AllstRedisApplication" />
-      <option name="HIDE_BANNER" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstSolrApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="allst-solr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.AllstSolrApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="allst-sharding-proxy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.db.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphQLApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="allst-graphql" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.GraphQLApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="allst-jpa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.SpringDataJpaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MongoAuthDemo" />
+      <item itemvalue="Application.MongoDemo" />
+      <item itemvalue="JUnit.SolrClientTest.testSave" />
+      <item itemvalue="Spring Boot.AllstSolrApplication" />
       <item itemvalue="Spring Boot.AllstEsApplication" />
       <item itemvalue="Spring Boot.AllstMysqlApplication" />
       <item itemvalue="Spring Boot.AllstPostgresqlApplication" />
       <item itemvalue="Spring Boot.AllstRedisApplication" />
+      <item itemvalue="Spring Boot.App" />
+      <item itemvalue="Spring Boot.AllstOracleApplication" />
+      <item itemvalue="Spring Boot.AllstMongodbApplication" />
+      <item itemvalue="Spring Boot.AllstOdpsApplication" />
+      <item itemvalue="Spring Boot.AllstNeo4jApplication" />
+      <item itemvalue="Spring Boot.SpringDataJpaApplication" />
+      <item itemvalue="Spring Boot.GraphQLApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringDataJpaApplication" />
+        <item itemvalue="Spring Boot.GraphQLApplication" />
+        <item itemvalue="Application.MongoAuthDemo" />
+        <item itemvalue="Application.MongoDemo" />
+        <item itemvalue="JUnit.SolrClientTest.testSave" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -186,198 +386,529 @@
       <workItem from="1597332901122" duration="3455000" />
       <workItem from="1597762144891" duration="11000" />
       <workItem from="1598454890209" duration="609000" />
+      <workItem from="1598798548367" duration="32000" />
+      <workItem from="1600697648791" duration="3033000" />
+      <workItem from="1600782712329" duration="5005000" />
+      <workItem from="1623083456595" duration="912000" />
+      <workItem from="1623465899826" duration="88000" />
+      <workItem from="1623665665536" duration="1325000" />
+      <workItem from="1624024201510" duration="6305000" />
+      <workItem from="1624714230364" duration="3194000" />
+      <workItem from="1624785295741" duration="5202000" />
+      <workItem from="1625029315559" duration="912000" />
+      <workItem from="1625154633879" duration="2308000" />
+      <workItem from="1625409336893" duration="7449000" />
+      <workItem from="1625491891506" duration="3716000" />
+      <workItem from="1625580189495" duration="673000" />
+      <workItem from="1625664868850" duration="1041000" />
+      <workItem from="1625757595552" duration="113000" />
+      <workItem from="1625841466714" duration="1247000" />
+      <workItem from="1625881265569" duration="9932000" />
+      <workItem from="1625930067073" duration="2739000" />
+      <workItem from="1625934562655" duration="1440000" />
+      <workItem from="1625991664519" duration="9266000" />
+      <workItem from="1626102893090" duration="2274000" />
+      <workItem from="1628092284890" duration="1839000" />
+      <workItem from="1628173642140" duration="4032000" />
+      <workItem from="1628325063872" duration="11144000" />
+      <workItem from="1628392535504" duration="1669000" />
+      <workItem from="1628432798813" duration="3688000" />
+      <workItem from="1628436553886" duration="77000" />
+      <workItem from="1628436683938" duration="1074000" />
+      <workItem from="1628437818271" duration="3094000" />
+      <workItem from="1628602481210" duration="6114000" />
+      <workItem from="1628612314751" duration="108000" />
+      <workItem from="1628777060091" duration="2469000" />
+      <workItem from="1629129897244" duration="26000" />
+      <workItem from="1629522506522" duration="738000" />
+      <workItem from="1629990477898" duration="1678000" />
+      <workItem from="1630072299237" duration="2990000" />
+      <workItem from="1630120845584" duration="3140000" />
+      <workItem from="1630126251126" duration="4000" />
+      <workItem from="1630340669835" duration="984000" />
+      <workItem from="1630420980900" duration="6219000" />
+      <workItem from="1630427766214" duration="470000" />
+      <workItem from="1630506668215" duration="1629000" />
+      <workItem from="1630589577005" duration="3783000" />
+      <workItem from="1630600237756" duration="2423000" />
+      <workItem from="1630720899319" duration="1559000" />
+      <workItem from="1630811613048" duration="12156000" />
+      <workItem from="1630901386119" duration="64000" />
+      <workItem from="1630987734392" duration="136000" />
+      <workItem from="1631579173193" duration="1082000" />
+      <workItem from="1631722691668" duration="742000" />
+      <workItem from="1632723466527" duration="983000" />
+      <workItem from="1632726784430" duration="95000" />
+      <workItem from="1632749520001" duration="679000" />
+      <workItem from="1633100500887" duration="776000" />
+      <workItem from="1633960137621" duration="4312000" />
+      <workItem from="1634220756171" duration="2944000" />
+      <workItem from="1635079188919" duration="1353000" />
+      <workItem from="1635903963838" duration="372000" />
+      <workItem from="1635952694982" duration="4549000" />
+      <workItem from="1636041611020" duration="492000" />
+      <workItem from="1636189342716" duration="1707000" />
+      <workItem from="1636209506746" duration="3410000" />
+      <workItem from="1636902177576" duration="240000" />
+      <workItem from="1636902648460" duration="1943000" />
+      <workItem from="1637590433694" duration="4795000" />
+      <workItem from="1637595415232" duration="913000" />
+      <workItem from="1648048028152" duration="1593000" />
+      <workItem from="1648218076232" duration="65000" />
+      <workItem from="1649256501505" duration="1037000" />
+      <workItem from="1657119043563" duration="253000" />
+      <workItem from="1659108669506" duration="48000" />
+      <workItem from="1660829513055" duration="635000" />
+      <workItem from="1660870135781" duration="5510000" />
+      <workItem from="1663556473881" duration="1830000" />
+      <workItem from="1663597480010" duration="207000" />
+      <workItem from="1666270961650" duration="279000" />
+      <workItem from="1685977152875" duration="4645000" />
+      <workItem from="1687921556580" duration="3224000" />
+      <workItem from="1689212528319" duration="3302000" />
+      <workItem from="1689255226799" duration="50000" />
+      <workItem from="1689255762738" duration="164000" />
+      <workItem from="1689597927630" duration="9694000" />
+      <workItem from="1689778158177" duration="2819000" />
+      <workItem from="1689820243589" duration="6442000" />
+      <workItem from="1689946188530" duration="3775000" />
+      <workItem from="1690162951483" duration="10649000" />
+      <workItem from="1690341489654" duration="14594000" />
+      <workItem from="1690888650101" duration="1478000" />
+      <workItem from="1692022241703" duration="1029000" />
+      <workItem from="1692256048437" duration="24000" />
+      <workItem from="1692581125308" duration="239000" />
+      <workItem from="1693447907058" duration="10089000" />
+      <workItem from="1693490469388" duration="1819000" />
+      <workItem from="1693642649149" duration="91000" />
+      <workItem from="1693646840253" duration="105000" />
+      <workItem from="1693721727344" duration="345000" />
+      <workItem from="1693723372782" duration="368000" />
+      <workItem from="1693913924305" duration="1160000" />
+      <workItem from="1694004615324" duration="8225000" />
+      <workItem from="1694161564941" duration="458000" />
+      <workItem from="1694309177097" duration="2622000" />
+      <workItem from="1694440330222" duration="2752000" />
+      <workItem from="1694443962596" duration="21000" />
+      <workItem from="1694444074758" duration="138000" />
+      <workItem from="1694445066907" duration="20000" />
+      <workItem from="1694520706726" duration="75000" />
+      <workItem from="1694520822849" duration="6449000" />
+      <workItem from="1694585255639" duration="13659000" />
+      <workItem from="1694700676717" duration="1405000" />
+      <workItem from="1694788181223" duration="2629000" />
+      <workItem from="1695126660774" duration="7690000" />
+      <workItem from="1695216285937" duration="4286000" />
+      <workItem from="1695261457984" duration="2909000" />
+      <workItem from="1695392985099" duration="2931000" />
+      <workItem from="1695434853807" duration="3594000" />
+      <workItem from="1695440236740" duration="1280000" />
+      <workItem from="1695447886390" duration="557000" />
+      <workItem from="1695458594048" duration="1155000" />
+      <workItem from="1695460557481" duration="64000" />
+      <workItem from="1695606799764" duration="2770000" />
+      <workItem from="1695693202640" duration="16053000" />
+      <workItem from="1695795971507" duration="12000" />
+      <workItem from="1696154287331" duration="1326000" />
+      <workItem from="1696156128803" duration="1196000" />
+      <workItem from="1696769626668" duration="409000" />
+      <workItem from="1696772130238" duration="724000" />
+      <workItem from="1696773455760" duration="64000" />
+      <workItem from="1698071577375" duration="833000" />
+      <workItem from="1698326171439" duration="39000" />
+      <workItem from="1698679818202" duration="884000" />
+      <workItem from="1698763294340" duration="424000" />
+      <workItem from="1698768035756" duration="96000" />
+      <workItem from="1698768492367" duration="39000" />
+      <workItem from="1698926739952" duration="4667000" />
+      <workItem from="1698932880780" duration="75000" />
+      <workItem from="1699273770104" duration="1159000" />
+      <workItem from="1699274938913" duration="729000" />
+      <workItem from="1699281449575" duration="83000" />
+      <workItem from="1701323672316" duration="3235000" />
+      <workItem from="1702437090975" duration="2925000" />
+      <workItem from="1702552841567" duration="164000" />
+      <workItem from="1703644530723" duration="2461000" />
+      <workItem from="1703679918488" duration="5599000" />
+      <workItem from="1703688442661" duration="353000" />
+      <workItem from="1708655628987" duration="181000" />
+      <workItem from="1708870009142" duration="2367000" />
+      <workItem from="1709205808022" duration="2260000" />
+      <workItem from="1709220219006" duration="3062000" />
+      <workItem from="1709224787909" duration="160000" />
+      <workItem from="1709224978181" duration="84000" />
+      <workItem from="1709252740668" duration="283000" />
+      <workItem from="1709255442812" duration="432000" />
+      <workItem from="1709283326093" duration="119000" />
+      <workItem from="1713012733675" duration="68000" />
+      <workItem from="1713180409266" duration="79000" />
+      <workItem from="1715095424436" duration="2746000" />
+      <workItem from="1715694845725" duration="814000" />
+      <workItem from="1715697023206" duration="225000" />
+      <workItem from="1718421067262" duration="1600000" />
+      <workItem from="1719584684568" duration="2263000" />
+      <workItem from="1720247550808" duration="5171000" />
+      <workItem from="1720946057498" duration="751000" />
+      <workItem from="1722077121148" duration="566000" />
+      <workItem from="1722433300119" duration="2862000" />
+      <workItem from="1722862127116" duration="9101000" />
+      <workItem from="1722950346899" duration="4268000" />
+      <workItem from="1723036816771" duration="515000" />
+      <workItem from="1723207764250" duration="932000" />
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1577376978478</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
+      <created>1626105019533</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
       <option name="project" value="LOCAL" />
-      <updated>1577376978478</updated>
+      <updated>1626105019533</updated>
     </task>
-    <task id="LOCAL-00002" summary="redis常用命令">
-      <created>1577631997367</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00042" summary="MySQL体系架构">
+      <created>1628094700400</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1577631997367</updated>
+      <updated>1628094700400</updated>
     </task>
-    <task id="LOCAL-00003" summary="redis常用命令">
-      <created>1577717669683</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00043" summary="luence">
+      <created>1628252867986</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
       <option name="project" value="LOCAL" />
-      <updated>1577717669683</updated>
+      <updated>1628252867988</updated>
     </task>
-    <task id="LOCAL-00004" summary="redis常用命令">
-      <created>1577719405191</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00044" summary="创建索引">
+      <created>1628350758621</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
-      <updated>1577719405191</updated>
+      <updated>1628350758621</updated>
     </task>
-    <task id="LOCAL-00005" summary="redis实现分布式锁">
-      <created>1577722888766</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00045" summary="创建索引">
+      <created>1628351620222</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
       <option name="project" value="LOCAL" />
-      <updated>1577722888766</updated>
+      <updated>1628351620222</updated>
     </task>
-    <task id="LOCAL-00006" summary="redis常用命令">
-      <created>1577892139926</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00046" summary="搜索索引">
+      <created>1628355345295</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1577892139926</updated>
+      <updated>1628355345295</updated>
     </task>
-    <task id="LOCAL-00007" summary="redis常用命令">
-      <created>1578203633851</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00047" summary="索引CRUD">
+      <created>1628435720517</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1578203633851</updated>
+      <updated>1628435720518</updated>
     </task>
-    <task id="LOCAL-00008" summary="MySQL8">
-      <created>1578229710676</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00048" summary="Ik分词器">
+      <created>1628439513656</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
-      <updated>1578229710676</updated>
+      <updated>1628439513657</updated>
     </task>
-    <task id="LOCAL-00009" summary="MySQL8">
-      <created>1578234909973</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00049" summary="Query子类查询">
+      <created>1628440894675</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
       <option name="project" value="LOCAL" />
-      <updated>1578234909973</updated>
+      <updated>1628440894675</updated>
     </task>
-    <task id="LOCAL-00010" summary="MySQL 条件判断函数  加密函数">
-      <created>1578235887026</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00050" summary="Query其他查询">
+      <created>1628603579899</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
       <option name="project" value="LOCAL" />
-      <updated>1578235887026</updated>
+      <updated>1628603579901</updated>
     </task>
-    <task id="LOCAL-00011" summary="REDIS">
-      <created>1578237382791</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00051" summary="Solr">
+      <created>1628612391681</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
       <option name="project" value="LOCAL" />
-      <updated>1578237382791</updated>
+      <updated>1628612391683</updated>
     </task>
-    <task id="LOCAL-00012" summary="MySQL 8.0 高级部分">
-      <created>1585066874700</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00052" summary="Solr">
+      <created>1629522608872</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
       <option name="project" value="LOCAL" />
-      <updated>1585066874700</updated>
+      <updated>1629522608873</updated>
     </task>
-    <task id="LOCAL-00013" summary="PostgresSQL">
-      <created>1589466744720</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00053" summary="mysql">
+      <created>1630078924644</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1589466744721</updated>
+      <updated>1630078924644</updated>
     </task>
-    <task id="LOCAL-00014" summary="PostgresSQL">
-      <created>1589466883395</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00054" summary="Sharding-JDBC">
+      <created>1630426220958</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
       <option name="project" value="LOCAL" />
-      <updated>1589466883395</updated>
+      <updated>1630426220959</updated>
     </task>
-    <task id="LOCAL-00015" summary="PostgresSQL">
-      <created>1589469266364</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00055" summary="Sharding-JDBC">
+      <created>1630426942924</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
-      <updated>1589469266365</updated>
+      <updated>1630426942924</updated>
     </task>
-    <task id="LOCAL-00016" summary="重拾Redis">
-      <created>1591027418139</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00056" summary="Sharding-JDBC">
+      <created>1630427166290</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
-      <updated>1591027418140</updated>
+      <updated>1630427166290</updated>
     </task>
-    <task id="LOCAL-00017" summary="重拾Redis String Hash">
-      <created>1591285173953</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00057" summary="自定义主键生成策略">
+      <created>1630428196942</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
-      <updated>1591285173953</updated>
+      <updated>1630428196947</updated>
     </task>
-    <task id="LOCAL-00018" summary="Redis特殊数据结构geospatial\Hyperloglog\bitmaps">
-      <created>1596966729544</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00058" summary="使用自定义主键生成策略、、&#10;生成职位详细Repository">
+      <created>1630592017101</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
       <option name="project" value="LOCAL" />
-      <updated>1596966729544</updated>
+      <updated>1630592017101</updated>
     </task>
-    <task id="LOCAL-00019" summary="jedis String测试">
-      <created>1596970875143</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00059" summary="职位表与职位关联查询">
+      <created>1630592575321</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
       <option name="project" value="LOCAL" />
-      <updated>1596970875144</updated>
+      <updated>1630592575321</updated>
     </task>
-    <task id="LOCAL-00020" summary="jedis multi测试">
-      <created>1596985115577</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00060" summary="广播表">
+      <created>1630593363265</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
       <option name="project" value="LOCAL" />
-      <updated>1596985115577</updated>
+      <updated>1630593363265</updated>
     </task>
-    <task id="LOCAL-00021" summary="springboot整合redis">
-      <created>1596986373122</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00061" summary="sharding-database-table:分库分表">
+      <created>1630601998082</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
       <option name="project" value="LOCAL" />
-      <updated>1596986373122</updated>
+      <updated>1630601998084</updated>
     </task>
-    <task id="LOCAL-00022" summary="springboot整合redis">
-      <created>1597155522351</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00062" summary="sharding-jdbc:读写分离">
+      <created>1630814082238</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
       <option name="project" value="LOCAL" />
-      <updated>1597155522352</updated>
+      <updated>1630814082239</updated>
     </task>
-    <task id="LOCAL-00023" summary="redis.conf配置">
-      <created>1597157457254</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00063" summary="sharding-jdbc:Hint强制修改路由规则">
+      <created>1630815717677</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
       <option name="project" value="LOCAL" />
-      <updated>1597157457254</updated>
+      <updated>1630815717677</updated>
     </task>
-    <task id="LOCAL-00024" summary="aof">
-      <created>1597334067159</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00064" summary="sharding-jdbc:数据脱敏处理">
+      <created>1630841677858</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
       <option name="project" value="LOCAL" />
-      <updated>1597334067159</updated>
+      <updated>1630841677858</updated>
     </task>
-    <task id="LOCAL-00025" summary="发布订阅 / 主从复制">
-      <created>1597337310025</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00065" summary="sharding-jdbc:分布式事务">
+      <created>1630855536955</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1597337310026</updated>
+      <updated>1630855536955</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00066" summary="sharding-proxy:基本使用">
+      <created>1630862768469</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1630862768469</updated>
+    </task>
+    <task id="LOCAL-00067" summary="sharding-proxy:测试新增">
+      <created>1630862977112</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1630862977112</updated>
+    </task>
+    <task id="LOCAL-00068" summary="MySQL运维工具简介">
+      <created>1630987846089</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1630987846093</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Oracle">
+      <created>1632750173376</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1632750173378</updated>
+    </task>
+    <task id="LOCAL-00070" summary="mongondb">
+      <created>1633101286325</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1633101286327</updated>
+    </task>
+    <task id="LOCAL-00071" summary="java访问mongondb">
+      <created>1633963843480</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1633963843481</updated>
+    </task>
+    <task id="LOCAL-00072" summary="MongoRepository访问mongondb">
+      <created>1634222528747</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1634222528748</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Neo4j">
+      <created>1635080672383</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1635080672384</updated>
+    </task>
+    <task id="LOCAL-00074" summary="ODPS">
+      <created>1635953524241</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1635953524242</updated>
+    </task>
+    <task id="LOCAL-00075" summary="ODPS简单介绍">
+      <created>1635956491284</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1635956491284</updated>
+    </task>
+    <task id="LOCAL-00076" summary="ODPS READMD.md修改图片加载路径">
+      <created>1636041885351</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1636041885351</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Java 使用ODPS api 操作ODPS数据表">
+      <created>1636213143765</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1636213143767</updated>
+    </task>
+    <task id="LOCAL-00078" summary="ODPS常量类与JDBC连接方式">
+      <created>1636213534440</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1636213534440</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Neo4j Embedded">
+      <created>1636904603294</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1636904603295</updated>
+    </task>
+    <task id="LOCAL-00080" summary="SpringBoot访问Neo4j">
+      <created>1637595229289</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1637595229291</updated>
+    </task>
+    <task id="LOCAL-00081" summary="SpringBoot访问Neo4j">
+      <created>1637596250673</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1637596250674</updated>
+    </task>
+    <task id="LOCAL-00082" summary="es">
+      <created>1648049740977</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1648049740977</updated>
+    </task>
+    <task id="LOCAL-00083" summary="redis">
+      <created>1660923051838</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1660923051839</updated>
+    </task>
+    <task id="LOCAL-00084" summary="test">
+      <created>1663590345949</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1663590345949</updated>
+    </task>
+    <task id="LOCAL-00085" summary="redis count">
+      <created>1685981830199</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1685981830199</updated>
+    </task>
+    <task id="LOCAL-00086" summary="oracle + postgresql">
+      <created>1689603816436</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1689603816436</updated>
+    </task>
+    <task id="LOCAL-00087" summary="oracle + postgresql">
+      <created>1690377956625</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1690377956625</updated>
+    </task>
+    <task id="LOCAL-00088" summary="mybatis-flex + oracle">
+      <created>1690385170277</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1690385170277</updated>
+    </task>
+    <task id="LOCAL-00089" summary="mybatis-flex + oracle">
+      <created>1690385997236</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1690385997236</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.lua" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -392,96 +923,55 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="redis实现分布式锁" />
-    <MESSAGE value="redis常用命令" />
-    <MESSAGE value="MySQL8" />
-    <MESSAGE value="MySQL 条件判断函数  加密函数" />
-    <MESSAGE value="REDIS" />
-    <MESSAGE value="MySQL 8.0 高级部分" />
-    <MESSAGE value="PostgresSQL" />
-    <MESSAGE value="重拾Redis" />
-    <MESSAGE value="重拾Redis String Hash" />
-    <MESSAGE value="Redis特殊数据结构geospatial\Hyperloglog\bitmaps" />
-    <MESSAGE value="jedis String测试" />
-    <MESSAGE value="jedis multi测试" />
-    <MESSAGE value="springboot整合redis" />
-    <MESSAGE value="redis.conf配置" />
-    <MESSAGE value="aof" />
-    <MESSAGE value="发布订阅 / 主从复制" />
-    <option name="LAST_COMMIT_MESSAGE" value="发布订阅 / 主从复制" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="790" y="121" key="#Inspections" timestamp="1597155031961">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="790" y="121" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1597155031961" />
-    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597157513851">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="244" y="80" width="1292" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1597157513851" />
-    <state x="485" y="0" key="CommitChangelistDialog2" timestamp="1597337307234">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="485" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1597337307234" />
-    <state x="652" y="180" key="FileChooserDialogImpl" timestamp="1596728796750">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="652" y="180" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1596728796750" />
-    <state width="788" height="223" key="GridCell.Tab.0.bottom" timestamp="1597157517676">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
-    <state width="788" height="223" key="GridCell.Tab.0.center" timestamp="1597157517676">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
-    <state width="788" height="223" key="GridCell.Tab.0.left" timestamp="1597157517675">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1597157517675" />
-    <state width="788" height="223" key="GridCell.Tab.0.right" timestamp="1597157517676">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
-    <state width="788" height="223" key="GridCell.Tab.1.bottom" timestamp="1597157517677">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1597157517677" />
-    <state width="788" height="223" key="GridCell.Tab.1.center" timestamp="1597157517676">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
-    <state width="788" height="223" key="GridCell.Tab.1.left" timestamp="1597157517676">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
-    <state width="788" height="223" key="GridCell.Tab.1.right" timestamp="1597157517676">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="788" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1597157517676" />
-    <state x="399" y="40" key="SettingsEditor" timestamp="1596969052138">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="399" y="40" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1596969052138" />
-    <state x="976" y="157" key="VCS.ChangeListViewerDialog" timestamp="1596728695136">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="976" y="157" key="VCS.ChangeListViewerDialog/0.0.1536.864@0.0.1536.864" timestamp="1596728695136" />
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2" timestamp="1597337311635">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="487" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1597337311635" />
-    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597334034978">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="705" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1597334034978" />
-    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1597333684989">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="1017" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1597333684989" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="使用SolrClient连接Solr" />
+    <MESSAGE value="安装及配置Elasticsearch" />
+    <MESSAGE value="Elasticsearch README.md" />
+    <MESSAGE value="Elasticsearch 中安装和使用IK分词器" />
+    <MESSAGE value="Elasticsearch 操作文档" />
+    <MESSAGE value="Elasticsearch 导出公钥证书" />
+    <MESSAGE value="Oracle SQL优化必懂概念" />
+    <MESSAGE value="ClickHouse概述" />
+    <MESSAGE value="Mybatis 开启二级缓存" />
+    <MESSAGE value="redis port" />
+    <MESSAGE value="Redis I/O 模型" />
+    <MESSAGE value="Trino" />
+    <MESSAGE value="docker 上安装Trino" />
+    <MESSAGE value="mongodb7.0.1 README_DB.md" />
+    <MESSAGE value="mybatisflex" />
+    <MESSAGE value="redis配合lua脚本实现接口限流" />
+    <MESSAGE value="GraphQL学习" />
+    <MESSAGE value="Start InfluxDB study trip" />
+    <MESSAGE value="Start Spring Data Jpa study trip" />
+    <MESSAGE value="Spring Data Jpa基本概念" />
+    <MESSAGE value="SpringBoot整合Spring Data Jpa集成mapstruct案例" />
+    <MESSAGE value="SpringBoot整合SpringData Jpa,SpringData Mongo" />
+    <MESSAGE value="SpringBoot使用Redis的发布订阅" />
+    <MESSAGE value="同时使用JPA和MongoDB注解的domain类，由于id类型不一致，MongoDB的类型为ObjectId，JPA的类型Long,所以在返回数据实体对象时转换异常，建议实体分开：Person和PersonMongo" />
+    <MESSAGE value="Elasticsearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Elasticsearch" />
   </component>
 </project>

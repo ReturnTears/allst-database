@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GraphDatabaseSupport.DataSourcesState">
+    <option name="containerV1">
+      <DataSourceContainerV1>
+        <option name="dataSources">
+          <list>
+            <DataSourceV1>
+              <option name="uuid" value="16a74939-bc79-41b6-bdc3-cfc7b8391816" />
+              <option name="name" value="@neo4j" />
+              <option name="dataSourceType" value="NEO4J_BOLT" />
+              <option name="configuration">
+                <map>
+                  <entry key="authType" value="No auth" />
+                  <entry key="database" value="neo4j" />
+                  <entry key="host" value="127.0.0.1" />
+                  <entry key="password" value="" />
+                  <entry key="port" value="7687" />
+                  <entry key="protocol" value="bolt" />
+                  <entry key="user" value="" />
+                </map>
+              </option>
+            </DataSourceV1>
+            <DataSourceV1>
+              <option name="uuid" value="b66e675a-80bd-4db7-bb4a-9b72cdf2a76d" />
+              <option name="name" value="@neo4jpass" />
+              <option name="dataSourceType" value="NEO4J_BOLT" />
+              <option name="configuration">
+                <map>
+                  <entry key="authType" value="User &amp; Password" />
+                  <entry key="database" value="neo4j" />
+                  <entry key="host" value="localhost" />
+                  <entry key="password" value="handoop" />
+                  <entry key="port" value="7687" />
+                  <entry key="protocol" value="bolt" />
+                  <entry key="user" value="neo4j" />
+                </map>
+              </option>
+            </DataSourceV1>
+          </list>
+        </option>
+      </DataSourceContainerV1>
+    </option>
+  </component>
+</project>

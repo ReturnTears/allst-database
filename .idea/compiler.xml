@@ -2,23 +2,55 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="allst-es" />
+        <module name="allst-clickhouse" />
+        <module name="allst-graphql" />
+        <module name="allst-neo4j" />
+        <module name="allst-mysql" />
         <module name="allst-postgresql" />
         <module name="allst-redis" />
-        <module name="allst-mysql" />
+        <module name="allst-solr" />
+        <module name="allst-luence" />
+        <module name="allst-mongodb" />
+        <module name="allst-es" />
+        <module name="allst-cassandra" />
+        <module name="allst-jpa" />
+        <module name="allst-sharding-proxy" />
+        <module name="allst-influxdb" />
+        <module name="allst-odps" />
+        <module name="allst-trino" />
+      </profile>
+      <profile name="Annotation profile for allst-db" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/com/mybatis-flex/mybatis-flex-processor/1.5.3/mybatis-flex-processor-1.5.3.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/mybatis-flex/mybatis-flex-annotation/1.5.3/mybatis-flex-annotation-1.5.3.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar" />
+        </processorPath>
+        <module name="allst-oracle" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="allst-cassandra" options="-parameters" />
+      <module name="allst-clickhouse" options="-parameters" />
       <module name="allst-es" options="-parameters" />
+      <module name="allst-mongodb" options="-parameters" />
       <module name="allst-mysql" options="-parameters" />
+      <module name="allst-neo4j" options="-parameters" />
+      <module name="allst-odps" options="-parameters" />
+      <module name="allst-oracle" options="-parameters" />
       <module name="allst-postgresql" options="-parameters" />
       <module name="allst-redis" options="-parameters" />
+      <module name="allst-sharding-proxy" options="-parameters" />
+      <module name="allst-solr" options="-parameters" />
     </option>
   </component>
 </project>

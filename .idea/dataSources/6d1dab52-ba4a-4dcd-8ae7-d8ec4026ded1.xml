@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@trino">
+  <database-model serializer="dbm" dbms="TRINO" family-id="TRINO" format-version="4.49">
+    <root id="1">
+      <Dbms>TRINO</Dbms>
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>0.0</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="tpch">
+      <Current>1</Current>
+    </database>
+    <schema id="3" parent="2">
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>

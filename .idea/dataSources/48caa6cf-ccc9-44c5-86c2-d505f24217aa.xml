@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@master">
+  <database-model serializer="dbm" dbms="REDIS" family-id="REDIS" format-version="4.49">
+    <root id="1">
+      <ServerVersion>3.2.100</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="0">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="1"/>
+    <schema id="4" parent="1" name="2"/>
+    <schema id="5" parent="1" name="3"/>
+    <schema id="6" parent="1" name="4"/>
+    <schema id="7" parent="1" name="5"/>
+    <schema id="8" parent="1" name="6"/>
+    <schema id="9" parent="1" name="7"/>
+    <schema id="10" parent="1" name="8"/>
+    <schema id="11" parent="1" name="9"/>
+    <schema id="12" parent="1" name="10"/>
+    <schema id="13" parent="1" name="11"/>
+    <schema id="14" parent="1" name="12"/>
+    <schema id="15" parent="1" name="13"/>
+    <schema id="16" parent="1" name="14"/>
+    <schema id="17" parent="1" name="15"/>
+    <collection id="18" parent="2" name="email"/>
+    <collection id="19" parent="2" name="empty_str"/>
+    <collection id="20" parent="2" name="greet_list"/>
+    <collection id="21" parent="2" name="hello"/>
+    <collection id="22" parent="2" name="key1"/>
+    <collection id="23" parent="2" name="key2"/>
+    <collection id="24" parent="2" name="language"/>
+    <collection id="25" parent="2" name="name1"/>
+    <collection id="26" parent="2" name="name2"/>
+    <collection id="27" parent="3" name="email"/>
+    <collection id="28" parent="3" name="empty_str"/>
+    <collection id="29" parent="3" name="greet_list"/>
+    <collection id="30" parent="3" name="hello"/>
+    <collection id="31" parent="3" name="key1"/>
+    <collection id="32" parent="3" name="key2"/>
+    <collection id="33" parent="3" name="language"/>
+    <collection id="34" parent="3" name="name1"/>
+    <collection id="35" parent="3" name="name2"/>
+  </database-model>
+</dataSource>
