@@ -22,9 +22,11 @@ import org.springframework.data.elasticsearch.core.SearchHits;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQuery;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.data.elasticsearch.core.query.Query;
+import org.springframework.data.elasticsearch.core.query.StringQuery;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Objects;
 
 @Slf4j
 @SpringBootTest
@@ -209,5 +211,50 @@ class AllstEsApplicationTests {
         List<VideoDTO> videoDTOS = Lists.newArrayList();
         searchHits.forEach(hit -> videoDTOS.add(hit.getContent()));
         System.out.println(videoDTOS);
+    }
+
+    /**
+     * 自定义DSL查询
+     */
+    @Test
+    public void stringQuery() {
+        //搜索标题有 微服务 关键词，描述有 Spring关键字，时长范围是 10～6000之间的
+        String dsl = "{\"bool\":{\"must\":[{\"match\":{\"title\":\"微服务\"}},{\"match\":{\"description\":\"Spring\"}},{\"range\":{\"duration\":{\"gte\":10,\"lte\":6000}}}]}}";
+        Query query = new StringQuery(dsl);
+        List<SearchHit<VideoDTO>> searchHitList = elasticsearchTemplate.search(query, VideoDTO.class).getSearchHits();
+        // 获得searchHits,进行遍历得到content
+        List<VideoDTO> videoDTOS = Lists.newArrayList();
+        searchHitList.forEach(hit -> videoDTOS.add(hit.getContent()));
+        System.out.println(videoDTOS);
+    }
+
+    /**
+     * 聚合查询
+     */
+    @Test
+    void aggQuery() {
+        // 新版本中语法
+        /*Query query = NativeQuery.builder()
+                .withAggregation("category_group", Aggregation.of(a -> a
+                        .terms(ta -> ta.field("category").size(2))))
+                .build();
+
+        SearchHits<VideoDTO> searchHits = elasticsearchTemplate.search(query, VideoDTO.class);
+
+        //获取聚合数据
+        ElasticsearchAggregations aggregationsContainer = (ElasticsearchAggregations) searchHits.getAggregations();
+        Map<String, ElasticsearchAggregation> aggregations = Objects.requireNonNull(aggregationsContainer).aggregationsAsMap();
+
+        //获取对应名称的聚合
+        ElasticsearchAggregation aggregation = aggregations.get("category_group");
+        Buckets<StringTermsBucket> buckets = aggregation.aggregation().getAggregate().sterms().buckets();
+
+        //打印聚合信息
+        buckets.array().forEach(bucket -> System.out.println("组名：" + bucket.key().stringValue() + ", 值" + bucket.docCount()));
+
+        // 获得searchHits,进行遍历得到content
+        List<VideoDTO> videoDTOS = Lists.newArrayList();
+        searchHits.forEach(hit -> videoDTOS.add(hit.getContent()));
+        System.out.println(videoDTOS);*/
     }
 }
