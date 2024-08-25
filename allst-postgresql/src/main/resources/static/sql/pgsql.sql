@@ -222,7 +222,8 @@ INSERT INTO user_logins(user_name, login_cnt) VALUES ('matiler',1), ('francs',1)
 select * from user_logins;
 INSERT INTO user_logins(user_name, login_cnt) VALUES ('tutu',1), ('francs',1) ON CONFLICT(user_name) DO NOTHING ;
 
-
-
+-- 创建表
+CREATE TABLE user_info(id int8, name varchar(32), age int);
+select * from user_info a ;
 
 
