@@ -27,6 +27,7 @@
         <module>allst-influxdb</module>
         <module>allst-jpa</module>
         <module>allst-presto</module>
+        <module>allst-antlr</module>
     </modules>
     <dependencies>
         <dependency>
