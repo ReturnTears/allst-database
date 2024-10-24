@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -19,7 +20,14 @@ class AllstPostgresqlApplicationTests {
 
     @Test
     void contextLoads() {
-        List<String> list = List.of("AA", "BB", "CC", "DD", "EE", "FF");
+        //List<String> list = List.of("AA", "BB", "CC", "DD", "EE", "FF");
+        List<String> list = new ArrayList<>(6);
+        list.add("AA");
+        list.add("BB");
+        list.add("CC");
+        list.add("DD");
+        list.add("EE");
+        list.add("FF");
         AtomicInteger count = new AtomicInteger(1);
         list.forEach(name -> {
             UserInfo userInfo = new UserInfo();
