@@ -28,28 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="redis">
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/controller/CityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/mapper/CityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/model/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/service/CityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/service/impl/CityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="SpringBoot使用mybatisplus的dynamic-datasource" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -622,7 +601,7 @@
       <workItem from="1729170551974" duration="134000" />
       <workItem from="1729777205955" duration="1274000" />
       <workItem from="1729930046272" duration="358000" />
-      <workItem from="1732109550554" duration="3473000" />
+      <workItem from="1732109550554" duration="3796000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -967,7 +946,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1028,7 +1007,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Elasticsearch 导出公钥证书" />
     <MESSAGE value="Oracle SQL优化必懂概念" />
     <MESSAGE value="ClickHouse概述" />
     <MESSAGE value="Mybatis 开启二级缓存" />
@@ -1053,6 +1031,7 @@
     <MESSAGE value="SpringBoot2.5.4整合PostgreSQL11" />
     <MESSAGE value="使用Antlr" />
     <MESSAGE value="redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis" />
+    <MESSAGE value="SpringBoot使用mybatisplus的dynamic-datasource" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot使用mybatisplus的dynamic-datasource" />
   </component>
 </project>
