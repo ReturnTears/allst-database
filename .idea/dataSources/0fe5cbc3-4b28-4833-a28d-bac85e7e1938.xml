@@ -3,8 +3,6 @@
   <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.49">
     <root id="1">
       <IntrospectionLevel>3</IntrospectionLevel>
-      <ServerVersion>11.2.0.1.0</ServerVersion>
-      <TablespacesHash>46835531837</TablespacesHash>
     </root>
     <schema id="2" parent="1" name="ANONYMOUS">
       <ObjectId>46</ObjectId>

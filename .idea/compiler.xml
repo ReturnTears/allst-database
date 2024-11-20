@@ -13,13 +13,16 @@
         <module name="allst-mysql" />
         <module name="allst-postgresql" />
         <module name="allst-redis" />
+        <module name="allst-presto" />
         <module name="allst-solr" />
         <module name="allst-luence" />
         <module name="allst-mongodb" />
         <module name="allst-es" />
         <module name="allst-cassandra" />
+        <module name="allst-antlr" />
         <module name="allst-jpa" />
         <module name="allst-sharding-proxy" />
+        <module name="allst-dynamic" />
         <module name="allst-influxdb" />
         <module name="allst-odps" />
         <module name="allst-trino" />

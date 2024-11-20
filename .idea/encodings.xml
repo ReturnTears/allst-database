@@ -2,10 +2,14 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allst-antlr/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allst-antlr/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-cassandra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-cassandra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-clickhouse/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-clickhouse/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allst-dynamic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allst-dynamic/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-es" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-es/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-graphql/src/main/java" charset="UTF-8" />
@@ -24,6 +28,8 @@
     <file url="file://$PROJECT_DIR$/allst-oracle/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-postgresql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-postgresql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allst-presto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/allst-presto/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/allst-sharding-proxy/src/main/java" charset="UTF-8" />

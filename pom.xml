@@ -28,6 +28,7 @@
         <module>allst-jpa</module>
         <module>allst-presto</module>
         <module>allst-antlr</module>
+        <module>allst-dynamic</module>
     </modules>
     <dependencies>
         <dependency>

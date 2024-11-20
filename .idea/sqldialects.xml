@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/allst-jpa/sql/init.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/allst-mysql/my8sql.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/allst-oracle/src/main/resources/static/sql/scott.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/allst-postgresql/src/main/resources/static/sql/pgsql.sql" dialect="PostgreSQL" />
   </component>
 </project>

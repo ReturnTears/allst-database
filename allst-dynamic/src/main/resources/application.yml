@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master # 设置默认的数据源或者数据源组,默认为master，如果没有设置，第一个数据源就是默认数据源
+      strict: false # 设置严格模式,默认false, 如果没有对应的数据源会抛出异常, 开启后一定要注意没有对应数据源的异常
+      datasource:
+        master:
+          url: jdbc:mysql://localhost:3306/lagou1?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slave:
+          url: jdbc:mysql://localhost:3306/lagou2?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8000
+  servlet:
+    context-path: /dynamic

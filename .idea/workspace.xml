@@ -28,7 +28,28 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="Elasticsearch" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="redis">
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/controller/CityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/mapper/CityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/model/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/service/CityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/service/impl/CityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +92,13 @@
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
+  <component name="KubernetesApiPersistence">
+    <option name="namespacesByContext">
+      <map>
+        <entry key="docker-for-desktop" value="default" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -106,41 +134,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/allst-db/allst-graphql/src/main/resources/graphql&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.18066406&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.33657587&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2c8243330970bca84f4c1a52c10d6448&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/IdeaProjects/allst-db/allst-antlr/src/main/resources/Expr.g4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.18066406",
+    "project.structure.side.proportion": "0.33657587",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "spring.configuration.checksum": "3b1dda091bcf9361fbbe3e5d8c911d8d",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;,
-      &quot;mongo&quot;,
-      &quot;oracle&quot;,
-      &quot;trino&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "mongo",
+      "oracle",
+      "trino",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -149,21 +177,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\allst-db\allst-antlr\src\main\resources" />
+      <recent name="E:\IdeaProjects\allst-db\allst-es\src\main\resources" />
       <recent name="E:\IdeaProjects\allst-db\allst-graphql\src\main\resources\graphql" />
       <recent name="E:\IdeaProjects\allst-db\allst-trino\src\main\resources\images" />
       <recent name="E:\IdeaProjects\allst-db\allst-es" />
-      <recent name="E:\IdeaProjects\allst-db\allst-solr\src\main\resources" />
-      <recent name="E:\IdeaProjects\allst-db\allst-neo4j" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\allst-db\allst-solr\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.allst.es.config" />
       <recent name="com.allst.boot.entity" />
       <recent name="com.allst.db.repository" />
       <recent name="com.allst.db.entity" />
       <recent name="com.allst.mysql" />
-      <recent name="com.allst.lucene" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,44 +201,50 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AllstRedisApplication">
-    <configuration name="MongoAuthDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.allst.db.mongo.MongoAuthDemo" />
-      <module name="allst-mongodb" />
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="AllstPostgresqlApplicationTests.testFindByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="allst-postgresql" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.db.mongo.*" />
+          <option name="PATTERN" value="com.allst.postgresql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.allst.postgresql" />
+      <option name="MAIN_CLASS_NAME" value="com.allst.postgresql.AllstPostgresqlApplicationTests" />
+      <option name="METHOD_NAME" value="testFindByName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.allst.db.mongo.MongoDemo" />
-      <module name="allst-mongodb" />
+    <configuration name="AllstPostgresqlApplicationTests.testFindByNameAndAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="allst-postgresql" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.db.mongo.*" />
+          <option name="PATTERN" value="com.allst.postgresql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.allst.postgresql" />
+      <option name="MAIN_CLASS_NAME" value="com.allst.postgresql.AllstPostgresqlApplicationTests" />
+      <option name="METHOD_NAME" value="testFindByNameAndAge" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolrClientTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="allst-solr" />
+    <configuration name="AllstPostgresqlApplicationTests.testFindUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="allst-postgresql" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.boot.*" />
+          <option name="PATTERN" value="com.allst.postgresql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.allst.boot" />
-      <option name="MAIN_CLASS_NAME" value="com.allst.boot.SolrClientTest" />
-      <option name="METHOD_NAME" value="testSave(java.lang.Integer,java.lang.String,java.lang.String,java.lang.Double)" />
+      <option name="PACKAGE_NAME" value="com.allst.postgresql" />
+      <option name="MAIN_CLASS_NAME" value="com.allst.postgresql.AllstPostgresqlApplicationTests" />
+      <option name="METHOD_NAME" value="testFindUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -284,6 +318,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AntlrApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="allst-antlr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.AntlrApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="allst-sharding-proxy" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.db.App" />
@@ -291,12 +338,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphQLApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="allst-graphql" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.GraphQLApplication" />
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="allst-dynamic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.dynamic.Main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.boot.*" />
+          <option name="PATTERN" value="com.allst.dynamic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -304,23 +351,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="allst-jpa" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.SpringDataJpaApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.allst.boot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="PrestoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="allst-presto" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.PrestoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MongoAuthDemo" />
-      <item itemvalue="Application.MongoDemo" />
-      <item itemvalue="JUnit.SolrClientTest.testSave" />
+      <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByName" />
+      <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByNameAndAge" />
+      <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindUser" />
+      <item itemvalue="Spring Boot.PrestoApplication" />
       <item itemvalue="Spring Boot.AllstSolrApplication" />
       <item itemvalue="Spring Boot.AllstEsApplication" />
       <item itemvalue="Spring Boot.AllstMysqlApplication" />
@@ -331,16 +373,16 @@
       <item itemvalue="Spring Boot.AllstMongodbApplication" />
       <item itemvalue="Spring Boot.AllstOdpsApplication" />
       <item itemvalue="Spring Boot.AllstNeo4jApplication" />
-      <item itemvalue="Spring Boot.SpringDataJpaApplication" />
-      <item itemvalue="Spring Boot.GraphQLApplication" />
+      <item itemvalue="Spring Boot.Main" />
+      <item itemvalue="Spring Boot.AntlrApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringDataJpaApplication" />
-        <item itemvalue="Spring Boot.GraphQLApplication" />
-        <item itemvalue="Application.MongoAuthDemo" />
-        <item itemvalue="Application.MongoDemo" />
-        <item itemvalue="JUnit.SolrClientTest.testSave" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Spring Boot.AntlrApp" />
+        <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindUser" />
+        <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByNameAndAge" />
+        <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByName" />
       </list>
     </recent_temporary>
   </component>
@@ -555,6 +597,32 @@
       <workItem from="1722950346899" duration="4268000" />
       <workItem from="1723036816771" duration="515000" />
       <workItem from="1723207764250" duration="932000" />
+      <workItem from="1723556401905" duration="602000" />
+      <workItem from="1723557100637" duration="9000" />
+      <workItem from="1723557250372" duration="1331000" />
+      <workItem from="1723559243727" duration="160000" />
+      <workItem from="1723731979651" duration="143000" />
+      <workItem from="1723734013591" duration="51000" />
+      <workItem from="1723734280717" duration="278000" />
+      <workItem from="1723819477826" duration="677000" />
+      <workItem from="1724331508937" duration="6476000" />
+      <workItem from="1724418180441" duration="2132000" />
+      <workItem from="1724565948849" duration="2485000" />
+      <workItem from="1724854464137" duration="666000" />
+      <workItem from="1724855164129" duration="537000" />
+      <workItem from="1725634520656" duration="424000" />
+      <workItem from="1726844544338" duration="816000" />
+      <workItem from="1726913044937" duration="262000" />
+      <workItem from="1726914433745" duration="41000" />
+      <workItem from="1726928340665" duration="126000" />
+      <workItem from="1727013189974" duration="1036000" />
+      <workItem from="1727710025455" duration="38000" />
+      <workItem from="1727787374244" duration="657000" />
+      <workItem from="1729000398576" duration="2612000" />
+      <workItem from="1729170551974" duration="134000" />
+      <workItem from="1729777205955" duration="1274000" />
+      <workItem from="1729930046272" duration="358000" />
+      <workItem from="1732109550554" duration="3473000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -899,7 +967,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -918,7 +986,13 @@
         </entry>
         <entry key="User">
           <value>
-            <list />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -937,6 +1011,13 @@
                       </list>
                     </value>
                   </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
@@ -947,11 +1028,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="使用SolrClient连接Solr" />
-    <MESSAGE value="安装及配置Elasticsearch" />
-    <MESSAGE value="Elasticsearch README.md" />
-    <MESSAGE value="Elasticsearch 中安装和使用IK分词器" />
-    <MESSAGE value="Elasticsearch 操作文档" />
     <MESSAGE value="Elasticsearch 导出公钥证书" />
     <MESSAGE value="Oracle SQL优化必懂概念" />
     <MESSAGE value="ClickHouse概述" />
@@ -972,6 +1048,11 @@
     <MESSAGE value="SpringBoot使用Redis的发布订阅" />
     <MESSAGE value="同时使用JPA和MongoDB注解的domain类，由于id类型不一致，MongoDB的类型为ObjectId，JPA的类型Long,所以在返回数据实体对象时转换异常，建议实体分开：Person和PersonMongo" />
     <MESSAGE value="Elasticsearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Elasticsearch" />
+    <MESSAGE value="Presto" />
+    <MESSAGE value="SpringBoot2.5.4整合ElasticSearch7.6.1" />
+    <MESSAGE value="SpringBoot2.5.4整合PostgreSQL11" />
+    <MESSAGE value="使用Antlr" />
+    <MESSAGE value="redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis" />
   </component>
 </project>
