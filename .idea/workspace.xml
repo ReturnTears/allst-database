@@ -28,27 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="配置gitignore文件">
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/config/MySqlConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/controller/VideoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/entity/ContentsIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/entity/EsUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/listener/BinlogListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/listener/CommandLineRunnerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/listener/HandleScheduled.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/listener/MySQLBinlogListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/service/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="SpringBoot2.5.4整合ElasticSearch7.6.1实现监听MySQL BinLog日志，同步更新数据到ES">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/Readme_Note_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/Readme_Note_1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/AllstEsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/AllstEsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/config/ElasticConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/config/ElasticConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -623,7 +604,7 @@
       <workItem from="1729777205955" duration="1274000" />
       <workItem from="1729930046272" duration="358000" />
       <workItem from="1732109550554" duration="4124000" />
-      <workItem from="1735824852200" duration="5320000" />
+      <workItem from="1735824852200" duration="6245000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -968,7 +949,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1029,7 +1010,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ClickHouse概述" />
     <MESSAGE value="Mybatis 开启二级缓存" />
     <MESSAGE value="redis port" />
     <MESSAGE value="Redis I/O 模型" />
@@ -1054,6 +1034,7 @@
     <MESSAGE value="redis" />
     <MESSAGE value="SpringBoot使用mybatisplus的dynamic-datasource" />
     <MESSAGE value="配置gitignore文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置gitignore文件" />
+    <MESSAGE value="SpringBoot2.5.4整合ElasticSearch7.6.1实现监听MySQL BinLog日志，同步更新数据到ES" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot2.5.4整合ElasticSearch7.6.1实现监听MySQL BinLog日志，同步更新数据到ES" />
   </component>
 </project>
