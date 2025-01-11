@@ -46,4 +46,13 @@ ANTLR Parser Generator  Version 4.11.1
  -Xexact-output-dir  all output goes into -o dir regardless of paths/package
  
  
+编写Hello.g4文件
+java -jar antlr-4.11.1-complete.jar Hello.g4
+示例：
+在Hello.g4文件所在的目录下运行如下命令：
+java -jar ..\..\..\..\resources\lib\antlr-4.11.1-complete.jar .\Hello.g4
+使用上述命令生成语法分析器和词法分析器
+
+运行 javac *.java 编译Antlr生成的Java代码
+
 ```
