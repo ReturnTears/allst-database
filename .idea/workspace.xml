@@ -28,11 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="安装antlr4">
-      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/g4/Hello.g4" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="运行antlr">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59a071cb-3316-4600-9f92-9906df17dfb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59a071cb-3316-4600-9f92-9906df17dfb3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allst-antlr/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-antlr/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-antlr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-antlr/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -612,7 +611,9 @@
       <workItem from="1736002906295" duration="115000" />
       <workItem from="1736518087291" duration="1780000" />
       <workItem from="1736603753564" duration="38000" />
-      <workItem from="1736604063731" duration="2207000" />
+      <workItem from="1736604063731" duration="2591000" />
+      <workItem from="1736683421553" duration="1197000" />
+      <workItem from="1739802072456" duration="115000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -957,7 +958,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1018,7 +1019,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="redis port" />
     <MESSAGE value="Redis I/O 模型" />
     <MESSAGE value="Trino" />
     <MESSAGE value="docker 上安装Trino" />
@@ -1043,6 +1043,7 @@
     <MESSAGE value="配置gitignore文件" />
     <MESSAGE value="SpringBoot2.5.4整合ElasticSearch7.6.1实现监听MySQL BinLog日志，同步更新数据到ES" />
     <MESSAGE value="安装antlr4" />
-    <option name="LAST_COMMIT_MESSAGE" value="安装antlr4" />
+    <MESSAGE value="运行antlr" />
+    <option name="LAST_COMMIT_MESSAGE" value="运行antlr" />
   </component>
 </project>

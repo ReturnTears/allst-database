@@ -55,4 +55,13 @@ java -jar ..\..\..\..\resources\lib\antlr-4.11.1-complete.jar .\Hello.g4
 
 运行 javac *.java 编译Antlr生成的Java代码
 
+的语法都编写一个main程序来测试。ANTLR在运行库中提供了一个名为TestRig的方便的调试工具。
+它可以详细列出一个语言类应用程序在匹配输入文本过程中的信息，这些输入文本可以来自文件或者标准输入。
+TestRig使用Java的反射机制来调用编译后的识别程序。与之前一样，最好通过别名或者批处理文件来调用它。
+在本书中，我将会使用grun作为别名，你可以使用任何你喜欢的别名。
+测试命令：
+java org.antlr.v4.runtime.misc.TestRig Hello r -tokens
+java -jar ..\..\..\..\resources\lib\antlr-4.11.1-complete.jar org.antlr.v4.runtime.misc.TestRig Hello r -tokens
+
+
 ```
