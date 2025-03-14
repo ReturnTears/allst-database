@@ -1,7 +1,9 @@
 # Elasticsearch
 ```text
 启动ES：bin/elasticsearch.bat
+启动成功后访问地址：http://127.0.0.1:9200
 启动Kibana: bin/kibana.bat
+启动成功后访问地址：http://127.0.0.1:5601
 
 查询所有的文档：
 https://127.0.0.1:9200/_search
@@ -200,4 +202,24 @@ xadd my-stream * user '{"tag":"my_tag","accountMethod":"freightFund","idList":[5
 xadd my-stream * user '{"tag":"my_tag","businessId":10086,"tableType":"10","body":"{\"name\": \"kang\",\r\n    \"age\": 18}"}'
 查看未被消费的消息
 xpending my-stream my-group-1
+```
+
+# 签名验证
+```text
+签名验证是一种常用的防止参数篡改的方法。其基本原理是：在发送请求时，客户端根据请求参数生成一个签名，并将签名作为请求的一部分发送给服务器。服务器在接收到请求后，根据相同的算法和参数重新生成签名，
+并与客户端发送的签名进行对比。如果签名一致，则认为请求是合法的；否则，认为请求已被篡改。
+
+为了实现签名验证，我们需要进行以下步骤：
+定义签名算法：选择一个安全的哈希算法（如SHA-256）作为签名算法。
+生成签名：客户端根据请求参数（不包括签名本身）和一个预定义的密钥，使用签名算法生成签名。
+发送签名：客户端将生成的签名作为请求参数的一部分发送给服务器。
+验证签名：服务器在接收到请求后，根据相同的算法、参数和密钥重新生成签名，并与客户端发送的签名进行对比。
+
+```
+
+# 接口参数加密解密方式其一
+```text
+SpringMVC 中给我们提供了 ResponseBodyAdvice 和 RequestBodyAdvice，利用这两个工具可以对请求和响应进行预处理。
+
+
 ```

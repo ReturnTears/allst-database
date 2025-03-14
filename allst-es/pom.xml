@@ -70,6 +70,12 @@
             <artifactId>mysql-binlog-connector-java</artifactId>
             <version>0.21.0</version>
         </dependency>
+        <!-- 添加自定义encrypt starter -->
+        <dependency>
+            <groupId>com.allst.es</groupId>
+            <artifactId>encrypt-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
