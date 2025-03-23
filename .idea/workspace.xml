@@ -28,20 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="README.md">
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/advice/RequestBodyDecodeAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/annotations/DecodeBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/controller/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/func/NumFuncInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/utils/SecurityUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/utils/SignatureUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="自定义encrypt starter对参数及响应加解密">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/file/encrypt-spring-boot-starter.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allst-es/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/src/main/java/com/allst/es/controller/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +129,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/Idea2023Projects/encrypt-spring-boot-starter",
+    "last_opened_file_path": "E:/IdeaProjects/allst-db/src/main/resources/file",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -170,11 +160,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\allst-db\src\main\resources\file" />
       <recent name="E:\IdeaProjects\allst-db\allst-es\src\main\java\com\allst\es\utils" />
       <recent name="E:\IdeaProjects\allst-db\allst-es\src\main\java\com\allst\es\func" />
       <recent name="E:\IdeaProjects\allst-db\allst-es\src\main\java\com\allst\es\controller" />
       <recent name="E:\IdeaProjects\allst-db\allst-es\src\main\java\com\allst\es\annotations" />
-      <recent name="E:\IdeaProjects\allst-db\allst-es\src\main\java\com\allst\es\advice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\allst-db\allst-antlr\src\main\java\org\example\g4" />
@@ -625,7 +615,9 @@
       <workItem from="1736683421553" duration="1197000" />
       <workItem from="1739802072456" duration="615000" />
       <workItem from="1741956464969" duration="994000" />
-      <workItem from="1741958021769" duration="2092000" />
+      <workItem from="1741958021769" duration="2425000" />
+      <workItem from="1742002811098" duration="705000" />
+      <workItem from="1742721633113" duration="488000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -970,7 +962,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1031,7 +1023,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Trino" />
     <MESSAGE value="docker 上安装Trino" />
     <MESSAGE value="mongodb7.0.1 README_DB.md" />
     <MESSAGE value="mybatisflex" />
@@ -1056,6 +1047,7 @@
     <MESSAGE value="安装antlr4" />
     <MESSAGE value="运行antlr" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="自定义encrypt starter对参数及响应加解密" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义encrypt starter对参数及响应加解密" />
   </component>
 </project>

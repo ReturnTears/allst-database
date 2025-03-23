@@ -220,6 +220,10 @@ xpending my-stream my-group-1
 # 接口参数加密解密方式其一
 ```text
 SpringMVC 中给我们提供了 ResponseBodyAdvice 和 RequestBodyAdvice，利用这两个工具可以对请求和响应进行预处理。
-
-
+<dependency>
+    <groupId>com.allst.es</groupId>
+    <artifactId>encrypt-spring-boot-starter</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+项目源文件在allst-db/src/main/resources/file中，解压后可直接使用
 ```
