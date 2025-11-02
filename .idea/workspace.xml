@@ -28,10 +28,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="自定义encrypt starter对参数及响应加解密">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/file/encrypt-spring-boot-starter.zip" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="提交newest code">
+      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/entity/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/repository/jpa/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/service/UsersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/service/UsersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-jpa/src/test/java/com/allst/boot/UsersRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-es/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-es/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +148,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.18066406",
     "project.structure.side.proportion": "0.33657587",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "spring.configuration.checksum": "0d5158a64e6e0c6f927546d3a375093e",
     "vue.rearranger.settings.migration": "true"
   },
@@ -185,50 +195,18 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AllstEsApplication">
-    <configuration name="AllstPostgresqlApplicationTests.testFindByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="allst-postgresql" />
+  <component name="RunManager" selected="JUnit.UsersRepositoryTest.findAllTest">
+    <configuration name="UsersRepositoryTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="allst-jpa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.postgresql.*" />
+          <option name="PATTERN" value="com.allst.boot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.allst.postgresql" />
-      <option name="MAIN_CLASS_NAME" value="com.allst.postgresql.AllstPostgresqlApplicationTests" />
-      <option name="METHOD_NAME" value="testFindByName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllstPostgresqlApplicationTests.testFindByNameAndAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="allst-postgresql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.allst.postgresql.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.allst.postgresql" />
-      <option name="MAIN_CLASS_NAME" value="com.allst.postgresql.AllstPostgresqlApplicationTests" />
-      <option name="METHOD_NAME" value="testFindByNameAndAge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllstPostgresqlApplicationTests.testFindUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="allst-postgresql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.allst.postgresql.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.allst.postgresql" />
-      <option name="MAIN_CLASS_NAME" value="com.allst.postgresql.AllstPostgresqlApplicationTests" />
-      <option name="METHOD_NAME" value="testFindUser" />
+      <option name="PACKAGE_NAME" value="com.allst.boot" />
+      <option name="MAIN_CLASS_NAME" value="com.allst.boot.UsersRepositoryTest" />
+      <option name="METHOD_NAME" value="findAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -342,10 +320,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="allst-jpa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.SpringDataJpaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByName" />
-      <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByNameAndAge" />
-      <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindUser" />
+      <item itemvalue="JUnit.UsersRepositoryTest.findAllTest" />
       <item itemvalue="Spring Boot.PrestoApplication" />
       <item itemvalue="Spring Boot.AllstSolrApplication" />
       <item itemvalue="Spring Boot.AllstEsApplication" />
@@ -357,16 +346,16 @@
       <item itemvalue="Spring Boot.AllstMongodbApplication" />
       <item itemvalue="Spring Boot.AllstOdpsApplication" />
       <item itemvalue="Spring Boot.AllstNeo4jApplication" />
+      <item itemvalue="Spring Boot.SpringDataJpaApplication" />
       <item itemvalue="Spring Boot.Main" />
       <item itemvalue="Spring Boot.AntlrApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsersRepositoryTest.findAllTest" />
+        <item itemvalue="Spring Boot.SpringDataJpaApplication" />
         <item itemvalue="Spring Boot.AntlrApp" />
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindUser" />
-        <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByNameAndAge" />
-        <item itemvalue="JUnit.AllstPostgresqlApplicationTests.testFindByName" />
       </list>
     </recent_temporary>
   </component>
@@ -617,7 +606,21 @@
       <workItem from="1741956464969" duration="994000" />
       <workItem from="1741958021769" duration="2425000" />
       <workItem from="1742002811098" duration="705000" />
-      <workItem from="1742721633113" duration="488000" />
+      <workItem from="1742721633113" duration="891000" />
+      <workItem from="1744035422326" duration="317000" />
+      <workItem from="1745844418305" duration="440000" />
+      <workItem from="1750937830520" duration="946000" />
+      <workItem from="1751866618080" duration="2364000" />
+      <workItem from="1751890110159" duration="61000" />
+      <workItem from="1751891192030" duration="610000" />
+      <workItem from="1751892166237" duration="741000" />
+      <workItem from="1752068019798" duration="597000" />
+      <workItem from="1756911960889" duration="102000" />
+      <workItem from="1757757633305" duration="235000" />
+      <workItem from="1757757934195" duration="82000" />
+      <workItem from="1760104403030" duration="91000" />
+      <workItem from="1760799498516" duration="933000" />
+      <workItem from="1762083229336" duration="8055000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -962,7 +965,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1023,7 +1026,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="docker 上安装Trino" />
     <MESSAGE value="mongodb7.0.1 README_DB.md" />
     <MESSAGE value="mybatisflex" />
     <MESSAGE value="redis配合lua脚本实现接口限流" />
@@ -1048,6 +1050,7 @@
     <MESSAGE value="运行antlr" />
     <MESSAGE value="README.md" />
     <MESSAGE value="自定义encrypt starter对参数及响应加解密" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义encrypt starter对参数及响应加解密" />
+    <MESSAGE value="提交newest code" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交newest code" />
   </component>
 </project>
