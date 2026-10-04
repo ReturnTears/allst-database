@@ -32,13 +32,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/com/mybatis-flex/mybatis-flex-processor/1.5.3/mybatis-flex-processor-1.5.3.jar" />
-          <entry name="$MAVEN_REPOSITORY$/com/mybatis-flex/mybatis-flex-annotation/1.5.3/mybatis-flex-annotation-1.5.3.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar" />
+          <entry name="$PROJECT_DIR$/../../ProgramData/.m2_sx_maven/com/mybatis-flex/mybatis-flex-processor/1.5.3/mybatis-flex-processor-1.5.3.jar" />
+          <entry name="$PROJECT_DIR$/../../ProgramData/.m2_sx_maven/com/mybatis-flex/mybatis-flex-annotation/1.5.3/mybatis-flex-annotation-1.5.3.jar" />
+          <entry name="$PROJECT_DIR$/../../ProgramData/.m2_sx_maven/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar" />
         </processorPath>
         <module name="allst-oracle" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

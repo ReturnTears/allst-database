@@ -28,20 +28,22 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="提交newest code">
-      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/controller/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/entity/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/repository/jpa/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/service/UsersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/service/UsersServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-jpa/src/test/java/com/allst/boot/UsersRepositoryTest.java" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="SpringBoot整合JPA以及DataJpaTest测试">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2528143b-bd54-4af8-8658-532e36e9c5b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2528143b-bd54-4af8-8658-532e36e9c5b4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31afd6fc-2718-46bc-b033-40d8d12dbcc9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31afd6fc-2718-46bc-b033-40d8d12dbcc9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48caa6cf-ccc9-44c5-86c2-d505f24217aa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48caa6cf-ccc9-44c5-86c2-d505f24217aa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59a071cb-3316-4600-9f92-9906df17dfb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59a071cb-3316-4600-9f92-9906df17dfb3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d1dab52-ba4a-4dcd-8ae7-d8ec4026ded1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d1dab52-ba4a-4dcd-8ae7-d8ec4026ded1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c08f22e5-f4c1-4291-9bfd-d20eb7618337.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c08f22e5-f4c1-4291-9bfd-d20eb7618337.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-jpa/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +100,16 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Program Files/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="customMavenHome" value="D:\Program Files\apache-maven-3.8.4" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.8.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="jdkForImporter" value="11" />
         <option name="vmOptionsForImporter" value="-Xmx768m -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -130,6 +134,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Maven.allst-es [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -139,17 +144,19 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "E:/IdeaProjects/allst-db/src/main/resources/file",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Idea2023Projects/encrypt-spring-boot-starter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.18066406",
     "project.structure.side.proportion": "0.33657587",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "0d5158a64e6e0c6f927546d3a375093e",
+    "spring.configuration.checksum": "ec328171f9c764be72c3091a4aecc646",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -191,11 +198,13 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UsersRepositoryTest.findAllTest">
+  <component name="RunManager" selected="Spring Boot.SpringDataJpaApplication">
     <configuration name="UsersRepositoryTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="allst-jpa" />
       <extension name="coverage">
@@ -358,6 +367,14 @@
         <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -620,7 +637,14 @@
       <workItem from="1757757934195" duration="82000" />
       <workItem from="1760104403030" duration="91000" />
       <workItem from="1760799498516" duration="933000" />
-      <workItem from="1762083229336" duration="8055000" />
+      <workItem from="1762083229336" duration="8414000" />
+      <workItem from="1764334400809" duration="2742000" />
+      <workItem from="1764417293021" duration="5689000" />
+      <workItem from="1764767292753" duration="2290000" />
+      <workItem from="1764858808381" duration="1055000" />
+      <workItem from="1765896311175" duration="1327000" />
+      <workItem from="1766237055372" duration="302000" />
+      <workItem from="1790999585087" duration="2436000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -965,7 +989,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1026,7 +1050,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="mongodb7.0.1 README_DB.md" />
     <MESSAGE value="mybatisflex" />
     <MESSAGE value="redis配合lua脚本实现接口限流" />
     <MESSAGE value="GraphQL学习" />
@@ -1051,6 +1074,7 @@
     <MESSAGE value="README.md" />
     <MESSAGE value="自定义encrypt starter对参数及响应加解密" />
     <MESSAGE value="提交newest code" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交newest code" />
+    <MESSAGE value="SpringBoot整合JPA以及DataJpaTest测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot整合JPA以及DataJpaTest测试" />
   </component>
 </project>

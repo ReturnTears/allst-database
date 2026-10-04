@@ -13,6 +13,8 @@ Spring Data repository 抽象的中心接口是 Repository。它把要管理的 
 这个接口主要是作为一个标记接口，用来捕捉工作中的类型，并帮助你发现扩展这个接口的接口。 
 CrudRepository 和 ListCrudRepository 接口为被管理的实体类提供复杂的CRUD功能。
 
+JPA（JavaPersistenceAPI）是JDK5.0新增的协议’通过相关持久层注解（@Entjty中的各种注解）来描述对象和关系型数据中的表映射关系’并将Java项目运行期的实体对象通过—种Session持久化到数据库中。
+
 ```
 ## CrudRepository 接口
 ```java

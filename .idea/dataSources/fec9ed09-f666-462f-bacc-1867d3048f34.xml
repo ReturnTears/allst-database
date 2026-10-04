@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@pgsql">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.52">
     <root id="1">
       <DateStyle>ymd</DateStyle>
       <Grants>1||-9223372036854775808|c|G
@@ -4183,8 +4183,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <Current>1</Current>
       <IntrospectionStateNumber>764</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-08-25.14:30:36.049</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-08-25.06:30:41</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-25.06:30:41</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>360</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4192,7 +4191,7 @@ true posixrules
     <sequence id="257" parent="256" name="news_inf_news_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>24708</ObjectId>
-      <SequenceIdentity>1(14)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>705</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4200,7 +4199,7 @@ true posixrules
     <sequence id="258" parent="256" name="test_copy_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>24653</ObjectId>
-      <SequenceIdentity>1(2)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>644</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4208,7 +4207,7 @@ true posixrules
     <sequence id="259" parent="256" name="test_json1_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>24642</ObjectId>
-      <SequenceIdentity>1(3)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>639</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4216,7 +4215,7 @@ true posixrules
     <sequence id="260" parent="256" name="test_rl_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>24683</ObjectId>
-      <SequenceIdentity>1(3)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>675</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4224,7 +4223,7 @@ true posixrules
     <sequence id="261" parent="256" name="test_serial_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>16470</ObjectId>
-      <SequenceIdentity>1(4)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>605</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4232,7 +4231,7 @@ true posixrules
     <sequence id="262" parent="256" name="user_inf_user_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>24781</ObjectId>
-      <SequenceIdentity>1(9)</SequenceIdentity>
+      <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>753</StateNumber>
       <OwnerName>postgres</OwnerName>

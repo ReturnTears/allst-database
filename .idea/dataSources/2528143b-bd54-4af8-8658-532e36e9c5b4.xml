@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="lagou1">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -751,8 +751,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="225" parent="1" name="lagou1">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-05-08.07:24:59</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-05-07.15:24:59</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-07.15:24:59</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="226" parent="1" name="lagou2">

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="local-oracle">
-  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.49">
+  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.52">
     <root id="1">
-      <IntrospectionLevel>3</IntrospectionLevel>
+      <ExplicitIntrospectionLevel>3</ExplicitIntrospectionLevel>
     </root>
     <schema id="2" parent="1" name="ANONYMOUS">
       <ObjectId>46</ObjectId>
@@ -41,11 +41,11 @@
       <CommentsHash>47066152618606</CommentsHash>
       <CreatedTimestamp>2021-09-26.18:57:13</CreatedTimestamp>
       <Current>1</Current>
-      <IntrospectionL1Timestamp>2023-08-31.23:25:18</IntrospectionL1Timestamp>
-      <IntrospectionL2Timestamp>2023-08-31.23:25:18</IntrospectionL2Timestamp>
-      <IntrospectionL3Timestamp>2023-08-31.23:25:18</IntrospectionL3Timestamp>
-      <IntrospectionVersion>200820</IntrospectionVersion>
-      <LocalIntrospectionTimestamp>2023-08-31.07:25:19</LocalIntrospectionTimestamp>
+      <LastIntrospectionL1Timestamp>2023-08-31.23:25:18</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL2Timestamp>2023-08-31.23:25:18</LastIntrospectionL2Timestamp>
+      <LastIntrospectionL3Timestamp>2023-08-31.23:25:18</LastIntrospectionL3Timestamp>
+      <LastIntrospectionLocalTimestamp>2023-08-31.07:25:19</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionVersion>200820</LastIntrospectionVersion>
       <ModifiedTimestamp>2023-07-27.05:41:04</ModifiedTimestamp>
       <ObjectId>101</ObjectId>
     </schema>
@@ -93,11 +93,11 @@
     </schema>
     <schema id="28" parent="1" name="PUBLIC">
       <CreatedTimestamp>2010-03-30.18:07:50</CreatedTimestamp>
-      <IntrospectionL1Timestamp>2023-08-31.23:25:18</IntrospectionL1Timestamp>
-      <IntrospectionL2Timestamp>2023-08-31.23:25:18</IntrospectionL2Timestamp>
-      <IntrospectionL3Timestamp>2023-08-31.23:25:18</IntrospectionL3Timestamp>
-      <IntrospectionVersion>200820</IntrospectionVersion>
-      <LocalIntrospectionTimestamp>2023-08-31.07:25:19</LocalIntrospectionTimestamp>
+      <LastIntrospectionL1Timestamp>2023-08-31.23:25:18</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL2Timestamp>2023-08-31.23:25:18</LastIntrospectionL2Timestamp>
+      <LastIntrospectionL3Timestamp>2023-08-31.23:25:18</LastIntrospectionL3Timestamp>
+      <LastIntrospectionLocalTimestamp>2023-08-31.07:25:19</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionVersion>200820</LastIntrospectionVersion>
       <ModifiedTimestamp>2017-08-31.01:04:37</ModifiedTimestamp>
       <ObjectId>1</ObjectId>
     </schema>

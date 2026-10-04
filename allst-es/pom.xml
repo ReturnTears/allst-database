@@ -72,7 +72,7 @@
         </dependency>
         <!-- 添加自定义encrypt starter -->
         <dependency>
-            <groupId>com.allst.es</groupId>
+            <groupId>com.example.boot</groupId>
             <artifactId>encrypt-spring-boot-starter</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

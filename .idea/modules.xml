@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/allst-neo4j/allst-neo4j.iml" filepath="$PROJECT_DIR$/allst-neo4j/allst-neo4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/allst-oracle/allst-oracle.iml" filepath="$PROJECT_DIR$/allst-oracle/allst-oracle.iml" />
       <module fileurl="file://$PROJECT_DIR$/allst-postgresql/allst-postgresql.iml" filepath="$PROJECT_DIR$/allst-postgresql/allst-postgresql.iml" />
-      <module fileurl="file://$PROJECT_DIR$/allst-solr.iml" filepath="$PROJECT_DIR$/allst-solr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allst-solr/allst-solr.iml" filepath="$PROJECT_DIR$/allst-solr/allst-solr.iml" />
     </modules>
   </component>
 </project>
