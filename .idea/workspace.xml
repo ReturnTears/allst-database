@@ -28,22 +28,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="SpringBoot整合JPA以及DataJpaTest测试">
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="调整pom">
+      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/provider/JdbcTemplateCacheProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/provider/JdbcTemplateProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/util/EasyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/ware/SpringContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/util/SqlMaskUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0fe5cbc3-4b28-4833-a28d-bac85e7e1938.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2528143b-bd54-4af8-8658-532e36e9c5b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2528143b-bd54-4af8-8658-532e36e9c5b4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31afd6fc-2718-46bc-b033-40d8d12dbcc9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31afd6fc-2718-46bc-b033-40d8d12dbcc9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48caa6cf-ccc9-44c5-86c2-d505f24217aa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48caa6cf-ccc9-44c5-86c2-d505f24217aa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59a071cb-3316-4600-9f92-9906df17dfb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59a071cb-3316-4600-9f92-9906df17dfb3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d1dab52-ba4a-4dcd-8ae7-d8ec4026ded1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d1dab52-ba4a-4dcd-8ae7-d8ec4026ded1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c08f22e5-f4c1-4291-9bfd-d20eb7618337.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c08f22e5-f4c1-4291-9bfd-d20eb7618337.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fec9ed09-f666-462f-bacc-1867d3048f34.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-jpa/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-antlr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-antlr/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-antlr/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allst-antlr/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,44 +126,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Maven.allst-es [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "11",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Idea2023Projects/encrypt-spring-boot-starter",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.18066406",
-    "project.structure.side.proportion": "0.33657587",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "ec328171f9c764be72c3091a4aecc646",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.EasyUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SqlMaskUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.allst-es [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AntlrApp.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EasyUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Idea2023Projects/encrypt-spring-boot-starter&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.18066406&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33657587&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ec328171f9c764be72c3091a4aecc646&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redis",
-      "mongo",
-      "oracle",
-      "trino",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mongo&quot;,
+      &quot;oracle&quot;,
+      &quot;trino&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -188,11 +188,11 @@
       <recent name="E:\IdeaProjects\allst-db\allst-solr\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.provider" />
       <recent name="com.allst.es.config" />
       <recent name="com.allst.boot.entity" />
       <recent name="com.allst.db.repository" />
       <recent name="com.allst.db.entity" />
-      <recent name="com.allst.mysql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,19 +204,31 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringDataJpaApplication">
-    <configuration name="UsersRepositoryTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="allst-jpa" />
+  <component name="RunManager" selected="Spring Boot.EasyUtil">
+    <configuration name="EasyUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.util.EasyUtil" />
+      <module name="allst-antlr" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.boot.*" />
+          <option name="PATTERN" value="org.example.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.allst.boot" />
-      <option name="MAIN_CLASS_NAME" value="com.allst.boot.UsersRepositoryTest" />
-      <option name="METHOD_NAME" value="findAllTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SqlMaskUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.allst.dynamic.util.SqlMaskUtil" />
+      <module name="allst-dynamic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.dynamic.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -309,6 +321,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EasyUtil" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="allst-antlr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.util.EasyUtil" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="allst-dynamic" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.dynamic.Main" />
@@ -329,21 +354,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringDataJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="allst-jpa" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.SpringDataJpaApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.allst.boot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.UsersRepositoryTest.findAllTest" />
+      <item itemvalue="Application.EasyUtil" />
+      <item itemvalue="Application.SqlMaskUtil" />
       <item itemvalue="Spring Boot.PrestoApplication" />
       <item itemvalue="Spring Boot.AllstSolrApplication" />
       <item itemvalue="Spring Boot.AllstEsApplication" />
@@ -355,16 +368,17 @@
       <item itemvalue="Spring Boot.AllstMongodbApplication" />
       <item itemvalue="Spring Boot.AllstOdpsApplication" />
       <item itemvalue="Spring Boot.AllstNeo4jApplication" />
-      <item itemvalue="Spring Boot.SpringDataJpaApplication" />
+      <item itemvalue="Spring Boot.EasyUtil" />
       <item itemvalue="Spring Boot.Main" />
       <item itemvalue="Spring Boot.AntlrApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsersRepositoryTest.findAllTest" />
-        <item itemvalue="Spring Boot.SpringDataJpaApplication" />
+        <item itemvalue="Spring Boot.EasyUtil" />
+        <item itemvalue="Application.EasyUtil" />
         <item itemvalue="Spring Boot.AntlrApp" />
         <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Application.SqlMaskUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -644,7 +658,9 @@
       <workItem from="1764858808381" duration="1055000" />
       <workItem from="1765896311175" duration="1327000" />
       <workItem from="1766237055372" duration="302000" />
-      <workItem from="1790999585087" duration="2436000" />
+      <workItem from="1790999585087" duration="4704000" />
+      <workItem from="1791941088619" duration="12618000" />
+      <workItem from="1792135550064" duration="4817000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -989,7 +1005,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1023,26 +1039,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="user">
-                    <value>
-                      <list>
-                        <option value="*" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -1050,7 +1047,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="mybatisflex" />
     <MESSAGE value="redis配合lua脚本实现接口限流" />
     <MESSAGE value="GraphQL学习" />
     <MESSAGE value="Start InfluxDB study trip" />
@@ -1075,6 +1071,7 @@
     <MESSAGE value="自定义encrypt starter对参数及响应加解密" />
     <MESSAGE value="提交newest code" />
     <MESSAGE value="SpringBoot整合JPA以及DataJpaTest测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot整合JPA以及DataJpaTest测试" />
+    <MESSAGE value="调整pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整pom" />
   </component>
 </project>
