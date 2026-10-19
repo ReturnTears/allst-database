@@ -5,14 +5,14 @@ spring:
       strict: false # 设置严格模式,默认false, 如果没有对应的数据源会抛出异常, 开启后一定要注意没有对应数据源的异常
       datasource:
         master:
-          url: jdbc:mysql://localhost:3306/lagou1?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
           username: root
-          password: 123456
+          password:
           driver-class-name: com.mysql.cj.jdbc.Driver
         slave:
-          url: jdbc:mysql://localhost:3306/lagou2?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
+          url: jdbc:mysql://localhost:3306/slave?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
           username: root
-          password: 123456
+          password:
           driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis-plus:
   configuration:
@@ -21,3 +21,7 @@ server:
   port: 8000
   servlet:
     context-path: /dynamic
+# 方式二（推荐）：只关闭自动配置报告，保留其他 debug 能力
+logging:
+  level:
+    org.springframework.boot.autoconfigure: INFO

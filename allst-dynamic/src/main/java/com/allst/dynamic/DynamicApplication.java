@@ -3,6 +3,7 @@ package com.allst.dynamic;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.util.StopWatch;
 
 /**
  * @author Hutu
@@ -10,9 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.allst.dynamic.mapper")
-public class Main {
+public class DynamicApplication {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        SpringApplication.run(Main.class, args);
+        StopWatch watch = new StopWatch();
+        watch.start();
+        SpringApplication.run(DynamicApplication.class, args);
+        watch.stop();
+        System.out.println("-----startup : -----" + watch.getTotalTimeMillis());
     }
 }

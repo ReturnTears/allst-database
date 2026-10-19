@@ -28,17 +28,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="调整pom">
-      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/provider/JdbcTemplateCacheProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/provider/JdbcTemplateProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/util/EasyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-antlr/src/main/java/org/example/ware/SpringContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/util/SqlMaskUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="调整antlr">
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/doc/edit.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2528143b-bd54-4af8-8658-532e36e9c5b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2528143b-bd54-4af8-8658-532e36e9c5b4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/71c14a99-341f-4025-9db5-6549f56614ff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-antlr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-antlr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-antlr/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allst-antlr/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-dynamic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-dynamic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/DynamicApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/controller/CityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-dynamic/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-dynamic/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,14 +71,12 @@
     &quot;assignee&quot;: &quot;ReturnTears&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="8d49072c-91f1-42e1-b8be-60a2295f0e8b" />
-        <option name="url" value="https://github.com/ReturnTears/allst-db.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ReturnTears/allst-db.git&quot;,
+    &quot;accountId&quot;: &quot;de93c875-4b92-473f-8b75-9c7d8888d7cc&quot;
+  }
+}</component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
@@ -102,14 +100,14 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="jdkForImporter" value="11" />
+        <option name="jdkForImporter" value="17" />
         <option name="vmOptionsForImporter" value="-Xmx768m -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
         <option name="workspaceImportForciblyTurnedOn" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
-    <option name="jreName" value="11" />
+    <option name="jreName" value="17" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -126,49 +124,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Application.EasyUtil.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SqlMaskUtil.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.allst-es [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AntlrApp.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EasyUtil.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Idea2023Projects/encrypt-spring-boot-starter&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.18066406&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.33657587&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ec328171f9c764be72c3091a4aecc646&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.EasyUtil.executor": "Run",
+    "Application.SqlMaskUtil.executor": "Run",
+    "Maven.allst-dynamic [clean].executor": "Run",
+    "Maven.allst-dynamic [compile].executor": "Run",
+    "Maven.allst-es [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AntlrApp.executor": "Run",
+    "Spring Boot.DynamicApplication.executor": "Debug",
+    "Spring Boot.EasyUtil.executor": "Run",
+    "Spring Boot.Main.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Idea2023Projects/encrypt-spring-boot-starter",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.18066406",
+    "project.structure.side.proportion": "0.33657587",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "spring.configuration.checksum": "ec328171f9c764be72c3091a4aecc646",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;,
-      &quot;mongo&quot;,
-      &quot;oracle&quot;,
-      &quot;trino&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "mongo",
+      "oracle",
+      "trino",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -204,7 +205,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EasyUtil">
+  <component name="RunManager" selected="Spring Boot.DynamicApplication">
     <configuration name="EasyUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.util.EasyUtil" />
       <module name="allst-antlr" />
@@ -321,12 +322,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EasyUtil" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="allst-antlr" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.util.EasyUtil" />
+    <configuration name="DynamicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="DEBUG_MODE" value="true" />
+      <module name="allst-dynamic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.dynamic.DynamicApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.util.*" />
+          <option name="PATTERN" value="com.allst.dynamic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,12 +336,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="allst-dynamic" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.dynamic.Main" />
+    <configuration name="EasyUtil" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="allst-antlr" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.util.EasyUtil" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.dynamic.*" />
+          <option name="PATTERN" value="org.example.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -369,15 +371,15 @@
       <item itemvalue="Spring Boot.AllstOdpsApplication" />
       <item itemvalue="Spring Boot.AllstNeo4jApplication" />
       <item itemvalue="Spring Boot.EasyUtil" />
-      <item itemvalue="Spring Boot.Main" />
+      <item itemvalue="Spring Boot.DynamicApplication" />
       <item itemvalue="Spring Boot.AntlrApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DynamicApplication" />
         <item itemvalue="Spring Boot.EasyUtil" />
         <item itemvalue="Application.EasyUtil" />
         <item itemvalue="Spring Boot.AntlrApp" />
-        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Application.SqlMaskUtil" />
       </list>
     </recent_temporary>
@@ -660,7 +662,9 @@
       <workItem from="1766237055372" duration="302000" />
       <workItem from="1790999585087" duration="4704000" />
       <workItem from="1791941088619" duration="12618000" />
-      <workItem from="1792135550064" duration="4817000" />
+      <workItem from="1792135550064" duration="5335000" />
+      <workItem from="1792375590468" duration="2117000" />
+      <workItem from="1792377776202" duration="4647000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -1005,7 +1009,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1047,7 +1051,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="redis配合lua脚本实现接口限流" />
     <MESSAGE value="GraphQL学习" />
     <MESSAGE value="Start InfluxDB study trip" />
     <MESSAGE value="Start Spring Data Jpa study trip" />
@@ -1072,6 +1075,7 @@
     <MESSAGE value="提交newest code" />
     <MESSAGE value="SpringBoot整合JPA以及DataJpaTest测试" />
     <MESSAGE value="调整pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整pom" />
+    <MESSAGE value="调整antlr" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整antlr" />
   </component>
 </project>

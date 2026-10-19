@@ -3,6 +3,7 @@ package com.allst.dynamic.controller;
 import com.allst.dynamic.service.CityService;
 import com.baomidou.dynamic.datasource.annotation.DS;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,14 +19,15 @@ public class CityController {
 
     @Autowired
     private CityService cityService;
+
     @GetMapping("/get/{id}")
-    public String getCity(@PathVariable long id) {
-        return cityService.getById(id).getName();
+    public ResponseEntity<String> getCity(@PathVariable long id) {
+        return ResponseEntity.ok(cityService.getById(id).getName());
     }
 
     @DS("slave")
     @GetMapping("/get2/{id}")
-    public String getCity2(@PathVariable long id) {
-        return cityService.getById(id).getName();
+    public ResponseEntity<String> getCity2(@PathVariable long id) {
+        return ResponseEntity.ok(cityService.getById(id).getName());
     }
 }
