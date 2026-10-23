@@ -72,3 +72,13 @@ class Config {}
 4、
 
 ```
+
+## 指南场景
+
+旧的 `Users`、`Person` 练习代码保留在原来的包里。新的规范示例在 `com.allst.boot.guide`，逐条说明在 [docs/guide/README.md](docs/guide/README.md)。
+
+不依赖本机 MySQL、Mongo、Redis、Elasticsearch 的验证：
+
+```text
+mvn test -Dtest=com.allst.boot.guide.**
+```
