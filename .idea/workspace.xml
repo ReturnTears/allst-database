@@ -28,13 +28,30 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善多数据源和动态数据源">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-jpa/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/SpringDataJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/SpringDataJpaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/config/RepositoryConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/src/main/java/com/allst/boot/config/RepositoryConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-jpa/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allst-jpa/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善JPA使用指南">
+      <change afterPath="$PROJECT_DIR$/allst-presto/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/docker/presto/catalog/tpch.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/docker/presto/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/docker/presto/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/docs/PRESTO_INTEGRATION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/config/PrestoDataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/config/PrestoProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/exception/PrestoExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/exception/PrestoQueryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/model/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/model/QueryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/model/QueryResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/service/PrestoQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/support/PrestoSqlGuard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/resources/sql/tpch-samples.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/test/java/com/allst/boot/PrestoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-presto/src/test/java/com/allst/boot/support/PrestoSqlGuardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-presto/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-presto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/PrestoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/PrestoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/controller/PrestoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/controller/PrestoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-presto/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -666,7 +683,7 @@
       <workItem from="1792754417544" duration="1884000" />
       <workItem from="1792757100988" duration="3148000" />
       <workItem from="1792761905901" duration="581000" />
-      <workItem from="1792763935748" duration="626000" />
+      <workItem from="1792763935748" duration="1717000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -1011,7 +1028,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1053,7 +1070,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Spring Data Jpa基本概念" />
     <MESSAGE value="SpringBoot整合Spring Data Jpa集成mapstruct案例" />
     <MESSAGE value="SpringBoot整合SpringData Jpa,SpringData Mongo" />
     <MESSAGE value="SpringBoot使用Redis的发布订阅" />
@@ -1078,6 +1094,7 @@
     <MESSAGE value="调整dynamic:数据源" />
     <MESSAGE value="完善elasticsearch使用场景" />
     <MESSAGE value="完善多数据源和动态数据源" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善多数据源和动态数据源" />
+    <MESSAGE value="完善JPA使用指南" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善JPA使用指南" />
   </component>
 </project>

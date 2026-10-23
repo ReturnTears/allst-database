@@ -1,0 +1,12 @@
+# 单节点 PrestoDB，供本模块联调。镜像内已带 Java 17，应用侧仍使用 Java 11 + JDBC。
+# 配置写法对应官方文档：https://prestodb.io/docs/current/installation/deploy-docker.html
+services:
+  presto:
+    image: prestodb/presto:latest
+    container_name: allst-presto-server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./docker/presto/config.properties:/opt/presto-server/etc/config.properties:ro
+      - ./docker/presto/jvm.config:/opt/presto-server/etc/jvm.config:ro
+      - ./docker/presto/catalog/tpch.properties:/opt/presto-server/etc/catalog/tpch.properties:ro

@@ -1,0 +1,34 @@
+server:
+  port: 8121
+
+spring:
+  application:
+    name: allst-presto
+  # 本模块只有 Presto 这一个数据源，前缀是 presto.jdbc，不是 spring.datasource。
+  # 关掉 JDBC 自动配置，避免启动时因缺少 spring.datasource.url 而失败。
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+presto:
+  jdbc:
+    driver-class-name: com.facebook.presto.jdbc.PrestoDriver
+    # catalog/schema 可以写在 URL 里，SQL 里仍建议使用完全限定名 catalog.schema.table。
+    url: jdbc:presto://127.0.0.1:8080/tpch/tiny
+    username: presto
+    password: ""
+    ssl: false
+  pool:
+    # minimum-idle 为 0：没有 Presto 时应用也能启动，第一条 SQL 才真正建连。
+    maximum-pool-size: 8
+    minimum-idle: 0
+    connection-timeout-ms: 30000
+    idle-timeout-ms: 600000
+    max-lifetime-ms: 1800000
+  query:
+    timeout-seconds: 60
+    max-rows: 500
+    read-only: true
+
+logging:
+  level:
+    com.allst.boot: INFO

@@ -1,3 +1,25 @@
+# allst-presto
+
+Spring Boot 2.7 集成 PrestoDB JDBC 的 demo。应用通过独立的 `JdbcTemplate` 查询 Presto，默认只读，并提供目录、schema、表和自定义 SQL 接口。
+
+集成步骤、配置说明和回溯记录见 [docs/PRESTO_INTEGRATION.md](docs/PRESTO_INTEGRATION.md)。
+
+- 应用端口：`8121`
+- Presto 协调节点端口：`8080`
+- 示例数据：内置 `tpch` catalog
+
+```bash
+docker compose up -d
+mvn spring-boot:run
+```
+
+```bash
+curl http://127.0.0.1:8121/presto/halo
+curl http://127.0.0.1:8121/presto/health
+```
+
+下面是原先整理的 Presto 学习笔记。
+
 # Presto
 ```text
 第一部分 Presto 入门
