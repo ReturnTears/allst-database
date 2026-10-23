@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS t_article (
+    id BIGINT PRIMARY KEY,
+    title VARCHAR(128) NOT NULL,
+    author VARCHAR(64) NOT NULL,
+    created_at DATETIME NOT NULL
+);

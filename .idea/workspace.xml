@@ -28,9 +28,80 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="调整dynamic:数据源">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善elasticsearch使用场景">
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/ScenarioCatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/ScenarioConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/Checks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/DataSourceKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/DataSources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/RequestRouteCleanupFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/RouteProbe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/RouteProbeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/RouteView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/ScenarioException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/ScenarioExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/ScenarioHeaders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/ScenarioMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/ScenarioResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/common/TenantContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/gray/FeatureFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/gray/FeatureFlagMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/gray/FeatureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/gray/GrayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/gray/GrayDecider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/gray/GrayPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/gray/GrayPolicyCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/runtime/DataSourceCatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/runtime/DataSourceSnapshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/runtime/RegisterDataSourceCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/runtime/RuntimeDataSourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ArticleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ArticleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ArticleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ForceMasterContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ReadAfterWriteView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ReadRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/ReadWriteRouteAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/rw/WriteRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/shard/EventCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/shard/MoveSlotsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/shard/ShardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/shard/ShardDirectory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/shard/ShardEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/shard/ShardEventMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/shard/ShardEventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/OrderCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/OrderRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/OrderShardRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/OrderTableConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/OrderTableContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/TradeOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/TradeOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/TradeOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/TradeOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/sharding/TradeOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/AccountCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/LedgerEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/LedgerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/LedgerWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/RegisterTenantCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantAccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantAccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantContextFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantDirectory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TenantKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TransferCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/scenario/tenant/TransferService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-dynamic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-dynamic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/DynamicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-dynamic/src/main/java/com/allst/dynamic/DynamicApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-dynamic/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-dynamic/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -660,6 +731,7 @@
       <workItem from="1792396832437" duration="20000" />
       <workItem from="1792675266502" duration="223000" />
       <workItem from="1792754417544" duration="1884000" />
+      <workItem from="1792757100988" duration="2013000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -1004,7 +1076,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1046,7 +1118,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Start InfluxDB study trip" />
     <MESSAGE value="Start Spring Data Jpa study trip" />
     <MESSAGE value="Spring Data Jpa基本概念" />
     <MESSAGE value="SpringBoot整合Spring Data Jpa集成mapstruct案例" />
@@ -1071,6 +1142,7 @@
     <MESSAGE value="调整pom" />
     <MESSAGE value="调整antlr" />
     <MESSAGE value="调整dynamic:数据源" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整dynamic:数据源" />
+    <MESSAGE value="完善elasticsearch使用场景" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善elasticsearch使用场景" />
   </component>
 </project>

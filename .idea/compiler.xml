@@ -45,6 +45,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="allst-cassandra" options="-parameters" />
       <module name="allst-clickhouse" options="-parameters" />
+      <module name="allst-dynamic" options="-parameters" />
       <module name="allst-es" options="-parameters" />
       <module name="allst-mongodb" options="-parameters" />
       <module name="allst-mysql" options="-parameters" />

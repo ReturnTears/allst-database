@@ -1,0 +1,87 @@
+spring:
+  datasource:
+    dynamic:
+      strict: true
+      datasource:
+        master:
+          url: "jdbc:h2:mem:legacy_master;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/legacy.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        slave:
+          url: "jdbc:h2:mem:legacy_slave;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/legacy.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        rwMaster:
+          url: "jdbc:h2:mem:dyn_rw_master;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/article.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        rwSlave_1:
+          url: "jdbc:h2:mem:dyn_rw_slave_1;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/article.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        rwSlave_2:
+          url: "jdbc:h2:mem:dyn_rw_slave_2;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/article.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        orderShard0:
+          url: "jdbc:h2:mem:dyn_order_0;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/order.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        orderShard1:
+          url: "jdbc:h2:mem:dyn_order_1;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/order.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        tenantA:
+          url: "jdbc:h2:mem:dyn_tenant_a;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/tenant.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        tenantB:
+          url: "jdbc:h2:mem:dyn_tenant_b;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/tenant.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        releaseStable:
+          url: "jdbc:h2:mem:dyn_stable;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/feature.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        releaseGray:
+          url: "jdbc:h2:mem:dyn_gray;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/feature.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        dataShard0:
+          url: "jdbc:h2:mem:dyn_shard_0;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/event.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+        dataShard1:
+          url: "jdbc:h2:mem:dyn_shard_1;MODE=MySQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=RUNSCRIPT FROM 'classpath:sql/h2/event.sql'"
+          username: sa
+          password:
+          driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    database-platform: org.hibernate.dialect.H2Dialect
+  sql:
+    init:
+      mode: never
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+
+logging:
+  level:
+    root: WARN
+    com.allst.dynamic: INFO

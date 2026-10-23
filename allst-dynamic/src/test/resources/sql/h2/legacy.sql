@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS city (
+    id BIGINT PRIMARY KEY,
+    name VARCHAR(64),
+    province VARCHAR(64)
+);

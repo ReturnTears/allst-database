@@ -3,7 +3,10 @@ spring:
     dynamic:
       primary: master # 设置默认的数据源或者数据源组,默认为master，如果没有设置，第一个数据源就是默认数据源
       strict: false # 设置严格模式,默认false, 如果没有对应的数据源会抛出异常, 开启后一定要注意没有对应数据源的异常
+      # 从库组 rwSlave_1 / rwSlave_2 使用轮询。只对带下划线的分组生效，不影响 master、slave 这两个旧数据源。
+      strategy: com.baomidou.dynamic.datasource.strategy.LoadBalanceDynamicDataSourceStrategy
       datasource:
+        # 旧练习：CityController 默认走 master，/city/get2 显式走 slave。不要改这两个名字。
         master:
           url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai
           username: root
@@ -14,6 +17,129 @@ spring:
           username: root
           password:
           driver-class-name: com.mysql.cj.jdbc.Driver
+        # 以下是场景数据源。lazy 与 initialization-fail-timeout 让库还没建好时，应用仍能启动。
+        # 建库脚本：docs/datasource-scenarios/sql/mysql-init.sql
+        rwMaster:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_rw_master?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        rwSlave_1:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_rw_slave_1?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        rwSlave_2:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_rw_slave_2?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        orderShard0:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_order_0?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        orderShard1:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_order_1?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        tenantA:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_tenant_a?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        tenantB:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_tenant_b?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        releaseStable:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_stable?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        releaseGray:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_gray?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        dataShard0:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_shard_0?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
+        dataShard1:
+          lazy: true
+          url: "jdbc:mysql://localhost:3306/dyn_shard_1?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=Asia/Shanghai"
+          username: root
+          password:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          hikari:
+            initialization-fail-timeout: -1
+            min-idle: 0
+            max-pool-size: 5
+            connection-timeout: 3000
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -25,3 +151,10 @@ server:
 logging:
   level:
     org.springframework.boot.autoconfigure: INFO
+
+# 灰度策略启动时的默认值。运行中可通过 PUT /scenario/gray/policy 修改，重启后回到这里。
+allst:
+  datasource:
+    gray:
+      percent: 0
+      allow-users: []
