@@ -1,3 +1,7 @@
+# Elasticsearch 业务场景规范
+
+原有练习代码保持不变。场景实现在 `com.allst.es.scenario`，说明见 [docs/es-scenarios/README.md](docs/es-scenarios/README.md)。接口入口是 `GET /scenario`。
+
 # Elasticsearch
 ```text
 启动ES：bin/elasticsearch.bat
