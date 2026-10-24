@@ -1,0 +1,9 @@
+# 单节点 Trino，供本模块联调。镜像内已带运行所需的 JDK，应用侧仍使用 Java 11 + JDBC 435。
+# 官方镜像自带 tpch、tpcds、memory、jmx catalog，这里不再覆盖 /etc/trino。
+# 安装说明：https://trino.io/docs/current/installation/containers.html
+services:
+  trino:
+    image: trinodb/trino:435
+    container_name: allst-trino-server
+    ports:
+      - "8080:8080"

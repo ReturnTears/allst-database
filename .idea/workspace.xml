@@ -28,30 +28,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善JPA使用指南">
-      <change afterPath="$PROJECT_DIR$/allst-presto/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/docker/presto/catalog/tpch.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/docker/presto/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/docker/presto/jvm.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/docs/PRESTO_INTEGRATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/config/PrestoDataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/config/PrestoProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/exception/PrestoExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/exception/PrestoQueryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/model/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/model/QueryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/model/QueryResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/service/PrestoQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/support/PrestoSqlGuard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/main/resources/sql/tpch-samples.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/test/java/com/allst/boot/PrestoApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-presto/src/test/java/com/allst/boot/support/PrestoSqlGuardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-presto/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-presto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/PrestoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/PrestoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/controller/PrestoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-presto/src/main/java/com/allst/boot/controller/PrestoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-presto/src/main/resources/application.properties" beforeDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善Presto的集成">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-trino/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-trino/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-trino/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-trino/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-trino/src/main/java/com/allst/trino/BootTrinoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-trino/src/main/java/com/allst/trino/BootTrinoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-trino/src/main/java/com/allst/trino/jdbc/Trino2Hive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-trino/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +92,7 @@
         <option name="customMavenHome" value="D:\Program Files\apache-maven-3.8.4" />
         <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
         <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.8.4\conf\settings.xml" />
+        <option name="workOffline" value="true" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -137,52 +121,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Application.EasyUtil.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SqlMaskUtil.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.allst-dynamic [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.allst-dynamic [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.allst-es [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AntlrApp.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DynamicApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.EasyUtil.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Idea2023Projects/encrypt-spring-boot-starter&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.18066406&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.33657587&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ec328171f9c764be72c3091a4aecc646&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.EasyUtil.executor": "Run",
+    "Application.SqlMaskUtil.executor": "Run",
+    "Maven.allst-dynamic [clean].executor": "Run",
+    "Maven.allst-dynamic [compile].executor": "Run",
+    "Maven.allst-es [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AntlrApp.executor": "Run",
+    "Spring Boot.DynamicApplication.executor": "Debug",
+    "Spring Boot.EasyUtil.executor": "Run",
+    "Spring Boot.Main.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Idea2023Projects/encrypt-spring-boot-starter",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.18066406",
+    "project.structure.side.proportion": "0.33657587",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "ec328171f9c764be72c3091a4aecc646",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;,
-      &quot;mongo&quot;,
-      &quot;oracle&quot;,
-      &quot;trino&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "mongo",
+      "oracle",
+      "trino",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -335,6 +319,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BootTrinoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="allst-trino" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.trino.BootTrinoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DynamicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="DEBUG_MODE" value="true" />
       <module name="allst-dynamic" />
@@ -372,6 +363,7 @@
     <list>
       <item itemvalue="Application.EasyUtil" />
       <item itemvalue="Application.SqlMaskUtil" />
+      <item itemvalue="Spring Boot.BootTrinoApplication" />
       <item itemvalue="Spring Boot.PrestoApplication" />
       <item itemvalue="Spring Boot.AllstSolrApplication" />
       <item itemvalue="Spring Boot.AllstEsApplication" />
@@ -683,7 +675,8 @@
       <workItem from="1792754417544" duration="1884000" />
       <workItem from="1792757100988" duration="3148000" />
       <workItem from="1792761905901" duration="581000" />
-      <workItem from="1792763935748" duration="1717000" />
+      <workItem from="1792763935748" duration="2054000" />
+      <workItem from="1792807360886" duration="308000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -1028,7 +1021,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1070,7 +1063,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="SpringBoot整合Spring Data Jpa集成mapstruct案例" />
     <MESSAGE value="SpringBoot整合SpringData Jpa,SpringData Mongo" />
     <MESSAGE value="SpringBoot使用Redis的发布订阅" />
     <MESSAGE value="同时使用JPA和MongoDB注解的domain类，由于id类型不一致，MongoDB的类型为ObjectId，JPA的类型Long,所以在返回数据实体对象时转换异常，建议实体分开：Person和PersonMongo" />
@@ -1095,6 +1087,7 @@
     <MESSAGE value="完善elasticsearch使用场景" />
     <MESSAGE value="完善多数据源和动态数据源" />
     <MESSAGE value="完善JPA使用指南" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善JPA使用指南" />
+    <MESSAGE value="完善Presto的集成" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善Presto的集成" />
   </component>
 </project>

@@ -1,3 +1,26 @@
+# allst-trino
+
+Spring Boot 2.7 集成 Trino JDBC 的 demo。应用通过独立的 `JdbcTemplate` 查询 Trino，默认只读，并提供目录、schema、表和自定义 SQL 接口。
+
+集成步骤、配置说明和回溯记录见 [docs/TRINO_INTEGRATION.md](docs/TRINO_INTEGRATION.md)。
+
+- 应用端口：`8122`
+- Trino 协调节点端口：`8080`
+- 驱动与服务端：`435`
+- 示例数据：官方镜像自带的 `tpch` catalog
+
+```bash
+docker compose up -d
+mvn spring-boot:run
+```
+
+```bash
+curl http://127.0.0.1:8122/trino/halo
+curl http://127.0.0.1:8122/trino/health
+```
+
+下面是原先整理的 Trino 安装笔记。
+
 # Trino
 ```
 官方地址：https://trino.io/

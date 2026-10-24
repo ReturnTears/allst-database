@@ -1,0 +1,39 @@
+server:
+  port: 8122
+
+spring:
+  application:
+    name: allst-trino
+  # 本模块只有 Trino 这一个数据源，前缀是 trino.jdbc，不是 spring.datasource。
+  # 关掉 JDBC 自动配置，避免启动时因缺少 spring.datasource.url 而失败。
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+trino:
+  jdbc:
+    driver-class-name: io.trino.jdbc.TrinoDriver
+    # catalog/schema 可以写在 URL 里。跨数据源时 SQL 仍使用完全限定名 catalog.schema.table。
+    url: jdbc:trino://127.0.0.1:8080/tpch/tiny
+    username: trino
+    password: ""
+    ssl: false
+    # 开启 TLS 后再填。取值 FULL、CA、NONE，对应驱动参数 SSLVerification。
+    ssl-verification: ""
+    # 出现在 Trino Web UI 的 Source 列。
+    source: allst-trino
+    timezone: ""
+  pool:
+    # minimum-idle 为 0：没有 Trino 时应用也能启动，第一条 SQL 才真正建连。
+    maximum-pool-size: 8
+    minimum-idle: 0
+    connection-timeout-ms: 30000
+    idle-timeout-ms: 600000
+    max-lifetime-ms: 1800000
+  query:
+    timeout-seconds: 60
+    max-rows: 500
+    read-only: true
+
+logging:
+  level:
+    com.allst.trino: INFO

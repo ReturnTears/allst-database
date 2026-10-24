@@ -1,0 +1,11 @@
+# 需要 Hive 时，复制为 hive.properties 再挂进容器。
+# 默认 compose 不挂载本文件，官方镜像已经带有 tpch。
+#
+# docker-compose.yml 增加：
+# volumes:
+#   - ./docker/trino/catalog/hive.properties:/etc/trino/catalog/hive.properties:ro
+#
+# 应用侧把 trino.jdbc.url 改成 jdbc:trino://127.0.0.1:8080/hive/default
+
+connector.name=hive
+hive.metastore.uri=thrift://hive-metastore:9083
