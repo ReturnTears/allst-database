@@ -1,5 +1,11 @@
 # Neo4j
 
+## 业务开发规范示例
+
+旧的 `Person`、`PersonRepository`、`Neo4jPersonService` 练习代码保留在原处。新规范在 `com.allst.db.guide`，按场景写在 [docs/neo4j/README.md](docs/neo4j/README.md)。
+
+样例是一套协作图谱：成员、部门、项目、任务、文档、技能。Neo4j 4.3 社区版启动后，先 `POST /api/neo4j/guide/schema/init`，再 `POST /api/neo4j/guide/seed`。连接用 `allst.neo4j.*`，默认 `http://127.0.0.1:7474`，账号 `neo4j` / `hadoop`。
+
 ## 知识图谱
 
 ## 图数据库
