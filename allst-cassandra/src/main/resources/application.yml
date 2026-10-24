@@ -1,0 +1,51 @@
+server:
+  port: 8100
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: allst-cassandra
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    default-property-inclusion: non_null
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.cassandra.CassandraAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.cassandra.CassandraDataAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.cassandra.CassandraRepositoriesAutoConfiguration
+
+logging:
+  level:
+    com.allst.boot: INFO
+    com.datastax.oss.driver: WARN
+
+# 单节点演示不开启密码。生产用环境变量覆盖，不要把真实口令写进仓库。
+cassandra:
+  contact-points: ${CASSANDRA_CONTACT_POINTS:127.0.0.1:9042}
+  local-datacenter: ${CASSANDRA_LOCAL_DC:datacenter1}
+  keyspace: ${CASSANDRA_KEYSPACE:allst_iot}
+  username: ${CASSANDRA_USERNAME:}
+  password: ${CASSANDRA_PASSWORD:}
+  # 集群没启动时应用也能起来。确认 keyspace 可以建了再改成 true。
+  initialize-on-startup: false
+  # 日桶按这个时区切。写入和查询必须一致，否则同一条数据会落在两个分区。
+  zone: Asia/Shanghai
+  replication:
+    strategy: SimpleStrategy
+    factor: 1
+  request:
+    timeout: 5s
+    connect-timeout: 5s
+    # 遥测演示用 LOCAL_ONE。订单、库存在代码里单独用 LOCAL_QUORUM 和 LOCAL_SERIAL。
+    consistency: LOCAL_ONE
+    page-size: 500
+  pool:
+    local-size: 2
+    remote-size: 1
+  ops:
+    backup-dir: ./data/cassandra-backup

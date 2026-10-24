@@ -1,0 +1,48 @@
+# 三个节点的演示集群。不要和 deploy/docker-compose.yml 同时启动，9042 会冲突。
+# 在 allst-cassandra 目录执行：docker compose -f deploy/cluster/docker-compose.yml up -d
+# 节点之间用服务名互通。宿主机上的驱动只映射了 9042/9043/9044，
+# 驱动发现到的容器 IP 从宿主机不一定走得通。看集群状态用：
+# docker compose -f deploy/cluster/docker-compose.yml exec cassandra-1 nodetool status
+# 应用要连全部节点时，把应用放进同一个 docker 网络，contact-points 用 cassandra-1:9042,cassandra-2:9042,cassandra-3:9042。
+services:
+  cassandra-1: &node
+    image: cassandra:4.1
+    hostname: cassandra-1
+    ports:
+      - "9042:9042"
+    environment: &env
+      CASSANDRA_CLUSTER_NAME: allst-cassandra
+      CASSANDRA_SEEDS: cassandra-1
+      CASSANDRA_DC: datacenter1
+      CASSANDRA_RACK: rack1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      CASSANDRA_NUM_TOKENS: 16
+      MAX_HEAP_SIZE: 512M
+      HEAP_NEWSIZE: 128M
+    networks:
+      - allst-cassandra
+
+  cassandra-2:
+    <<: *node
+    hostname: cassandra-2
+    ports:
+      - "9043:9042"
+    environment:
+      <<: *env
+      CASSANDRA_RACK: rack2
+    depends_on:
+      - cassandra-1
+
+  cassandra-3:
+    <<: *node
+    hostname: cassandra-3
+    ports:
+      - "9044:9042"
+    environment:
+      <<: *env
+      CASSANDRA_RACK: rack3
+    depends_on:
+      - cassandra-1
+
+networks:
+  allst-cassandra:

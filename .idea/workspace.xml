@@ -28,74 +28,29 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善Neo4j">
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/backup/backup.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/backup/backup.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/backup/restore.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/backup/restore.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/cluster/docker-compose.relay.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/cluster/influxdb-data.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/cluster/influxdb-meta.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/cluster/relay.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/influxdb.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/deploy/init/schema.iql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/docs/influx-scenarios/01-基本写入.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/docs/influx-scenarios/02-基本查询.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/docs/influx-scenarios/03-函数与运算.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/docs/influx-scenarios/04-连续查询.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/docs/influx-scenarios/05-性能调优.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/docs/influx-scenarios/06-集群安装配置.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/docs/influx-scenarios/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/analytics/AnalyticsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/analytics/AnalyticsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/catalog/CatalogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/cq/ContinuousQueryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/cq/ContinuousQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/governance/GovernanceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/governance/GovernanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/client/InfluxGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/common/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/common/InfluxAccessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/common/InfluxExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/common/InfluxLimits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/common/InfluxResults.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/common/TimeRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/common/TimeRanges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/config/InfluxClientConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/config/InfluxProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/config/SchemaInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/schema/InfluxSchema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/schema/SchemaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/schema/SchemaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/schema/SchemaStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/sql/AnalyticsStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/sql/InfluxQl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/sql/MetricStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/influx/sql/SchemaStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/DevicePoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/MetricBatchCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/MetricController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/MetricQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/MetricRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/MetricWriteCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/MetricWriteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/metric/ValidMetric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/ops/BackupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/ops/BackupPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/ops/BackupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/ops/LogicalBackup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/ops/PortableBackupCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/tuning/TuningController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/tuning/TuningService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-influxdb/src/test/java/com/allst/boot/influx/InfluxSpecTest.java" afterDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善Influxdb">
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/deploy/cluster/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/deploy/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/01-基本写入.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/02-基本查询.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/03-函数与运算.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/04-连续查询.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/05-性能调优.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/06-集群安装配置.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/07-数据备份与恢复.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/08-数据模型规范.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/09-轻量事务TTL计数器与集合.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/10-二级索引与物化视图.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/11-删除与墓碑.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allst-cassandra/src/test/java/com/allst/boot/cassandra/CassandraSpecTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-influxdb/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-influxdb/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-influxdb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-influxdb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/InfluxDBApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-influxdb/src/main/java/com/allst/boot/InfluxDBApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-influxdb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/allst-influxdb/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-cassandra/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-cassandra/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-cassandra/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-cassandra/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-cassandra/src/main/java/com/allst/boot/AllstCassandraApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-cassandra/src/main/java/com/allst/boot/AllstCassandraApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-cassandra/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allst-graphql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-graphql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,52 +136,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Application.EasyUtil.executor": "Run",
-    "Application.SqlMaskUtil.executor": "Run",
-    "Maven.allst-dynamic [clean].executor": "Run",
-    "Maven.allst-dynamic [compile].executor": "Run",
-    "Maven.allst-es [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.AntlrApp.executor": "Run",
-    "Spring Boot.DynamicApplication.executor": "Debug",
-    "Spring Boot.EasyUtil.executor": "Run",
-    "Spring Boot.Main.executor": "Debug",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "11",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Idea2023Projects/encrypt-spring-boot-starter",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.18066406",
-    "project.structure.side.proportion": "0.33657587",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "ec328171f9c764be72c3091a4aecc646",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.EasyUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SqlMaskUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.allst-dynamic [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.allst-dynamic [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.allst-es [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.allst-trino [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.allst-trino [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AntlrApp.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DynamicApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EasyUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Idea2023Projects/encrypt-spring-boot-starter&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.18066406&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33657587&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ec328171f9c764be72c3091a4aecc646&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redis",
-      "mongo",
-      "oracle",
-      "trino",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mongo&quot;,
+      &quot;oracle&quot;,
+      &quot;trino&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -287,6 +244,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllstCassandraApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="allst-cassandra" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.AllstCassandraApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -430,6 +394,7 @@
     <list>
       <item itemvalue="Application.EasyUtil" />
       <item itemvalue="Application.SqlMaskUtil" />
+      <item itemvalue="Spring Boot.AllstCassandraApplication" />
       <item itemvalue="Spring Boot.BootTrinoApplication" />
       <item itemvalue="Spring Boot.InfluxDBApplication" />
       <item itemvalue="Spring Boot.PrestoApplication" />
@@ -744,7 +709,8 @@
       <workItem from="1792757100988" duration="3148000" />
       <workItem from="1792761905901" duration="581000" />
       <workItem from="1792763935748" duration="2054000" />
-      <workItem from="1792807360886" duration="7212000" />
+      <workItem from="1792807360886" duration="8846000" />
+      <workItem from="1792847171827" duration="590000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -1089,7 +1055,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1131,7 +1097,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="同时使用JPA和MongoDB注解的domain类，由于id类型不一致，MongoDB的类型为ObjectId，JPA的类型Long,所以在返回数据实体对象时转换异常，建议实体分开：Person和PersonMongo" />
     <MESSAGE value="Elasticsearch" />
     <MESSAGE value="Presto" />
     <MESSAGE value="SpringBoot2.5.4整合ElasticSearch7.6.1" />
@@ -1156,6 +1121,7 @@
     <MESSAGE value="完善Presto的集成" />
     <MESSAGE value="完善Trino的集成" />
     <MESSAGE value="完善Neo4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善Neo4j" />
+    <MESSAGE value="完善Influxdb" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善Influxdb" />
   </component>
 </project>
