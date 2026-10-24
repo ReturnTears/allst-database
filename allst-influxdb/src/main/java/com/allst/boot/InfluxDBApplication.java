@@ -1,11 +1,12 @@
 package com.allst.boot;
 
-/**
- * @author Hutu
- * @since 2024-07-31 下午 09:56
- */
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class InfluxDBApplication {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SpringApplication.run(InfluxDBApplication.class, args);
     }
 }

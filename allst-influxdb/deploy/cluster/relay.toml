@@ -1,0 +1,11 @@
+# InfluxDB Relay 只转发写入，不转发查询。
+# 配置格式来自 https://github.com/influxdata/influxdb-relay 的 config.sample.toml。
+# 下面的账号只对应本仓库的本地演示节点。
+
+[[http]]
+name = "allst-iot-write"
+bind-addr = "0.0.0.0:9096"
+output = [
+  { name = "influxdb-a", location = "http://admin:admin123@influxdb-a:8086/write", timeout = "10s", buffer-size-mb = 64, max-batch-kb = 1024, max-delay-interval = "200ms" },
+  { name = "influxdb-b", location = "http://admin:admin123@influxdb-b:8086/write", timeout = "10s", buffer-size-mb = 64, max-batch-kb = 1024, max-delay-interval = "200ms" },
+]

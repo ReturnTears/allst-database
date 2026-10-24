@@ -1,0 +1,35 @@
+# 两个独立的 OSS 节点，用来对照部署，不是共识集群。
+# Relay 的配置在 relay.toml。官方没有长期维护的 relay 镜像，所以这里不启动 relay 容器。
+# 应用仍然只配置一个 influx.url，读写都打到其中一个节点。采集器如果只写不读，再走 relay。
+services:
+  influxdb-a:
+    image: influxdb:1.8.10
+    ports:
+      - "8086:8086"
+    environment:
+      INFLUXDB_DB: allst_iot
+      INFLUXDB_ADMIN_USER: admin
+      INFLUXDB_ADMIN_PASSWORD: admin123
+      INFLUXDB_HTTP_AUTH_ENABLED: "true"
+      INFLUXDB_DATA_INDEX_VERSION: tsi1
+      INFLUXDB_REPORTING_DISABLED: "true"
+    volumes:
+      - influxdb-a:/var/lib/influxdb
+
+  influxdb-b:
+    image: influxdb:1.8.10
+    ports:
+      - "8087:8086"
+    environment:
+      INFLUXDB_DB: allst_iot
+      INFLUXDB_ADMIN_USER: admin
+      INFLUXDB_ADMIN_PASSWORD: admin123
+      INFLUXDB_HTTP_AUTH_ENABLED: "true"
+      INFLUXDB_DATA_INDEX_VERSION: tsi1
+      INFLUXDB_REPORTING_DISABLED: "true"
+    volumes:
+      - influxdb-b:/var/lib/influxdb
+
+volumes:
+  influxdb-a:
+  influxdb-b:

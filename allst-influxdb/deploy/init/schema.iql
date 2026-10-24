@@ -1,0 +1,9 @@
+# DDL
+# 给 influx -import 在空库上使用。重复执行不会自动改成 ALTER，日常以 POST /api/influx/schema/init 为准。
+CREATE DATABASE "allst_iot"
+CREATE RETENTION POLICY "rp_down_90d" ON "allst_iot" DURATION 90d REPLICATION 1 SHARD DURATION 7d
+CREATE RETENTION POLICY "rp_down_365d" ON "allst_iot" DURATION 365d REPLICATION 1 SHARD DURATION 30d
+CREATE RETENTION POLICY "rp_raw_7d" ON "allst_iot" DURATION 7d REPLICATION 1 SHARD DURATION 1d DEFAULT
+DROP RETENTION POLICY "autogen" ON "allst_iot"
+CREATE CONTINUOUS QUERY "cq_device_metric_1m" ON "allst_iot" RESAMPLE EVERY 1m FOR 5m BEGIN SELECT mean("value") AS "value", max("value") AS "max_value", min("value") AS "min_value", count("value") AS "sample_count" INTO "rp_down_90d"."device_metric_1m" FROM "rp_raw_7d"."device_metric" GROUP BY time(1m), * END
+CREATE CONTINUOUS QUERY "cq_device_metric_1h" ON "allst_iot" RESAMPLE EVERY 1h FOR 2h BEGIN SELECT mean("value") AS "value", max("value") AS "max_value", min("value") AS "min_value", count("value") AS "sample_count" INTO "rp_down_365d"."device_metric_1h" FROM "rp_raw_7d"."device_metric" GROUP BY time(1h), * END

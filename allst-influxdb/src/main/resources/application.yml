@@ -1,0 +1,52 @@
+server:
+  port: 8091
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: allst-influxdb
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+logging:
+  level:
+    com.allst.boot: INFO
+    org.influxdb: WARN
+
+# 本地演示账号只用于 deploy/docker-compose.yml。生产用环境变量覆盖，不要把真实口令写进仓库。
+influx:
+  url: ${INFLUX_URL:http://127.0.0.1:8086}
+  username: ${INFLUX_USERNAME:admin}
+  password: ${INFLUX_PASSWORD:admin123}
+  database: allst_iot
+  retention-policy: rp_raw_7d
+  # 应用可以在 InfluxDB 没启动时起来。生产确认库已就绪后，再改成 true。
+  initialize-on-startup: false
+  connect-timeout: 10s
+  read-timeout: 30s
+  write-timeout: 10s
+  gzip: true
+  # OSS 单节点用 ONE。Enterprise 集群要等副本确认时再用 QUORUM。
+  consistency: ONE
+  # OSS 只能是 1。Enterprise 数据节点副本数才可以是 2 或 3。
+  replication-factor: 1
+  log-level: NONE
+  batch:
+    enabled: true
+    actions: 2000
+    flush-interval-ms: 200
+    jitter-interval-ms: 50
+    buffer-limit: 20000
+    drop-on-queue-exhaustion: false
+    precision: MILLISECONDS
+  ops:
+    backup-dir: ./data/influx-backup
+    # 默认不在应用进程里执行 influxd。物理备份命令会返回，由宿主机脚本执行。
+    allow-shell: false
+    influxd-command: influxd
+    backup-host: 127.0.0.1:8088

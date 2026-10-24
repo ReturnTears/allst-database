@@ -1,0 +1,25 @@
+# 单节点，给本仓库的接口直接连。
+# 在 allst-influxdb 目录执行：docker compose -f deploy/docker-compose.yml up -d
+services:
+  influxdb:
+    image: influxdb:1.8.10
+    container_name: allst-influxdb
+    ports:
+      - "8086:8086"
+      - "8088:8088"
+    environment:
+      INFLUXDB_DB: allst_iot
+      INFLUXDB_ADMIN_USER: admin
+      INFLUXDB_ADMIN_PASSWORD: admin123
+      INFLUXDB_HTTP_AUTH_ENABLED: "true"
+      INFLUXDB_REPORTING_DISABLED: "true"
+      INFLUXDB_DATA_INDEX_VERSION: tsi1
+      INFLUXDB_DATA_MAX_SERIES_PER_DATABASE: "1000000"
+      INFLUXDB_DATA_MAX_VALUES_PER_TAG: "100000"
+      INFLUXDB_HTTP_MAX_BODY_SIZE: "25000000"
+      INFLUXDB_CONTINUOUS_QUERIES_ENABLED: "true"
+    volumes:
+      - influxdb-data:/var/lib/influxdb
+
+volumes:
+  influxdb-data:
