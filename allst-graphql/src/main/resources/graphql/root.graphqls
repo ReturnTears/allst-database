@@ -1,0 +1,35 @@
+"""金额。用十进制字符串表示，例如 "128.00"。"""
+scalar BigDecimal
+
+"""本地日期时间，ISO-8601，例如 2026-10-24T21:00:00。"""
+scalar DateTime
+
+"""有标识的节点。当前没有直接查询该接口的字段，类型仍然声明它，方便以后接全局 node 查询。"""
+interface Node {
+    id: ID!
+}
+
+enum ProductStatus {
+    ON_SALE
+    OFF_SALE
+}
+
+enum OrderStatus {
+    CREATED
+    PAID
+    SHIPPED
+    COMPLETED
+    CANCELLED
+}
+
+input PageInput {
+    """从 0 开始。"""
+    page: Int
+    """1 到 50，缺省 10。"""
+    size: Int
+}
+
+type Query {
+    """服务探活。"""
+    health: String!
+}

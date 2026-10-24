@@ -1,0 +1,67 @@
+extend type Query {
+    category(id: ID!): Category!
+    """分类数量有限，一次返回全部，树形关系用 parent / children 取。"""
+    categories: [Category!]!
+    product(id: ID!): Product!
+    products(filter: ProductFilter, page: PageInput): ProductPage!
+}
+
+extend type Mutation {
+    createCategory(input: CategoryInput!): Category!
+    updateCategory(id: ID!, input: CategoryInput!): Category!
+    deleteCategory(id: ID!): Boolean!
+    createProduct(input: ProductInput!): Product!
+    updateProduct(id: ID!, input: ProductInput!): Product!
+    deleteProduct(id: ID!): Boolean!
+}
+
+input CategoryInput {
+    name: String!
+    parentId: ID
+}
+
+input ProductInput {
+    name: String!
+    description: String
+    price: BigDecimal!
+    stock: Int!
+    status: ProductStatus!
+    categoryId: ID!
+}
+
+input ProductFilter {
+    keyword: String
+    categoryId: ID
+    status: ProductStatus
+    minPrice: BigDecimal
+    maxPrice: BigDecimal
+}
+
+type Category implements Node {
+    id: ID!
+    name: String!
+    parent: Category
+    children: [Category!]!
+    productCount: Int!
+}
+
+type Product implements Node {
+    id: ID!
+    name: String!
+    description: String
+    price: BigDecimal!
+    stock: Int!
+    status: ProductStatus!
+    """由库存推导，不入库。"""
+    inStock: Boolean!
+    createdAt: DateTime!
+    category: Category!
+}
+
+type ProductPage {
+    content: [Product!]!
+    total: Int!
+    page: Int!
+    size: Int!
+    totalPages: Int!
+}

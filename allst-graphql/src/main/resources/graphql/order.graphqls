@@ -1,0 +1,65 @@
+extend type Query {
+    order(id: ID!): Order!
+    orderByNo(orderNo: String!): Order!
+    orders(customerId: ID, status: OrderStatus, page: PageInput): OrderPage!
+}
+
+extend type Mutation {
+    """按下单时的价格和地址做快照，并扣减库存。"""
+    createOrder(input: CreateOrderInput!): Order!
+    updateOrderStatus(id: ID!, status: OrderStatus!): Order!
+    """待支付或已支付可以取消，库存会加回去。"""
+    cancelOrder(id: ID!): Order!
+    """只有已取消的订单可以物理删除。"""
+    deleteOrder(id: ID!): Boolean!
+}
+
+type Subscription {
+    """订单状态变化后推送。orderId 省略时接收全部订单。"""
+    orderStatusChanged(orderId: ID): Order!
+}
+
+input OrderLineInput {
+    productId: ID!
+    quantity: Int!
+}
+
+input CreateOrderInput {
+    customerId: ID!
+    addressId: ID!
+    remark: String
+    items: [OrderLineInput!]!
+}
+
+type Order implements Node {
+    id: ID!
+    orderNo: String!
+    status: OrderStatus!
+    totalAmount: BigDecimal!
+    remark: String
+    receiver: String!
+    phone: String!
+    addressDetail: String!
+    createdAt: DateTime!
+    itemCount: Int!
+    customer: Customer!
+    items: [OrderItem!]!
+}
+
+type OrderPage {
+    content: [Order!]!
+    total: Int!
+    page: Int!
+    size: Int!
+    totalPages: Int!
+}
+
+type OrderItem implements Node {
+    id: ID!
+    productName: String!
+    price: BigDecimal!
+    quantity: Int!
+    amount: BigDecimal!
+    """商品被删掉之后这里为空。正常业务里，有明细的商品不允许删除。"""
+    product: Product
+}

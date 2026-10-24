@@ -1,0 +1,63 @@
+extend type Query {
+    customer(id: ID!): Customer!
+    customers(page: PageInput): CustomerPage!
+}
+
+type Mutation {
+    """新建客户，并同时写入第一条收货地址。"""
+    createCustomer(input: CreateCustomerInput!): Customer!
+    updateCustomer(id: ID!, input: CustomerInput!): Customer!
+    deleteCustomer(id: ID!): Boolean!
+    createAddress(customerId: ID!, input: AddressInput!): Address!
+    deleteAddress(id: ID!): Boolean!
+}
+
+input CustomerInput {
+    name: String!
+    email: String!
+    phone: String!
+}
+
+input CreateCustomerInput {
+    name: String!
+    email: String!
+    phone: String!
+    address: AddressInput!
+}
+
+input AddressInput {
+    receiver: String!
+    phone: String!
+    province: String!
+    city: String!
+    detail: String!
+    defaultAddress: Boolean
+}
+
+type Customer implements Node {
+    id: ID!
+    name: String!
+    email: String!
+    phone: String!
+    createdAt: DateTime!
+    addresses: [Address!]!
+    orders: [Order!]!
+}
+
+type CustomerPage {
+    content: [Customer!]!
+    total: Int!
+    page: Int!
+    size: Int!
+    totalPages: Int!
+}
+
+type Address implements Node {
+    id: ID!
+    receiver: String!
+    phone: String!
+    province: String!
+    city: String!
+    detail: String!
+    defaultAddress: Boolean!
+}

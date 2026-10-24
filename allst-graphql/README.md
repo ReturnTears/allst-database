@@ -1,28 +1,38 @@
-《GraphQL学习指南》
+# allst-graphql
 
-第一十一章 GraphQL是什么
+岸口货栈是一个 Spring Boot 2.7 + GraphQL 的电商接口示例，用来固定本仓库里 GraphQL 的写法。后端 Java 11，数据放在 H2，柜台是 Vue 3。
 
-◆ GraphQL（http://www.graphql.cn）是一种API查询语言，也是一种用于实现数据查询的运行时（runtime）。GraphQL服务与传输方式没有关系，但通常基于HTTP协议
+能做的事：分类、商品、客户、地址、订单的增删改查；分页和筛选；一次查询带出关联；下单扣库存、取消回库存；订单状态订阅；自定义金额和日期标量。
 
-◆ 每当我们向GraphQL服务器请求数据时，它会自动通过类型检测系统进行验证。每个GraphQL服务器都会在其GraphQL Schema中定义数据类型。可以将类型检测系统看作是API数据的架构，并自定义数据对象的内容
+## 运行
 
+```bash
+mvn spring-boot:run
+```
 
-第一十二章 GraphQL规范
+GraphiQL：http://localhost:8089/graphiql
 
-◆ GraphQL是客户端和服务器之间通信的规范
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
+柜台：http://localhost:5173
 
-第一十六章 远程过程调用
+## 文档
 
-◆ 远程过程调用（remote procedure call，RPC）发明于20世纪60年代。远程过程调用由客户端发起，向远程计算机发起请求以执行某些操作。接下来，远程计算机则向客户端发送响应
-
-
-第一十七章 简单对象访问协议
-
-◆ 20世纪90年代末，微软提出了简单对象访问协议（Simple Object Access Protocol，SOAP）。SOAP使用XML将消息编码并通过HTTP传输，集成了类型检测系统，并引入了面向资源的数据调用概念。SOAP所提供的结果具有可预测性，可惜的是由于其实现过于复杂而导致失败的概率也很高
-
-
-第一十八章 表述性状态传递（REST）
-
-◆ REST描述了一种面向资源的架构，用户可以通过执行GET、POST、PUT和DELETE等操作来浏览Web资源
-
+| 文档 | 内容 |
+| --- | --- |
+| [背景笔记](docs/00-背景笔记.md) | 原先的 GraphQL 学习摘录 |
+| [目标与技术选型](docs/01-目标与技术选型.md) | 为什么用 Spring for GraphQL |
+| [工程结构](docs/02-工程结构.md) | 包和分层 |
+| [持久化建模](docs/03-持久化建模.md) | 表、快照、约束、样例数据 |
+| [Schema 与类型](docs/04-Schema与类型规范.md) | View、Input、空值、校验 |
+| [查询分页与过滤](docs/05-查询分页与过滤.md) | 分页和商品筛选 |
+| [变更与订单流转](docs/06-变更校验与订单流转.md) | 下单、状态、删除条件 |
+| [嵌套与 BatchMapping](docs/07-嵌套查询与BatchMapping.md) | 避免 N+1 |
+| [错误、标量、查询保护](docs/08-错误处理自定义标量与查询保护.md) | code、DateTime、深度限制 |
+| [订阅](docs/09-订阅.md) | 订单状态推送 |
+| [Vue 3 柜台](docs/10-Vue3柜台.md) | 前端如何调用 |
+| [运行与示例](docs/11-运行与请求示例.md) | 启动命令和可粘贴的请求 |

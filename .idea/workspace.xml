@@ -28,27 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善Influxdb">
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/deploy/cluster/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/deploy/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/01-基本写入.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/02-基本查询.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/03-函数与运算.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/04-连续查询.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/05-性能调优.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/06-集群安装配置.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/07-数据备份与恢复.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/08-数据模型规范.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/09-轻量事务TTL计数器与集合.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/10-二级索引与物化视图.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/11-删除与墓碑.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/docs/cassandra-scenarios/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allst-cassandra/src/test/java/com/allst/boot/cassandra/CassandraSpecTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-cassandra/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/allst-cassandra/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-cassandra/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-cassandra/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-cassandra/src/main/java/com/allst/boot/AllstCassandraApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/allst-cassandra/src/main/java/com/allst/boot/AllstCassandraApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allst-cassandra/src/main/resources/application.properties" beforeDir="false" />
+    <list default="true" id="a357a888-8d4f-4291-8c7e-063f3d200f52" name="Default Changelist" comment="完善Cassandra">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allst-graphql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/allst-graphql/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -377,6 +358,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphQLApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="allst-graphql" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.GraphQLApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InfluxDBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="allst-influxdb" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.allst.boot.InfluxDBApplication" />
@@ -394,6 +382,7 @@
     <list>
       <item itemvalue="Application.EasyUtil" />
       <item itemvalue="Application.SqlMaskUtil" />
+      <item itemvalue="Spring Boot.GraphQLApplication" />
       <item itemvalue="Spring Boot.AllstCassandraApplication" />
       <item itemvalue="Spring Boot.BootTrinoApplication" />
       <item itemvalue="Spring Boot.InfluxDBApplication" />
@@ -710,7 +699,7 @@
       <workItem from="1792761905901" duration="581000" />
       <workItem from="1792763935748" duration="2054000" />
       <workItem from="1792807360886" duration="8846000" />
-      <workItem from="1792847171827" duration="590000" />
+      <workItem from="1792847171827" duration="847000" />
     </task>
     <task id="LOCAL-00041" summary="redis 集群优缺点 &amp; Redis应用问题解决">
       <created>1626105019533</created>
@@ -1055,7 +1044,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690385997236</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1097,7 +1086,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Elasticsearch" />
     <MESSAGE value="Presto" />
     <MESSAGE value="SpringBoot2.5.4整合ElasticSearch7.6.1" />
     <MESSAGE value="SpringBoot2.5.4整合PostgreSQL11" />
@@ -1122,6 +1110,7 @@
     <MESSAGE value="完善Trino的集成" />
     <MESSAGE value="完善Neo4j" />
     <MESSAGE value="完善Influxdb" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善Influxdb" />
+    <MESSAGE value="完善Cassandra" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善Cassandra" />
   </component>
 </project>
